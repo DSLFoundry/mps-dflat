@@ -36,11 +36,15 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+      </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -51,6 +55,7 @@
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
+      <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
       <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
         <property id="1075375595204" name="text" index="1xolSY" />
       </concept>
@@ -80,6 +85,8 @@
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1198257632966" name="jetbrains.mps.lang.editor.structure.CellModel_BlockStart" flags="ng" index="3XI7vg" />
+      <concept id="1198257747917" name="jetbrains.mps.lang.editor.structure.CellModel_BlockEnd" flags="ng" index="3XIzrr" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -136,6 +143,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="6870613620390542976" name="jetbrains.mps.lang.smodel.structure.ConceptAliasOperation" flags="ng" index="3n3YKJ" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -649,6 +659,16 @@
     <node concept="14StLt" id="3lo6kbLh9Lm" role="V601i">
       <property role="TrG5h" value="Operator" />
     </node>
+    <node concept="14StLt" id="7CM0FuU2pI1" role="V601i">
+      <property role="TrG5h" value="StructureBlockBrace" />
+    </node>
+    <node concept="14StLt" id="7CM0FuU2pIl" role="V601i">
+      <property role="TrG5h" value="BlockEnd" />
+      <node concept="VechU" id="7CM0FuU2pIw" role="3F10Kt">
+        <property role="Vb096" value="gray" />
+      </node>
+      <node concept="Vb9p2" id="7CM0FuU2pI_" role="3F10Kt" />
+    </node>
   </node>
   <node concept="24kQdi" id="3lo6kbMybhL">
     <property role="3GE5qa" value="literal.character" />
@@ -696,6 +716,54 @@
     <ref role="1XX52x" to="wgz4:6wfKxDW$zwQ" resolve="NullLiteral" />
     <node concept="PMmxH" id="41Bb1O9905Y" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="3p36aQ" id="7CM0FuTR_fm">
+    <property role="3GE5qa" value="dot" />
+    <ref role="aqKnT" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
+  </node>
+  <node concept="PKFIW" id="7CM0FuTYHg4">
+    <property role="TrG5h" value="BlockEnd" />
+    <ref role="1XX52x" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
+    <node concept="3EZMnI" id="7CM0FuTYHg6" role="2wV5jI">
+      <node concept="3XIzrr" id="7CM0FuTYHgd" role="3EZMnx">
+        <ref role="1k5W1q" node="7CM0FuU2pI1" resolve="StructureBlockBrace" />
+        <node concept="3mYdg7" id="7CM0FuU2pz0" role="3F10Kt">
+          <property role="1413C4" value="identifier-block" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="7CM0FuTYHg9" role="2iSdaV" />
+      <node concept="PMmxH" id="7CM0FuTYHgj" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="7CM0FuU2pIl" resolve="BlockEnd" />
+      </node>
+      <node concept="1HlG4h" id="7CM0FuTYHgv" role="3EZMnx">
+        <ref role="1k5W1q" node="7CM0FuU2pIl" resolve="BlockEnd" />
+        <node concept="1HfYo3" id="7CM0FuTYHgx" role="1HlULh">
+          <node concept="3TQlhw" id="7CM0FuTYHgz" role="1Hhtcw">
+            <node concept="3clFbS" id="7CM0FuTYHg_" role="2VODD2">
+              <node concept="3clFbF" id="7CM0FuTYHph" role="3cqZAp">
+                <node concept="2OqwBi" id="7CM0FuTYHBU" role="3clFbG">
+                  <node concept="pncrf" id="7CM0FuTYHpg" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7CM0FuTYI1P" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7CM0FuTYIsO">
+    <property role="TrG5h" value="BlockStart" />
+    <ref role="1XX52x" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
+    <node concept="3XI7vg" id="7CM0FuTYIsQ" role="2wV5jI">
+      <ref role="1k5W1q" node="7CM0FuU2pI1" resolve="StructureBlockBrace" />
+      <node concept="3mYdg7" id="7CM0FuU2po8" role="3F10Kt">
+        <property role="1413C4" value="identifier-block" />
+      </node>
     </node>
   </node>
 </model>

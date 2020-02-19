@@ -821,7 +821,7 @@
     <property role="TrG5h" value="NullLiteral" />
     <property role="34LRSv" value="null" />
     <property role="R4oN_" value="null literal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6wfKxDXeUzQ" resolve="Expression" />
     <node concept="PrWs8" id="6wfKxDW$zwW" role="PzmwI">
       <ref role="PrY4T" node="6wfKxDW$zwT" resolve="INullLiteral" />
     </node>
@@ -872,6 +872,9 @@
     <property role="34LRSv" value="(" />
     <property role="R4oN_" value="parenthesis" />
     <ref role="1TJDcQ" node="5KwscwGd6rY" resolve="AUnaryOperator" />
+    <node concept="PrWs8" id="7CM0FuTRbjh" role="PzmwI">
+      <ref role="PrY4T" node="3lo6kbLTGgo" resolve="IDottable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6wfKxDWT1H8">
     <property role="EcuMT" value="7498425323615427400" />

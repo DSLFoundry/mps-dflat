@@ -49,6 +49,9 @@
   <node concept="PlHQZ" id="5KwscwGd6$t">
     <property role="EcuMT" value="6638429855781513501" />
     <property role="TrG5h" value="IType" />
+    <node concept="PrWs8" id="7CM0FuTQS3Y" role="PrDN$">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5KwscwGd6$u">
     <property role="EcuMT" value="6638429855781513502" />
@@ -610,13 +613,12 @@
     <property role="3GE5qa" value="expression" />
     <property role="TrG5h" value="ATypeReferenceExpression" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="wgz4:6wfKxDXhrye" resolve="AReferenceExpression" />
-    <node concept="1TJgyj" id="6wfKxDW$paZ" role="1TKVEi">
-      <property role="IQ2ns" value="7498425323610018495" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
-      <ref role="20ksaX" to="wgz4:6wfKxDW$paK" resolve="target" />
+    <ref role="1TJDcQ" to="wgz4:6wfKxDXeUzQ" resolve="Expression" />
+    <node concept="PrWs8" id="7CM0FuT3Jrb" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuT3Jrg" role="PzmwI">
+      <ref role="PrY4T" node="5KwscwGd6$u" resolve="ITyped" />
     </node>
   </node>
   <node concept="PlHQZ" id="7wiI39P2o$W">

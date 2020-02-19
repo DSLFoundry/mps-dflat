@@ -15,6 +15,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -157,6 +158,9 @@
     <node concept="PrWs8" id="5KwscwGd6_n" role="PzmwI">
       <ref role="PrY4T" to="wgz4:5KwscwGd6_4" resolve="IExpressed" />
     </node>
+    <node concept="PrWs8" id="7CM0FuUaW9S" role="PzmwI">
+      <ref role="PrY4T" node="7CM0FuU964F" resolve="IBlockEndTextProvider" />
+    </node>
     <node concept="1TJgyj" id="5KwscwGd6tr" role="1TKVEi">
       <property role="IQ2ns" value="6638429855781513051" />
       <property role="20lmBu" value="aggregation" />
@@ -272,6 +276,9 @@
     <ref role="1TJDcQ" node="5KwscwGd6t1" resolve="Statement" />
     <node concept="PrWs8" id="5KwscwGd6_0" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6v6" resolve="IBlocked" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuUaWa0" role="PzmwI">
+      <ref role="PrY4T" node="7CM0FuU964F" resolve="IBlockEndTextProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd6ub">
@@ -603,6 +610,7 @@
     <property role="EcuMT" value="6638429855781513505" />
     <property role="3GE5qa" value="declaration" />
     <property role="TrG5h" value="ExplicitlyTypedLocalVariableStatement" />
+    <property role="R4oN_" value="local variable" />
     <ref role="1TJDcQ" node="5KwscwGd6t6" resolve="ALocalVariableStatement" />
     <node concept="PrWs8" id="5KwscwGd6B4" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6Av" resolve="ITypedVariableDeclaration" />
@@ -754,6 +762,11 @@
     <property role="TrG5h" value="MultiLineCommentStatement" />
     <property role="34LRSv" value="/*" />
     <ref role="1TJDcQ" node="7wiI39PdGrk" resolve="ACommentStatement" />
+  </node>
+  <node concept="PlHQZ" id="7CM0FuU964F">
+    <property role="EcuMT" value="8805103209587958059" />
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="IBlockEndTextProvider" />
   </node>
 </model>
 

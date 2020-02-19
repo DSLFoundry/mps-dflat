@@ -12,6 +12,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="nahy" ref="r:6d2c3cd0-e8af-409a-8c7c-1e2871cc2684(com.dslfoundry.dblunt.expression.editor)" implicit="true" />
     <import index="7d5b" ref="r:89de843e-e2b5-4681-b4ee-54706926d780(com.dslfoundry.dblunt.type.behavior)" implicit="true" />
+    <import index="h8m6" ref="r:ad1df716-1554-4e53-8df8-f8bf7be75224(com.dslfoundry.dblunt.expression.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -94,7 +95,11 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
-      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
+        <child id="8207263695491669778" name="leftAssociative" index="2EmT7a" />
+        <child id="8207263695491670784" name="priority" index="2EmURo" />
+      </concept>
+      <concept id="8207263695491691232" name="com.mbeddr.mpsutil.grammarcells.structure.SubconceptExpression" flags="ng" index="2EmZKS" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -366,6 +371,31 @@
       <property role="TrG5h" value="VoidType" />
       <node concept="VechU" id="3lo6kbLhb7J" role="3F10Kt">
         <property role="Vb096" value="LIGHT_BLUE" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7CM0FuT3RQR">
+    <property role="3GE5qa" value="expression" />
+    <ref role="1XX52x" to="r1kv:6wfKxDXh$Zf" resolve="ATypeReferenceExpression" />
+    <node concept="1WcQYu" id="6wfKxDX6vvp" role="2wV5jI">
+      <node concept="2ElW$n" id="6wfKxDX6vvq" role="2El2Yn">
+        <node concept="2OqwBi" id="15FVd_LBljp" role="2EmURo">
+          <node concept="2EmZKS" id="15FVd_LBl1w" role="2Oq$k0" />
+          <node concept="2qgKlT" id="15FVd_LBm15" role="2OqNvi">
+            <ref role="37wK5l" to="h8m6:6wfKxDXeWCJ" resolve="getPriority" />
+          </node>
+        </node>
+        <node concept="2OqwBi" id="15FVd_LBmsp" role="2EmT7a">
+          <node concept="2EmZKS" id="15FVd_LBm5Q" role="2Oq$k0" />
+          <node concept="2qgKlT" id="15FVd_LBmWq" role="2OqNvi">
+            <ref role="37wK5l" to="h8m6:6wfKxDXeWEe" resolve="isLeftAssociative" />
+          </node>
+        </node>
+      </node>
+      <node concept="1kIj98" id="6wfKxDX6vvA" role="1LiK7o">
+        <node concept="3F1sOY" id="7CM0FuT4aMt" role="1kIj9b">
+          <ref role="1NtTu8" to="r1kv:5KwscwGd6$v" resolve="type" />
+        </node>
       </node>
     </node>
   </node>

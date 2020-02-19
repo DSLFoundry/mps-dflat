@@ -377,6 +377,9 @@
     <node concept="PrWs8" id="6wfKxDW$oVt" role="PzmwI">
       <ref role="PrY4T" to="28vp:5KwscwGd6HF" resolve="IBlockable" />
     </node>
+    <node concept="PrWs8" id="7CM0FuUbe2x" role="PzmwI">
+      <ref role="PrY4T" to="28vp:7CM0FuU964F" resolve="IBlockEndTextProvider" />
+    </node>
     <node concept="1TJgyj" id="5KwscwGd6H6" role="1TKVEi">
       <property role="IQ2ns" value="6638429855781514054" />
       <property role="20lmBu" value="aggregation" />
@@ -469,6 +472,9 @@
       <property role="20kJfa" value="initialValue" />
       <ref role="20ksaX" to="wgz4:5KwscwGd6j6" resolve="initializer" />
       <ref role="20lvS9" to="wgz4:6wfKxDXeUzQ" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuTb3PI" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
     </node>
     <node concept="PrWs8" id="3lo6kbKlaRL" role="PzmwI">
       <ref role="PrY4T" to="r1kv:5KwscwGd6$u" resolve="ITyped" />
@@ -587,6 +593,9 @@
     </node>
     <node concept="PrWs8" id="3lo6kbKcbz9" role="PzmwI">
       <ref role="PrY4T" node="3lo6kbKcbyh" resolve="ISealed" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuU9bzK" role="PzmwI">
+      <ref role="PrY4T" to="28vp:7CM0FuU964F" resolve="IBlockEndTextProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="5KwscwGd67y">
@@ -967,7 +976,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3lo6kbKl9Zk" resolve="ClassMember" />
+      <ref role="20lvS9" node="7CM0FuTYtyW" resolve="IClassMember" />
     </node>
     <node concept="PrWs8" id="6wfKxDWTiEM" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
@@ -983,6 +992,9 @@
     </node>
     <node concept="PrWs8" id="3lo6kbL8_LD" role="PzmwI">
       <ref role="PrY4T" to="r1kv:3lo6kbL8_fg" resolve="IGeneric" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuTYtKv" role="PzmwI">
+      <ref role="PrY4T" node="7CM0FuTYtyW" resolve="IClassMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd6kw">
@@ -1116,6 +1128,7 @@
     <property role="EcuMT" value="6638429855781511314" />
     <property role="TrG5h" value="ATypeDeclaration" />
     <property role="3GE5qa" value="typeDeclaration" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5KwscwGd62j" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd61K" resolve="INamespaceMember" />
@@ -1391,6 +1404,9 @@
       <ref role="20lvS9" node="6wfKxDW$pb8" resolve="IMethod" />
       <ref role="20ksaX" to="wgz4:6wfKxDW$pbf" resolve="target" />
     </node>
+    <node concept="PrWs8" id="7CM0FuTOnVZ" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6wfKxDW$pbH">
     <property role="EcuMT" value="7498425323610018541" />
@@ -1474,25 +1490,6 @@
     <property role="EcuMT" value="7498425323610246372" />
     <property role="3GE5qa" value="typeDeclaration" />
     <property role="TrG5h" value="IClassOrInterface" />
-  </node>
-  <node concept="1TIwiD" id="6wfKxDXhuIg">
-    <property role="EcuMT" value="7498425323621837712" />
-    <property role="3GE5qa" value="typeDeclaration.class.member.field" />
-    <property role="TrG5h" value="FieldReferenceExpression" />
-    <ref role="1TJDcQ" to="wgz4:6wfKxDXhryk" resolve="AValueReferenceExpression" />
-    <node concept="1TJgyj" id="6wfKxDW$pdr" role="1TKVEi">
-      <property role="IQ2ns" value="7498425323610018651" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <ref role="20lvS9" node="5KwscwGd64U" resolve="AField" />
-      <ref role="20ksaX" to="wgz4:6wfKxDW$pc2" resolve="target" />
-    </node>
-    <node concept="RPilO" id="7wiI39P4KbZ" role="lGtFl">
-      <ref role="RPilL" node="6wfKxDW$pdr" resolve="target" />
-      <node concept="ROjv2" id="7wiI39P4Kc1" role="ROhUF">
-        <property role="1W_73P" value="field " />
-      </node>
-    </node>
   </node>
   <node concept="1TIwiD" id="6wfKxDXhwix">
     <property role="EcuMT" value="7498425323621844129" />
@@ -1588,6 +1585,9 @@
     <node concept="PrWs8" id="3lo6kbJwDiY" role="PzmwI">
       <ref role="PrY4T" to="wgz4:3lo6kbJwDgI" resolve="IArgumented" />
     </node>
+    <node concept="PrWs8" id="7CM0FuTQ2Li" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3lo6kbJwDgo">
     <property role="EcuMT" value="3843850057237566488" />
@@ -1679,8 +1679,8 @@
     <property role="3GE5qa" value="typeDeclaration.class.member" />
     <property role="TrG5h" value="ClassMember" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3lo6kbKlbqg" role="PzmwI">
-      <ref role="PrY4T" node="5KwscwGd6lX" resolve="IAccessed" />
+    <node concept="PrWs8" id="7CM0FuTYtKl" role="PzmwI">
+      <ref role="PrY4T" node="7CM0FuTYtyW" resolve="IClassMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="3lo6kbKDdcZ">
@@ -1714,6 +1714,7 @@
     <property role="EcuMT" value="3843850057256591321" />
     <property role="3GE5qa" value="typeDeclaration.enum" />
     <property role="TrG5h" value="AEnum" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5KwscwGd62i" resolve="ATypeDeclaration" />
     <node concept="1TJgyj" id="3lo6kbKDdcS" role="1TKVEi">
       <property role="IQ2ns" value="3843850057256588088" />
@@ -1914,6 +1915,71 @@
       <node concept="ROjv2" id="3lo6kbMr8CR" role="ROhUF">
         <property role="1W_73K" value=" [constant]" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CM0FuT3Jra">
+    <property role="EcuMT" value="8805103209569777354" />
+    <property role="3GE5qa" value="typeDeclaration.class" />
+    <property role="TrG5h" value="ClassTypeReferenceExpression" />
+    <ref role="1TJDcQ" to="r1kv:6wfKxDXh$Zf" resolve="ATypeReferenceExpression" />
+  </node>
+  <node concept="1TIwiD" id="7CM0FuTtEb8">
+    <property role="EcuMT" value="8805103209576571592" />
+    <property role="3GE5qa" value="typeDeclaration.class" />
+    <property role="TrG5h" value="ThisExpression" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="wgz4:6wfKxDXeUzQ" resolve="Expression" />
+    <node concept="PrWs8" id="7CM0FuTtEb9" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CM0FuTx1vw">
+    <property role="EcuMT" value="8805103209577453536" />
+    <property role="3GE5qa" value="typeDeclaration.class.member.field.expression" />
+    <property role="TrG5h" value="ScopedFieldReferenceExpression" />
+    <ref role="1TJDcQ" node="7CM0FuTx1v$" resolve="AFieldReferenceExpression" />
+    <node concept="PrWs8" id="7CM0FuTx1vx" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:6wfKxDW$Wlz" resolve="IDotTarget" />
+    </node>
+    <node concept="RPilO" id="7CM0FuTx1vy" role="lGtFl">
+      <ref role="RPilL" node="7CM0FuTx1v_" resolve="target" />
+      <node concept="ROjv2" id="7CM0FuTx1vz" role="ROhUF">
+        <property role="1W_73K" value=" [field]" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CM0FuTx1v$">
+    <property role="EcuMT" value="8805103209577453540" />
+    <property role="3GE5qa" value="typeDeclaration.class.member.field.expression" />
+    <property role="TrG5h" value="AFieldReferenceExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="wgz4:6wfKxDXhryk" resolve="AValueReferenceExpression" />
+    <node concept="1TJgyj" id="7CM0FuTx1v_" role="1TKVEi">
+      <property role="IQ2ns" value="8805103209577453541" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <ref role="20ksaX" to="wgz4:6wfKxDW$pc2" resolve="target" />
+      <ref role="20lvS9" node="5KwscwGd64U" resolve="AField" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CM0FuTx1vA">
+    <property role="EcuMT" value="8805103209577453542" />
+    <property role="3GE5qa" value="typeDeclaration.class.member.field.expression" />
+    <property role="TrG5h" value="LocalFieldReferenceExpression" />
+    <ref role="1TJDcQ" node="7CM0FuTx1v$" resolve="AFieldReferenceExpression" />
+    <node concept="RPilO" id="7CM0FuTx1vB" role="lGtFl">
+      <ref role="RPilL" node="7CM0FuTx1v_" resolve="target" />
+      <node concept="ROjv2" id="7CM0FuTx1vC" role="ROhUF">
+        <property role="1W_73K" value=" [field]" />
+      </node>
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7CM0FuTYtyW">
+    <property role="EcuMT" value="8805103209585170620" />
+    <property role="3GE5qa" value="typeDeclaration.class.member" />
+    <property role="TrG5h" value="IClassMember" />
+    <node concept="PrWs8" id="7CM0FuTYtyX" role="PrDN$">
+      <ref role="PrY4T" node="5KwscwGd6lX" resolve="IAccessed" />
     </node>
   </node>
 </model>

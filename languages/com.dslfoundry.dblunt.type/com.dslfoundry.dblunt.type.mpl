@@ -53,6 +53,8 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dblunt.type)</dependency>
+    <dependency reexport="false">21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dblunt.expression)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
