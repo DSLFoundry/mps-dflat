@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/com.dslfoundry.dblunt/com.dslfoundry.dblunt.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.expression/com.dslfoundry.dblunt.expression.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.statement/com.dslfoundry.dblunt.statement.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.structure/com.dslfoundry.dblunt.structure.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.type/com.dslfoundry.dblunt.type.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.playground/com.dslfoundry.dblunt.playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.runtime/com.dslfoundry.dblunt.runtime.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
