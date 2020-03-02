@@ -47,6 +47,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
@@ -83,6 +84,7 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="625126330682908270" name="jetbrains.mps.lang.editor.structure.CellModel_ReferencePresentation" flags="sg" stub="730538219795961225" index="3SHvHV" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1198257632966" name="jetbrains.mps.lang.editor.structure.CellModel_BlockStart" flags="ng" index="3XI7vg">
@@ -222,10 +224,9 @@
   </node>
   <node concept="24kQdi" id="6wfKxDWRInj">
     <ref role="1XX52x" to="28vp:5KwscwGd6t1" resolve="Statement" />
-    <node concept="1WcQYu" id="15FVd_LApK2" role="2wV5jI">
-      <node concept="2ElW$n" id="15FVd_LApK4" role="2El2Yn" />
-      <node concept="1kIj98" id="15FVd_LApKe" role="1LiK7o">
-        <node concept="3F0ifn" id="15FVd_LAQX$" role="1kIj9b" />
+    <node concept="3F0ifn" id="7CM0FuUqi9T" role="2wV5jI">
+      <node concept="VPxyj" id="7CM0FuUqi9X" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
@@ -658,6 +659,21 @@
     </node>
     <node concept="14StLt" id="7CM0FuU94Ej" role="V601i">
       <property role="TrG5h" value="StatementBlockBrace" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7CM0FuUqYQS">
+    <property role="3GE5qa" value="variable" />
+    <ref role="1XX52x" to="28vp:7CM0FuUqYQi" resolve="NamedVariableReferenceExpression" />
+    <node concept="3EZMnI" id="7CM0FuUD_K1" role="2wV5jI">
+      <node concept="2iRfu4" id="7CM0FuUD_K2" role="2iSdaV" />
+      <node concept="1kIj98" id="7CM0FuUyNdk" role="3EZMnx">
+        <node concept="1iCGBv" id="7CM0FuUqYRl" role="1kIj9b">
+          <ref role="1NtTu8" to="28vp:7CM0FuUqYQp" resolve="target" />
+          <node concept="1sVBvm" id="7CM0FuUqYRn" role="1sWHZn">
+            <node concept="3SHvHV" id="7CM0FuUzwBp" role="2wV5jI" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -7,8 +7,12 @@
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.statement/com.dslfoundry.dblunt.statement.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.structure/com.dslfoundry.dblunt.structure.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dblunt.type/com.dslfoundry.dblunt.type.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/grammarcells/grammarcells.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.expression.test.editor/com.dslfoundry.dblunt.expression.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.playground/com.dslfoundry.dblunt.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.runtime/com.dslfoundry.dblunt.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dblunt.statement.test.editor/com.dslfoundry.dblunt.statement.test.editor.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/grammarcells.playground/grammarcells.playground.msd" folder="" />
     </projectModules>
   </component>
 </project>

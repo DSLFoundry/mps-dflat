@@ -168,7 +168,7 @@
   </node>
   <node concept="13h7C7" id="3lo6kbM0hcT">
     <property role="3GE5qa" value="variable" />
-    <ref role="13h7C2" to="28vp:6wfKxDW$pcb" resolve="VariableReferenceExpression" />
+    <ref role="13h7C2" to="28vp:6wfKxDW$pcb" resolve="AVariableReferenceExpression" />
     <node concept="13hLZK" id="3lo6kbM0hcU" role="13h7CW">
       <node concept="3clFbS" id="3lo6kbM0hcV" role="2VODD2" />
     </node>

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="8iju" ref="r:60ca9eb8-120f-450f-a830-b55094bab30d(com.dslfoundry.dblunt.runtime.scoping)" />
     <import index="28vp" ref="r:97df7598-a461-44b0-9392-375b61c3ab06(com.dslfoundry.dblunt.statement.structure)" implicit="true" />
   </imports>
   <registry>
@@ -15,6 +16,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -38,6 +42,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
@@ -66,6 +71,9 @@
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -85,7 +93,7 @@
   </registry>
   <node concept="1M2fIO" id="3lo6kbLApDg">
     <property role="3GE5qa" value="variable" />
-    <ref role="1M2myG" to="28vp:6wfKxDW$pcb" resolve="VariableReferenceExpression" />
+    <ref role="1M2myG" to="28vp:6wfKxDW$pcb" resolve="AVariableReferenceExpression" />
     <node concept="1N5Pfh" id="3lo6kbLApDh" role="1Mr941">
       <ref role="1N5Vy1" to="28vp:6wfKxDW$paS" resolve="target" />
       <node concept="3dgokm" id="3lo6kbLApDl" role="1N6uqs">
@@ -123,6 +131,28 @@
                   <node concept="chp4Y" id="3lo6kbLAEpA" role="v3oSu">
                     <ref role="cht4Q" to="28vp:5KwscwGd6Ae" resolve="IVariableDeclaration" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7CM0FuUJHjd">
+    <property role="3GE5qa" value="variable" />
+    <ref role="1M2myG" to="28vp:7CM0FuUqYQi" resolve="NamedVariableReferenceExpression" />
+    <node concept="1N5Pfh" id="7CM0FuUJHjh" role="1Mr941">
+      <ref role="1N5Vy1" to="28vp:7CM0FuUqYQp" resolve="target" />
+      <node concept="3dgokm" id="7CM0FuUJHji" role="1N6uqs">
+        <node concept="3clFbS" id="7CM0FuUJHjj" role="2VODD2">
+          <node concept="3clFbF" id="7CM0FuUKxDw" role="3cqZAp">
+            <node concept="2ShNRf" id="7CM0FuUKxDu" role="3clFbG">
+              <node concept="1pGfFk" id="7CM0FuUKCZd" role="2ShVmc">
+                <ref role="37wK5l" to="8iju:7CM0FuV1NDq" resolve="StatementListScope" />
+                <node concept="2rP1CM" id="7CM0FuUKD3O" role="37wK5m" />
+                <node concept="35c_gC" id="7CM0FuUKDfS" role="37wK5m">
+                  <ref role="35c_gD" to="28vp:5KwscwGd6Al" resolve="INamedVariableDeclaration" />
                 </node>
               </node>
             </node>

@@ -734,7 +734,7 @@
   </node>
   <node concept="WtQ9Q" id="41Bb1O9iUj_">
     <property role="3GE5qa" value="variable" />
-    <ref role="WuzLi" to="28vp:6wfKxDW$pcb" resolve="VariableReferenceExpression" />
+    <ref role="WuzLi" to="28vp:6wfKxDW$pcb" resolve="AVariableReferenceExpression" />
     <node concept="11bSqf" id="41Bb1O9iUjA" role="11c4hB">
       <node concept="3clFbS" id="41Bb1O9iUjB" role="2VODD2">
         <node concept="lc7rE" id="41Bb1O9iTwV" role="3cqZAp">

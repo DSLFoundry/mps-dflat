@@ -41,10 +41,12 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
         <module reference="21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dblunt.expression)" version="0" />
+        <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dblunt.runtime)" version="0" />
         <module reference="8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dblunt.type)" version="0" />
         <module reference="7b37b250-c45b-493f-91bf-2cb44e5bcb1a(com.dslfoundry.dblunt.type#01)" version="0" />
         <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
         <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
+        <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -98,6 +100,9 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dblunt.runtime)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dblunt.expression)</extendedLanguage>
   </extendedLanguages>

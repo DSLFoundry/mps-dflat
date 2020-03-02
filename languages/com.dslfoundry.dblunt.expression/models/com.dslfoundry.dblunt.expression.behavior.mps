@@ -1033,6 +1033,34 @@
       </node>
       <node concept="10P_77" id="3lo6kbMit$4" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="7CM0FuUPsL5" role="13h7CS">
+      <property role="TrG5h" value="getPossibleTargets" />
+      <ref role="13i0hy" node="3lo6kbLTGgX" resolve="getPossibleTargets" />
+      <node concept="3Tm1VV" id="7CM0FuUPsL6" role="1B3o_S" />
+      <node concept="3clFbS" id="7CM0FuUPsLa" role="3clF47">
+        <node concept="3clFbF" id="7CM0FuUPukM" role="3cqZAp">
+          <node concept="2OqwBi" id="7CM0FuUPFLl" role="3clFbG">
+            <node concept="1PxgMI" id="7CM0FuUPFvR" role="2Oq$k0">
+              <node concept="chp4Y" id="7CM0FuUPF$3" role="3oSUPX">
+                <ref role="cht4Q" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+              </node>
+              <node concept="2OqwBi" id="7CM0FuUPEmF" role="1m5AlR">
+                <node concept="13iPFW" id="7CM0FuUPDBu" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7CM0FuUPENf" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wgz4:6wfKxDW$Wlw" resolve="target" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="7CM0FuUPHrh" role="2OqNvi">
+              <ref role="37wK5l" node="3lo6kbLTGgX" resolve="getPossibleTargets" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7CM0FuUPsLb" role="3clF45">
+        <node concept="3Tqbb2" id="7CM0FuUPsLc" role="A3Ik2" />
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="6wfKxDWXwJL">
     <property role="3GE5qa" value="reference" />

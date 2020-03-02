@@ -843,7 +843,6 @@
     <property role="EcuMT" value="7498425323610162205" />
     <property role="3GE5qa" value="dot" />
     <property role="TrG5h" value="DotExpression" />
-    <property role="34LRSv" value="." />
     <property role="R4oN_" value="member access" />
     <ref role="1TJDcQ" node="5KwscwGd6rX" resolve="AOperator" />
     <node concept="1TJgyj" id="6wfKxDW$Wlw" role="1TKVEi">
@@ -858,6 +857,9 @@
     </node>
     <node concept="PrWs8" id="6wfKxDW$WlB" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6_4" resolve="IExpressed" />
+    </node>
+    <node concept="PrWs8" id="7CM0FuUPqep" role="PzmwI">
+      <ref role="PrY4T" node="3lo6kbLTGgo" resolve="IDottable" />
     </node>
   </node>
   <node concept="PlHQZ" id="6wfKxDW$Wlz">

@@ -62,9 +62,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
-        <property id="1200397540847" name="charConstant" index="1XhdNS" />
-      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -130,21 +127,11 @@
                   </node>
                   <node concept="3clFbS" id="6wfKxDWT99i" role="1bW5cS">
                     <node concept="3clFbF" id="6wfKxDWTaiA" role="3cqZAp">
-                      <node concept="22lmx$" id="7wiI39OWWOn" role="3clFbG">
-                        <node concept="3clFbC" id="7wiI39OWZcx" role="3uHU7w">
-                          <node concept="37vLTw" id="7wiI39OWZEy" role="3uHU7w">
-                            <ref role="3cqZAo" node="6wfKxDWT9mi" resolve="it" />
-                          </node>
-                          <node concept="1Xhbcc" id="7wiI39OWWYi" role="3uHU7B">
-                            <property role="1XhdNS" value="." />
-                          </node>
-                        </node>
-                        <node concept="2YIFZM" id="7wiI39OVPrA" role="3uHU7B">
-                          <ref role="37wK5l" to="wyt6:~Character.isJavaIdentifierPart(int)" resolve="isJavaIdentifierPart" />
-                          <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-                          <node concept="37vLTw" id="7wiI39OVPrB" role="37wK5m">
-                            <ref role="3cqZAo" node="6wfKxDWT9mi" resolve="it" />
-                          </node>
+                      <node concept="2YIFZM" id="7wiI39OVPrA" role="3clFbG">
+                        <ref role="37wK5l" to="wyt6:~Character.isJavaIdentifierPart(int)" resolve="isJavaIdentifierPart" />
+                        <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                        <node concept="37vLTw" id="7wiI39OVPrB" role="37wK5m">
+                          <ref role="3cqZAo" node="6wfKxDWT9mi" resolve="it" />
                         </node>
                       </node>
                     </node>

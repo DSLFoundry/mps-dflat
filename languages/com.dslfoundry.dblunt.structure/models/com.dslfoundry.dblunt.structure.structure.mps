@@ -1002,6 +1002,7 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <property role="TrG5h" value="Class" />
     <property role="34LRSv" value="class" />
+    <property role="R4oN_" value="class" />
     <ref role="1TJDcQ" node="5KwscwGd62l" resolve="AClass" />
   </node>
   <node concept="1TIwiD" id="5KwscwGd6kx">
@@ -1009,6 +1010,7 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <property role="TrG5h" value="PartialClass" />
     <property role="34LRSv" value="partial" />
+    <property role="R4oN_" value="partial class" />
     <ref role="1TJDcQ" node="5KwscwGd62l" resolve="AClass" />
   </node>
   <node concept="1TIwiD" id="5KwscwGd6ky">
@@ -1016,6 +1018,7 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <property role="TrG5h" value="StaticClass" />
     <property role="34LRSv" value="static" />
+    <property role="R4oN_" value="static class" />
     <ref role="1TJDcQ" node="5KwscwGd62l" resolve="AClass" />
     <node concept="PrWs8" id="6wfKxDW$WnB" role="PzmwI">
       <ref role="PrY4T" node="6wfKxDW$WmJ" resolve="IStatic" />
@@ -1026,6 +1029,7 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <property role="TrG5h" value="AbstractClass" />
     <property role="34LRSv" value="abstract" />
+    <property role="R4oN_" value="abstract class" />
     <ref role="1TJDcQ" node="5KwscwGd62l" resolve="AClass" />
   </node>
   <node concept="1TIwiD" id="5KwscwGd6k$">
@@ -1033,6 +1037,7 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <property role="TrG5h" value="SealedClass" />
     <property role="34LRSv" value="sealed" />
+    <property role="R4oN_" value="sealed class" />
     <ref role="1TJDcQ" node="5KwscwGd62l" resolve="AClass" />
   </node>
   <node concept="1TIwiD" id="5KwscwGd64w">
@@ -1547,6 +1552,7 @@
     <property role="EcuMT" value="8652180360984199975" />
     <property role="3GE5qa" value="typeDeclaration.class.member.method.instance" />
     <property role="TrG5h" value="AVirtualMethod" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5KwscwGd64X" resolve="AMethod" />
     <node concept="PrWs8" id="7wiI39P4KcY" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6ot" resolve="IVirtualMethod" />
@@ -1556,6 +1562,7 @@
     <property role="EcuMT" value="8652180360984200036" />
     <property role="3GE5qa" value="typeDeclaration.class.member.property.instance" />
     <property role="TrG5h" value="AVirtualProperty" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5KwscwGd650" resolve="AProperty" />
     <node concept="PrWs8" id="7wiI39P4Kd_" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6oQ" resolve="IVirtualProperty" />
@@ -1678,6 +1685,7 @@
     <property role="EcuMT" value="3843850057251332052" />
     <property role="3GE5qa" value="typeDeclaration.class.member" />
     <property role="TrG5h" value="ClassMember" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7CM0FuTYtKl" role="PzmwI">
       <ref role="PrY4T" node="7CM0FuTYtyW" resolve="IClassMember" />
