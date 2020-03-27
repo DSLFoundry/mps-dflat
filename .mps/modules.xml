@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.playground/com.dslfoundry.dflat.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.runtime/com.dslfoundry.dflat.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.statement.test.editor/com.dslfoundry.dflat.statement.test.editor.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.type.test.editor/com.dslfoundry.dflat.type.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/grammarcells.playground/grammarcells.playground.msd" folder="" />
     </projectModules>
   </component>
