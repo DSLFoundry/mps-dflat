@@ -11,6 +11,7 @@
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610246356" name="com.dslfoundry.dflat.expression.structure.ParenthesisExpression" flags="ng" index="kAGVe" />
       <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.DotExpression" flags="ng" index="kB0o7">
+        <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
       <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ng" index="kB0tT" />
@@ -19,6 +20,7 @@
       <concept id="7498425323610018849" name="com.dslfoundry.dflat.expression.structure.ALiteral" flags="ng" index="kB_oV">
         <property id="7498425323610018852" name="rawValue" index="kB_oY" />
       </concept>
+      <concept id="7498425323621165302" name="com.dslfoundry.dflat.expression.structure.Expression" flags="ng" index="ld6FG" />
       <concept id="7498425323621824654" name="com.dslfoundry.dflat.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
@@ -73,6 +75,7 @@
       <concept id="3843850057274209139" name="com.dslfoundry.dflat.structure.structure.LocalMethodCallExpression" flags="ng" index="34UqCL" />
       <concept id="3843850057274209140" name="com.dslfoundry.dflat.structure.structure.ScopedMethodCallExpression" flags="ng" index="34UqCQ" />
       <concept id="3843850057251332052" name="com.dslfoundry.dflat.structure.structure.ClassMember" flags="ng" index="3538qm" />
+      <concept id="3843850057256588095" name="com.dslfoundry.dflat.structure.structure.EnumLiteral" flags="ng" index="35ZcDX" />
       <concept id="6638429855781511298" name="com.dslfoundry.dflat.structure.structure.ANamespaceContainer" flags="ng" index="1K511a">
         <child id="6638429855781511306" name="members" index="1K5112" />
       </concept>
@@ -333,6 +336,15 @@
               <node concept="kB_1E" id="7CM0FuTkpcm" role="1K51Bn" />
             </node>
             <node concept="1K51vM" id="7CM0FuTqBri" role="1K51I$">
+              <node concept="1K51ur" id="1lkQMM4Xa7K" role="1K51vO">
+                <node concept="kB0o7" id="1lkQMM4Xa9b" role="1K51Ad">
+                  <node concept="33Hxln" id="1lkQMM4ZXtO" role="kB0tU">
+                    <ref role="kB_2E" node="7CM0FuThjoQ" resolve="data" />
+                  </node>
+                  <node concept="ld6FG" id="1lkQMM4Xa9d" role="1K51Ad" />
+                  <node concept="33ha1Z" id="1lkQMM4Xa7I" role="2hxcEd" />
+                </node>
+              </node>
               <node concept="1K51ur" id="7CM0FuTO2Oe" role="1K51vO">
                 <node concept="kB0o7" id="7CM0FuTO2Ov" role="1K51Ad">
                   <node concept="33ffhX" id="7CM0FuTO2Od" role="1K51Ad">
@@ -343,6 +355,9 @@
                   <node concept="34UqCQ" id="7CM0FuTO2OI" role="kB0tU">
                     <ref role="kB_2E" to="koxl:7CM0FuSZ4tM" resolve="WriteLine" />
                   </node>
+                  <node concept="35ZcDX" id="1lkQMM4WYxR" role="2hxcEd">
+                    <property role="TrG5h" value="this" />
+                  </node>
                 </node>
               </node>
               <node concept="1K51ur" id="7CM0FuTO2mt" role="1K51vO">
@@ -351,7 +366,7 @@
                     <ref role="kB_2E" node="7CM0FuTkpc3" resolve="next" />
                   </node>
                   <node concept="kB0o7" id="7CM0FuTOnys" role="db8Rq">
-                    <node concept="33Hxln" id="7CM0FuTPKXU" role="kB0tU">
+                    <node concept="33Hxln" id="1lkQMM4N9dI" role="kB0tU">
                       <ref role="kB_2E" node="7CM0FuTedfH" resolve="next" />
                     </node>
                     <node concept="33ha1Z" id="7CM0FuTO2lN" role="1K51Ad" />

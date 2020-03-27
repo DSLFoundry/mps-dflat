@@ -327,7 +327,7 @@
   </node>
   <node concept="1YbPZF" id="7CM0FuTPPJB">
     <property role="TrG5h" value="typeof_DotExpression" />
-    <property role="3GE5qa" value="dot" />
+    <property role="3GE5qa" value="memberAccess" />
     <node concept="3clFbS" id="7CM0FuTPPJC" role="18ibNy">
       <node concept="1Z5TYs" id="7CM0FuTPQ1g" role="3cqZAp">
         <node concept="mw_s8" id="7CM0FuTPQ1$" role="1ZfhKB">
@@ -353,7 +353,7 @@
     </node>
     <node concept="1YaCAy" id="7CM0FuTPPJE" role="1YuTPh">
       <property role="TrG5h" value="dotExpression" />
-      <ref role="1YaFvo" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
+      <ref role="1YaFvo" to="wgz4:6wfKxDW$Wgt" resolve="AMemberAccessExpression" />
     </node>
   </node>
   <node concept="1YbPZF" id="7CM0FuTPQBD">

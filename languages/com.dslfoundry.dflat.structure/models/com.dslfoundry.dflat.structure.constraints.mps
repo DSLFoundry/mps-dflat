@@ -374,6 +374,20 @@
         </node>
       </node>
     </node>
+    <node concept="9S07l" id="1lkQMM4NbuD" role="9Vyp8">
+      <node concept="3clFbS" id="1lkQMM4NbuE" role="2VODD2">
+        <node concept="3clFbF" id="1lkQMM4Nxaa" role="3cqZAp">
+          <node concept="2OqwBi" id="1lkQMM4NxrD" role="3clFbG">
+            <node concept="nLn13" id="1lkQMM4Nxa9" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="1lkQMM4NxQB" role="2OqNvi">
+              <node concept="chp4Y" id="1lkQMM4ONFz" role="cj9EA">
+                <ref role="cht4Q" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="3lo6kbMr8Di">
     <property role="3GE5qa" value="typeDeclaration.class.member.constant" />

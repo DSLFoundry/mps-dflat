@@ -142,6 +142,9 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -348,7 +351,7 @@
           <node concept="3cpWsn" id="7CM0FuT57gH" role="3cpWs9">
             <property role="TrG5h" value="r" />
             <node concept="3Tqbb2" id="7CM0FuT57gI" role="1tU5fm">
-              <ref role="ehGHo" to="wgz4:6wfKxDW$Wgq" resolve="IDotExpression" />
+              <ref role="ehGHo" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
             </node>
             <node concept="2OqwBi" id="7CM0FuT57gJ" role="33vP2m">
               <node concept="37vLTw" id="7CM0FuT57gK" role="2Oq$k0">
@@ -356,8 +359,8 @@
               </node>
               <node concept="2Xjw5R" id="7CM0FuT57gL" role="2OqNvi">
                 <node concept="1xMEDy" id="7CM0FuT57gM" role="1xVPHs">
-                  <node concept="chp4Y" id="7CM0FuT57gN" role="ri$Ld">
-                    <ref role="cht4Q" to="wgz4:6wfKxDW$Wgq" resolve="IDotExpression" />
+                  <node concept="chp4Y" id="1lkQMM4RyR5" role="ri$Ld">
+                    <ref role="cht4Q" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
                   </node>
                 </node>
                 <node concept="1xIGOp" id="7CM0FuT57gO" role="1xVPHs" />
@@ -383,7 +386,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7CM0FuT57gC" role="3clF45">
-        <ref role="ehGHo" to="wgz4:6wfKxDW$Wgq" resolve="IDotExpression" />
+        <ref role="ehGHo" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
       </node>
       <node concept="37vLTG" id="7CM0FuT57gD" role="3clF46">
         <property role="TrG5h" value="contextNode" />
@@ -407,8 +410,8 @@
                   <ref role="3cqZAo" node="7CM0FuT57Jz" resolve="contextNode" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="7CM0FuT57JG" role="2OqNvi">
-                <ref role="37wK5l" to="h8m6:3lo6kbLUqfs" resolve="getDottable" />
+              <node concept="3TrEf2" id="1lkQMM4R$d0" role="2OqNvi">
+                <ref role="3Tt5mk" to="wgz4:1lkQMM4O16x" resolve="dottable" />
               </node>
             </node>
           </node>

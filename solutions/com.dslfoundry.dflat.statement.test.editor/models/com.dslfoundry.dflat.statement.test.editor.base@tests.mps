@@ -6,7 +6,9 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
@@ -33,8 +35,8 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
-      <concept id="1101347953350122758" name="jetbrains.mps.lang.test.structure.BootstrapActionReference" flags="ng" index="3iKlGA">
-        <property id="1101347953350127918" name="actionId" index="3iKnse" />
+      <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
+        <reference id="4239542196496929559" name="action" index="1iFR8X" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -48,16 +50,16 @@
       </concept>
     </language>
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
-      <concept id="7498425323621824654" name="com.dslfoundry.dblunt.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
+      <concept id="7498425323621824654" name="com.dslfoundry.dflat.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
-      <concept id="6638429855781513540" name="com.dslfoundry.dblunt.expression.structure.IExpressed" flags="ng" index="1K51Ac">
+      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
     </language>
     <language id="8b8c7b93-8f15-471e-a430-739566f9c25e" name="com.dslfoundry.dflat.type">
-      <concept id="7498425323610018428" name="com.dslfoundry.dblunt.type.structure.StringType" flags="ng" index="kB_1A" />
-      <concept id="6638429855781513502" name="com.dslfoundry.dblunt.type.structure.ITyped" flags="ng" index="1K51Bm">
+      <concept id="7498425323610018428" name="com.dslfoundry.dflat.type.structure.StringType" flags="ng" index="kB_1A" />
+      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ng" index="1K51Bm">
         <child id="6638429855781513503" name="type" index="1K51Bn" />
       </concept>
     </language>
@@ -70,13 +72,13 @@
       </concept>
     </language>
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
-      <concept id="8805103209592647058" name="com.dslfoundry.dblunt.statement.structure.NamedVariableReferenceExpression" flags="ng" index="30muW_" />
-      <concept id="6638429855781513043" name="com.dslfoundry.dblunt.statement.structure.ExpressionStatement" flags="ng" index="1K51ur" />
-      <concept id="6638429855781513018" name="com.dslfoundry.dblunt.statement.structure.BlockStatement" flags="ng" index="1K51vM" />
-      <concept id="6638429855781513019" name="com.dslfoundry.dblunt.statement.structure.IStatementList" flags="ng" index="1K51vN">
+      <concept id="8805103209592647058" name="com.dslfoundry.dflat.statement.structure.NamedVariableReferenceExpression" flags="ng" index="30muW_" />
+      <concept id="6638429855781513043" name="com.dslfoundry.dflat.statement.structure.ExpressionStatement" flags="ng" index="1K51ur" />
+      <concept id="6638429855781513018" name="com.dslfoundry.dflat.statement.structure.BlockStatement" flags="ng" index="1K51vM" />
+      <concept id="6638429855781513019" name="com.dslfoundry.dflat.statement.structure.IStatementList" flags="ng" index="1K51vN">
         <child id="6638429855781513020" name="statements" index="1K51vO" />
       </concept>
-      <concept id="6638429855781513505" name="com.dslfoundry.dblunt.statement.structure.ExplicitlyTypedLocalVariableStatement" flags="ng" index="1K51BD" />
+      <concept id="6638429855781513505" name="com.dslfoundry.dflat.statement.structure.ExplicitlyTypedLocalVariableStatement" flags="ng" index="1K51BD" />
     </language>
   </registry>
   <node concept="LiM7Y" id="7CM0FuUWie6">
@@ -85,7 +87,7 @@
       <node concept="1K51BD" id="7CM0FuUWien" role="1K51vO">
         <property role="TrG5h" value="s" />
         <node concept="kB_1A" id="7CM0FuUWiem" role="1K51Bn" />
-        <node concept="LIFWc" id="7CM0FuV1XYd" role="lGtFl">
+        <node concept="LIFWc" id="1lkQMM52YIu" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
           <property role="p6zMq" value="1" />
@@ -99,10 +101,10 @@
         <property role="TrG5h" value="s" />
         <node concept="kB_1A" id="7CM0FuUWieO" role="1K51Bn" />
       </node>
-      <node concept="1K51ur" id="7CM0FuV1Yb0" role="1K51vO">
-        <node concept="30muW_" id="7CM0FuV1YaY" role="1K51Ad">
+      <node concept="1K51ur" id="1lkQMM52Y71" role="1K51vO">
+        <node concept="30muW_" id="1lkQMM52Y6Z" role="1K51Ad">
           <ref role="kB_2E" node="7CM0FuUWieN" resolve="s" />
-          <node concept="LIFWc" id="7CM0FuV1Ybl" role="lGtFl">
+          <node concept="LIFWc" id="1lkQMM52Y7m" role="lGtFl">
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="1" />
@@ -113,21 +115,21 @@
       </node>
     </node>
     <node concept="3clFbS" id="7CM0FuV1N_N" role="LjaKd">
-      <node concept="yd1bK" id="7CM0FuV1XYx" role="3cqZAp">
-        <node concept="pLAjd" id="7CM0FuV1XYz" role="yd6KS">
-          <property role="pLAjf" value="VK_ENTER" />
+      <node concept="2HxZob" id="1lkQMM52YNJ" role="3cqZAp">
+        <node concept="1iFQzN" id="1lkQMM52YNX" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:3emwrjqk66J" resolve="InsertPlaceholder" />
         </node>
       </node>
       <node concept="2TK7Tu" id="7CM0FuV1N_M" role="3cqZAp">
         <property role="2TTd_B" value="s" />
       </node>
-      <node concept="2HxZob" id="7CM0FuV1XZa" role="3cqZAp">
-        <node concept="3iKlGA" id="7CM0FuV1XZs" role="3iKnsn">
-          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+      <node concept="2HxZob" id="1lkQMM52Xfp" role="3cqZAp">
+        <node concept="1iFQzN" id="1lkQMM52XfF" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
         </node>
       </node>
-      <node concept="yd1bK" id="7CM0FuV1XLW" role="3cqZAp">
-        <node concept="pLAjd" id="7CM0FuV1XLY" role="yd6KS">
+      <node concept="yd1bK" id="1lkQMM52Z4n" role="3cqZAp">
+        <node concept="pLAjd" id="1lkQMM52Z4p" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
         </node>
       </node>

@@ -91,14 +91,6 @@
     <property role="R4oN_" value="negation" />
     <ref role="1TJDcQ" node="5KwscwGd6rY" resolve="AUnaryOperator" />
   </node>
-  <node concept="1TIwiD" id="5KwscwGd6s2">
-    <property role="EcuMT" value="6638429855781512962" />
-    <property role="TrG5h" value="NullConditionalExpression" />
-    <property role="34LRSv" value="?" />
-    <property role="3GE5qa" value="unary" />
-    <property role="R4oN_" value="null conditional" />
-    <ref role="1TJDcQ" node="5KwscwGd6rY" resolve="AUnaryOperator" />
-  </node>
   <node concept="1TIwiD" id="5KwscwGd6s3">
     <property role="EcuMT" value="6638429855781512963" />
     <property role="TrG5h" value="BitwiseComplementExpression" />
@@ -417,7 +409,7 @@
     <property role="EcuMT" value="6638429855781513002" />
     <property role="3GE5qa" value="ternary" />
     <property role="TrG5h" value="ConditionalExpression" />
-    <property role="34LRSv" value="?:" />
+    <property role="34LRSv" value="?" />
     <property role="R4oN_" value="conditional operator" />
     <ref role="1TJDcQ" node="5KwscwGd6sD" resolve="ATernaryOperator" />
     <node concept="1TJgyj" id="6wfKxDW_bVK" role="1TKVEi">
@@ -834,17 +826,19 @@
       <ref role="PrY4T" node="6wfKxDW$pfg" resolve="ILiteral" />
     </node>
   </node>
-  <node concept="PlHQZ" id="6wfKxDW$Wgq">
-    <property role="EcuMT" value="7498425323610162202" />
-    <property role="TrG5h" value="IDotExpression" />
-    <property role="3GE5qa" value="dot" />
-  </node>
   <node concept="1TIwiD" id="6wfKxDW$Wgt">
     <property role="EcuMT" value="7498425323610162205" />
-    <property role="3GE5qa" value="dot" />
-    <property role="TrG5h" value="DotExpression" />
-    <property role="R4oN_" value="member access" />
+    <property role="3GE5qa" value="memberAccess" />
+    <property role="TrG5h" value="AMemberAccessExpression" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="5KwscwGd6rX" resolve="AOperator" />
+    <node concept="1TJgyj" id="1lkQMM4O16x" role="1TKVEi">
+      <property role="IQ2ns" value="1537094357093454241" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dottable" />
+      <ref role="20lvS9" node="6wfKxDXeUzQ" resolve="Expression" />
+      <ref role="20ksaX" node="5KwscwGd6_5" resolve="expression" />
+    </node>
     <node concept="1TJgyj" id="6wfKxDW$Wlw" role="1TKVEi">
       <property role="IQ2ns" value="7498425323610162528" />
       <property role="20lmBu" value="aggregation" />
@@ -852,10 +846,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6wfKxDW$Wlz" resolve="IDotTarget" />
     </node>
-    <node concept="PrWs8" id="6wfKxDW$Wgu" role="PzmwI">
-      <ref role="PrY4T" node="6wfKxDW$Wgq" resolve="IDotExpression" />
-    </node>
-    <node concept="PrWs8" id="6wfKxDW$WlB" role="PzmwI">
+    <node concept="PrWs8" id="1lkQMM4X1U9" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd6_4" resolve="IExpressed" />
     </node>
     <node concept="PrWs8" id="7CM0FuUPqep" role="PzmwI">
@@ -864,7 +855,7 @@
   </node>
   <node concept="PlHQZ" id="6wfKxDW$Wlz">
     <property role="EcuMT" value="7498425323610162531" />
-    <property role="3GE5qa" value="dot" />
+    <property role="3GE5qa" value="memberAccess" />
     <property role="TrG5h" value="IDotTarget" />
   </node>
   <node concept="1TIwiD" id="6wfKxDW_gNk">
@@ -969,8 +960,67 @@
   </node>
   <node concept="PlHQZ" id="3lo6kbLTGgo">
     <property role="EcuMT" value="3843850057277686808" />
-    <property role="3GE5qa" value="dot" />
+    <property role="3GE5qa" value="memberAccess" />
     <property role="TrG5h" value="IDottable" />
+  </node>
+  <node concept="1TIwiD" id="3c_TKUhRLNY">
+    <property role="EcuMT" value="3685605919835495678" />
+    <property role="3GE5qa" value="memberAccess" />
+    <property role="TrG5h" value="NullConditionalMemberAccessExpression" />
+    <property role="34LRSv" value="?." />
+    <property role="R4oN_" value="null-conditional member access" />
+    <ref role="1TJDcQ" node="6wfKxDW$Wgt" resolve="AMemberAccessExpression" />
+  </node>
+  <node concept="1TIwiD" id="3c_TKUhRNPG">
+    <property role="EcuMT" value="3685605919835503980" />
+    <property role="3GE5qa" value="memberAccess" />
+    <property role="TrG5h" value="MemberAccessExpression" />
+    <property role="34LRSv" value="." />
+    <property role="R4oN_" value="member access" />
+    <ref role="1TJDcQ" node="6wfKxDW$Wgt" resolve="AMemberAccessExpression" />
+  </node>
+  <node concept="1TIwiD" id="3c_TKUhTtsf">
+    <property role="EcuMT" value="3685605919835936527" />
+    <property role="TrG5h" value="AIndexerExpression" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="index" />
+    <ref role="1TJDcQ" node="5KwscwGd6rX" resolve="AOperator" />
+    <node concept="1TJgyj" id="3c_TKUhTtsp" role="1TKVEi">
+      <property role="IQ2ns" value="3685605919835936537" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="indexable" />
+      <ref role="20lvS9" node="6wfKxDXeUzQ" resolve="Expression" />
+      <ref role="20ksaX" node="5KwscwGd6_5" resolve="expression" />
+    </node>
+    <node concept="1TJgyj" id="3c_TKUhTtst" role="1TKVEi">
+      <property role="IQ2ns" value="3685605919835936541" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="indeces" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6wfKxDXeUzQ" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="3c_TKUhTtsg" role="PzmwI">
+      <ref role="PrY4T" node="5KwscwGd6_4" resolve="IExpressed" />
+    </node>
+    <node concept="PrWs8" id="3c_TKUhTtsl" role="PzmwI">
+      <ref role="PrY4T" node="3lo6kbLTGgo" resolve="IDottable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3c_TKUhTwHU">
+    <property role="EcuMT" value="3685605919835949946" />
+    <property role="3GE5qa" value="index" />
+    <property role="TrG5h" value="IndexerExpression" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="indexer" />
+    <ref role="1TJDcQ" node="3c_TKUhTtsf" resolve="AIndexerExpression" />
+  </node>
+  <node concept="1TIwiD" id="3c_TKUhTwHV">
+    <property role="EcuMT" value="3685605919835949947" />
+    <property role="3GE5qa" value="index" />
+    <property role="TrG5h" value="NullConditionalIndexerExpression" />
+    <property role="34LRSv" value="?[" />
+    <property role="R4oN_" value="null-conditional indexer" />
+    <ref role="1TJDcQ" node="3c_TKUhTtsf" resolve="AIndexerExpression" />
   </node>
 </model>
 

@@ -86,6 +86,11 @@
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="7CM0FuUVhw1">
     <ref role="1XX52x" to="pkuw:7CM0FuUVe_8" resolve="DotExpression" />
@@ -129,6 +134,11 @@
         <node concept="2iRfu4" id="7CM0FuUVhWB" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7CM0FuUVhX8" role="3EZMnx" />
+      <node concept="3F2HdR" id="1lkQMM4K6aX" role="3EZMnx">
+        <ref role="1NtTu8" to="pkuw:1lkQMM4K6ag" resolve="methods" />
+        <node concept="2iRkQZ" id="1lkQMM4K6aZ" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1lkQMM4K6aC" role="3EZMnx" />
       <node concept="3F2HdR" id="7CM0FuUVhX$" role="3EZMnx">
         <ref role="1NtTu8" to="pkuw:7CM0FuUVe$Z" resolve="expressions" />
         <node concept="2iRkQZ" id="7CM0FuUVhXA" role="2czzBx" />
@@ -146,8 +156,11 @@
   </node>
   <node concept="24kQdi" id="7CM0FuUVhYM">
     <ref role="1XX52x" to="pkuw:7CM0FuUVhv$" resolve="MethodCall" />
-    <node concept="PMmxH" id="7CM0FuUVhYO" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    <node concept="1iCGBv" id="1lkQMM4K6a0" role="2wV5jI">
+      <ref role="1NtTu8" to="pkuw:1lkQMM4K5Zh" resolve="target" />
+      <node concept="1sVBvm" id="1lkQMM4K6a2" role="1sWHZn">
+        <node concept="3SHvHV" id="1lkQMM4K6ac" role="2wV5jI" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7CM0FuUVhZg">
@@ -171,6 +184,9 @@
       <node concept="PMmxH" id="7CM0FuUVi1X" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
+      <node concept="3F1sOY" id="1lkQMM4L4_S" role="3EZMnx">
+        <ref role="1NtTu8" to="pkuw:1lkQMM4Kyiv" resolve="type" />
+      </node>
       <node concept="3F0A7n" id="7CM0FuUVzDr" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
@@ -187,6 +203,13 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7CM0FuUVi2V" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1lkQMM4KQYt">
+    <property role="3GE5qa" value="type" />
+    <ref role="1XX52x" to="pkuw:1lkQMM4Kyia" resolve="ITy" />
+    <node concept="PMmxH" id="1lkQMM4KQYv" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
