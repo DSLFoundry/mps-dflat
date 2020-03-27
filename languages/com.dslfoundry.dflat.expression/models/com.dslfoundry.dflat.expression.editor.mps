@@ -52,6 +52,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186414949600" name="jetbrains.mps.lang.editor.structure.AutoDeletableStyleClassItem" flags="ln" index="VPRnO" />
       <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ng" index="2ZABuq">
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
@@ -681,6 +682,7 @@
         <property role="Vb096" value="gray" />
       </node>
       <node concept="Vb9p2" id="7CM0FuU2pI_" role="3F10Kt" />
+      <node concept="VPM3Z" id="3c_TKUi88PT" role="3F10Kt" />
     </node>
   </node>
   <node concept="24kQdi" id="3lo6kbMybhL">
@@ -874,6 +876,34 @@
         </node>
         <node concept="l2Vlx" id="3c_TKUhTtFD" role="2iSdaV" />
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="3c_TKUiykWI">
+    <property role="TrG5h" value="expressableParenthesis" />
+    <ref role="1XX52x" to="wgz4:5KwscwGd6BW" resolve="IExpressable" />
+    <node concept="3EZMnI" id="3c_TKUiykWJ" role="2wV5jI">
+      <node concept="3F0ifn" id="3c_TKUiykWK" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="3mYdg7" id="3c_TKUiykWL" role="3F10Kt">
+          <property role="1413C4" value="expressed-parenthesis" />
+        </node>
+        <node concept="11LMrY" id="3c_TKUiykWM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3c_TKUiykWN" role="3EZMnx">
+        <ref role="1NtTu8" to="wgz4:5KwscwGd6BX" resolve="expression" />
+      </node>
+      <node concept="3F0ifn" id="3c_TKUiykWO" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="3mYdg7" id="3c_TKUiykWP" role="3F10Kt">
+          <property role="1413C4" value="expressed-parenthesis" />
+        </node>
+        <node concept="11L4FC" id="3c_TKUiykWQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3c_TKUiykWR" role="2iSdaV" />
     </node>
   </node>
 </model>
