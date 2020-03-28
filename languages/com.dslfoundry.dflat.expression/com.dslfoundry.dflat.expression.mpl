@@ -55,6 +55,7 @@
   <dependencies>
     <dependency reexport="false">21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
+    <dependency reexport="false">9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="0" />
@@ -96,6 +97,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)" version="0" />
+    <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
