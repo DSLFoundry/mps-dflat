@@ -10,7 +10,7 @@
   <registry>
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610246356" name="com.dslfoundry.dflat.expression.structure.ParenthesisExpression" flags="ng" index="kAGVe" />
-      <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.DotExpression" flags="ng" index="kB0o7">
+      <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.AMemberAccessExpression" flags="ng" index="kB0o7">
         <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
