@@ -89,6 +89,10 @@
       <concept id="3843850057248979083" name="com.dslfoundry.dflat.structure.structure.IAsync" flags="ng" index="35qa79">
         <property id="3843850057248979084" name="async" index="35qa7e" />
       </concept>
+      <concept id="3843850057256591321" name="com.dslfoundry.dflat.structure.structure.AEnum" flags="ng" index="35Zcqr">
+        <child id="3843850057256588092" name="literals" index="35ZcDY" />
+      </concept>
+      <concept id="3843850057256588095" name="com.dslfoundry.dflat.structure.structure.EnumLiteral" flags="ng" index="35ZcDX" />
       <concept id="3843850057238277142" name="com.dslfoundry.dflat.structure.structure.IAttributed" flags="ng" index="3qPnlk">
         <child id="3843850057238277143" name="attributes" index="3qPnll" />
       </concept>
@@ -96,6 +100,7 @@
       <concept id="6638429855781511298" name="com.dslfoundry.dflat.structure.structure.ANamespaceContainer" flags="ng" index="1K511a">
         <child id="6638429855781511306" name="members" index="1K5112" />
       </concept>
+      <concept id="6638429855781511320" name="com.dslfoundry.dflat.structure.structure.Enum" flags="ng" index="1K511g" />
       <concept id="6638429855781511317" name="com.dslfoundry.dflat.structure.structure.AClass" flags="ng" index="1K511t">
         <child id="6638429855781511476" name="members" index="1K517W" />
       </concept>
@@ -1818,6 +1823,196 @@
               <node concept="kB_oh" id="3c_TKUljSPh" role="kARNX">
                 <property role="kB_oY" value="t" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUltCqg">
+    <property role="TrG5h" value="Enum" />
+    <property role="3GE5qa" value="typeDeclaration.enum" />
+    <node concept="3clFbS" id="3c_TKUltCqh" role="LjaKd">
+      <node concept="2TK7Tu" id="3c_TKUltCqi" role="3cqZAp">
+        <property role="2TTd_B" value="enummyenum" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCqj" role="LiRBU">
+      <property role="TrG5h" value="aa" />
+      <node concept="LIFWc" id="3c_TKUltCqk" role="lGtFl">
+        <property role="ZRATv" value="true" />
+        <property role="OXtK3" value="true" />
+        <property role="p6zMq" value="0" />
+        <property role="p6zMs" value="0" />
+        <property role="LIFWd" value="Constant_kkxtbn_a3a" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCql" role="LiZbd">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCG9" role="1K5112">
+        <property role="TrG5h" value="myenum" />
+        <node concept="LIFWc" id="3c_TKUltCGb" role="lGtFl">
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="6" />
+          <property role="p6zMs" value="6" />
+          <property role="LIFWd" value="property_name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUltCGd">
+    <property role="TrG5h" value="EnumAttribute" />
+    <property role="3GE5qa" value="typeDeclaration.enum" />
+    <node concept="3clFbS" id="3c_TKUltCGe" role="LjaKd">
+      <node concept="2TK7Tu" id="3c_TKUltCGf" role="3cqZAp">
+        <property role="2TTd_B" value="[" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGg" role="LiRBU">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGl" role="1K5112">
+        <property role="TrG5h" value="EnumAttribute" />
+        <node concept="LIFWc" id="3c_TKUltCGG" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+        </node>
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGi" role="LiZbd">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGj" role="1K5112">
+        <property role="TrG5h" value="EnumAttribute" />
+        <node concept="3qQCPq" id="3c_TKUltCGJ" role="3qPnll">
+          <node concept="LIFWc" id="3c_TKUltCGN" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="empty_targetType" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUltCGn">
+    <property role="TrG5h" value="EnumAccess" />
+    <property role="3GE5qa" value="typeDeclaration.enum" />
+    <node concept="3clFbS" id="3c_TKUltCGo" role="LjaKd">
+      <node concept="2TK7Tu" id="3c_TKUltCGp" role="3cqZAp">
+        <property role="2TTd_B" value="private" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGq" role="LiRBU">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGr" role="1K5112">
+        <property role="TrG5h" value="EnumAccess" />
+        <node concept="LIFWc" id="3c_TKUltCGQ" role="lGtFl">
+          <property role="LIFWa" value="0" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+        </node>
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGs" role="LiZbd">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGt" role="1K5112">
+        <property role="TrG5h" value="EnumAccess" />
+        <node concept="1K51l4" id="3c_TKUltCH0" role="1K51mQ">
+          <node concept="LIFWc" id="3c_TKUltCH2" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="7" />
+            <property role="p6zMs" value="7" />
+            <property role="LIFWd" value="ALIAS_EDITOR_COMPONENT" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUltCGu">
+    <property role="TrG5h" value="EnumLiteral" />
+    <property role="3GE5qa" value="typeDeclaration.enum" />
+    <node concept="3clFbS" id="3c_TKUltCGv" role="LjaKd">
+      <node concept="2TK7Tu" id="3c_TKUltCGw" role="3cqZAp">
+        <property role="2TTd_B" value="bla=1" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGx" role="LiRBU">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGy" role="1K5112">
+        <property role="TrG5h" value="EnumLiteral" />
+        <node concept="LIFWc" id="3c_TKUltCH4" role="lGtFl">
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+          <property role="LIFWd" value="empty_literals" />
+        </node>
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGz" role="LiZbd">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCG$" role="1K5112">
+        <property role="TrG5h" value="EnumLiteral" />
+        <node concept="35ZcDX" id="3c_TKUltCHa" role="35ZcDY">
+          <property role="TrG5h" value="bla" />
+          <node concept="kB_7x" id="3c_TKUltCHk" role="1K51$P">
+            <property role="kB_oY" value="1" />
+            <node concept="LIFWc" id="3c_TKUltCHm" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="1" />
+              <property role="p6zMs" value="1" />
+              <property role="LIFWd" value="property_rawValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUltCG_">
+    <property role="TrG5h" value="EnumLiteralAttribute" />
+    <property role="3GE5qa" value="typeDeclaration.enum" />
+    <node concept="3clFbS" id="3c_TKUltCGA" role="LjaKd">
+      <node concept="2TK7Tu" id="3c_TKUltCGB" role="3cqZAp">
+        <property role="2TTd_B" value="[" />
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGC" role="LiRBU">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGD" role="1K5112">
+        <property role="TrG5h" value="EnumLiteralAttribute" />
+        <node concept="35ZcDX" id="3c_TKUltCHs" role="35ZcDY">
+          <property role="TrG5h" value="bla" />
+          <node concept="LIFWc" id="3c_TKUltCHE" role="lGtFl">
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWd" value="property_name" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1K5120" id="3c_TKUltCGE" role="LiZbd">
+      <property role="TrG5h" value="aa" />
+      <node concept="1K511g" id="3c_TKUltCGF" role="1K5112">
+        <property role="TrG5h" value="EnumLiteralAttribute" />
+        <node concept="35ZcDX" id="3c_TKUltCHy" role="35ZcDY">
+          <property role="TrG5h" value="bla" />
+          <node concept="3qQCPq" id="3c_TKUltCHA" role="3qPnll">
+            <node concept="LIFWc" id="3c_TKUltCHH" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="empty_targetType" />
             </node>
           </node>
         </node>
