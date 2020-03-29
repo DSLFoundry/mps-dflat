@@ -9,7 +9,7 @@
   </languages>
   <imports>
     <import index="28vp" ref="r:97df7598-a461-44b0-9392-375b61c3ab06(com.dslfoundry.dflat.statement.structure)" />
-    <import index="h8m6" ref="r:ad1df716-1554-4e53-8df8-f8bf7be75224(com.dslfoundry.dblunt.expression.behavior)" />
+    <import index="h8m6" ref="r:ad1df716-1554-4e53-8df8-f8bf7be75224(com.dslfoundry.dflat.expression.behavior)" />
     <import index="wgz4" ref="r:3e9e012e-836a-4f5e-8e8c-74ff2ffd837f(com.dslfoundry.dflat.expression.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="r1kv" ref="r:427e6384-9b59-4f79-ac2a-ee878578e6c5(com.dslfoundry.dflat.type.structure)" />
@@ -252,29 +252,6 @@
     <ref role="13h7C2" to="28vp:6wfKxDW$pcb" resolve="AVariableReferenceExpression" />
     <node concept="13hLZK" id="3lo6kbM0hcU" role="13h7CW">
       <node concept="3clFbS" id="3lo6kbM0hcV" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3lo6kbM0hd4" role="13h7CS">
-      <property role="TrG5h" value="getPossibleTargets" />
-      <ref role="13i0hy" to="h8m6:3lo6kbLTGgX" resolve="getPossibleTargets" />
-      <node concept="3Tm1VV" id="3lo6kbM0hd5" role="1B3o_S" />
-      <node concept="3clFbS" id="3lo6kbM0hdf" role="3clF47">
-        <node concept="3clFbF" id="3lo6kbM0hdl" role="3cqZAp">
-          <node concept="2OqwBi" id="3lo6kbM0ild" role="3clFbG">
-            <node concept="2OqwBi" id="3lo6kbM0hwl" role="2Oq$k0">
-              <node concept="13iPFW" id="3lo6kbM0hiR" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3lo6kbM0hLZ" role="2OqNvi">
-                <ref role="3Tt5mk" to="28vp:6wfKxDW$paS" resolve="target" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="3lo6kbM0iAy" role="2OqNvi">
-              <ref role="37wK5l" to="h8m6:3lo6kbLTGgX" resolve="getPossibleTargets" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="A3Dl8" id="3lo6kbM0hdg" role="3clF45">
-        <node concept="3Tqbb2" id="3lo6kbM0hdh" role="A3Ik2" />
-      </node>
     </node>
     <node concept="13i0hz" id="7CM0FuUhDAH" role="13h7CS">
       <property role="TrG5h" value="getPresentation" />

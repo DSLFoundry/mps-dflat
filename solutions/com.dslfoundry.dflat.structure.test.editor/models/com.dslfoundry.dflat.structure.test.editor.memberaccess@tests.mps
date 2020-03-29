@@ -52,8 +52,10 @@
     </language>
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.AMemberAccessExpression" flags="ng" index="kB0o7">
+        <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
+      <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ng" index="kB0tT" />
       <concept id="7498425323610018827" name="com.dslfoundry.dflat.expression.structure.RegularStringLiteral" flags="ng" index="kB_oh" />
       <concept id="7498425323610018849" name="com.dslfoundry.dflat.expression.structure.ALiteral" flags="ng" index="kB_oV">
         <property id="7498425323610018852" name="rawValue" index="kB_oY" />
@@ -112,10 +114,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
-      </concept>
     </language>
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
       <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ng" index="1K51se">
@@ -156,9 +154,9 @@
           <property role="TrG5h" value="DoIt" />
           <node concept="kB$OU" id="3c_TKUlCSzj" role="kAOx1">
             <node concept="1K51vM" id="3c_TKUlCSzk" role="1K51s0">
-              <node concept="1K51ur" id="3c_TKUlCS$5" role="1K51vO">
-                <node concept="33ha1Z" id="3c_TKUlCS$4" role="1K51Ad">
-                  <node concept="LIFWc" id="3c_TKUlCTZr" role="lGtFl">
+              <node concept="1K51ur" id="5xWoeZusOPh" role="1K51vO">
+                <node concept="33ha1Z" id="5xWoeZusOPg" role="1K51Ad">
+                  <node concept="LIFWc" id="5xWoeZusOQ5" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
                     <property role="p6zMq" value="4" />
@@ -196,11 +194,11 @@
           <property role="TrG5h" value="DoIt" />
           <node concept="kB$OU" id="3c_TKUlCS_j" role="kAOx1">
             <node concept="1K51vM" id="3c_TKUlCS_k" role="1K51s0">
-              <node concept="1K51ur" id="3c_TKUlCS_l" role="1K51vO">
-                <node concept="2yYHDy" id="3c_TKUlCU0E" role="1K51Ad">
-                  <node concept="370BGT" id="3c_TKUlCU0Y" role="kB0tU">
+              <node concept="1K51ur" id="5xWoeZusFRK" role="1K51vO">
+                <node concept="2yYHDy" id="5xWoeZusOQk" role="1K51Ad">
+                  <node concept="370BGT" id="5xWoeZusOQC" role="kB0tU">
                     <ref role="kB_2E" node="3c_TKUlCS_e" resolve="name" />
-                    <node concept="LIFWc" id="3c_TKUlCUp0" role="lGtFl">
+                    <node concept="LIFWc" id="5xWoeZusPiC" role="lGtFl">
                       <property role="ZRATv" value="true" />
                       <property role="OXtK3" value="true" />
                       <property role="p6zMq" value="4" />
@@ -208,7 +206,7 @@
                       <property role="LIFWd" value="ReadOnlyModelAccessor_iarjf9_a" />
                     </node>
                   </node>
-                  <node concept="33ha1Z" id="3c_TKUlCS_m" role="1K51Ad" />
+                  <node concept="33ha1Z" id="5xWoeZusOOc" role="2hxcEd" />
                 </node>
               </node>
             </node>
@@ -263,18 +261,18 @@
           <node concept="kB$OU" id="3c_TKUlCUpu" role="kAOx1">
             <node concept="1K51vM" id="3c_TKUlCUpv" role="1K51s0">
               <node concept="1K51ur" id="3c_TKUlCUpw" role="1K51vO">
-                <node concept="2yYHDy" id="3c_TKUlCUr6" role="1K51Ad">
-                  <node concept="33Hxln" id="3c_TKUlCUrU" role="kB0tU">
+                <node concept="2yYHDy" id="5xWoeZus$Qg" role="1K51Ad">
+                  <node concept="33Hxln" id="5xWoeZus$Q$" role="kB0tU">
                     <ref role="kB_2E" node="3c_TKUlCUpm" resolve="self" />
-                    <node concept="LIFWc" id="3c_TKUlCUsU" role="lGtFl">
+                    <node concept="LIFWc" id="5xWoeZus$RC" role="lGtFl">
                       <property role="ZRATv" value="true" />
                       <property role="OXtK3" value="true" />
                       <property role="p6zMq" value="4" />
                       <property role="p6zMs" value="4" />
-                      <property role="LIFWd" value="property_name" />
+                      <property role="LIFWd" value="ReferencePresentation_qm8fop_a0a0" />
                     </node>
                   </node>
-                  <node concept="33ha1Z" id="3c_TKUlCUrE" role="1K51Ad" />
+                  <node concept="33ha1Z" id="5xWoeZus$Q0" role="2hxcEd" />
                 </node>
               </node>
             </node>
@@ -307,13 +305,12 @@
           <node concept="kB$OU" id="3c_TKUlCUpI" role="kAOx1">
             <node concept="1K51vM" id="3c_TKUlCUpJ" role="1K51s0">
               <node concept="1K51ur" id="3c_TKUlCUpK" role="1K51vO">
-                <node concept="2yYHDy" id="3c_TKUlCUpL" role="1K51Ad">
-                  <node concept="33ha1Z" id="3c_TKUlCUpO" role="1K51Ad" />
-                  <node concept="33Hxln" id="3c_TKUlCUtB" role="kB0tU">
-                    <ref role="kB_2E" node="3c_TKUlCUpA" resolve="self" />
-                    <node concept="1KehLL" id="3c_TKUlCUtV" role="lGtFl">
-                      <property role="1K8rM7" value="property_name" />
-                      <property role="1Kfyot" value="right" />
+                <node concept="2yYHDy" id="5xWoeZuCVdQ" role="1K51Ad">
+                  <node concept="kB0tT" id="5xWoeZuCVdS" role="kB0tU" />
+                  <node concept="2yYHDy" id="5xWoeZurduT" role="2hxcEd">
+                    <node concept="33ha1Z" id="5xWoeZurduD" role="2hxcEd" />
+                    <node concept="33Hxln" id="5xWoeZurdwd" role="kB0tU">
+                      <ref role="kB_2E" node="3c_TKUlCUpA" resolve="self" />
                     </node>
                   </node>
                 </node>

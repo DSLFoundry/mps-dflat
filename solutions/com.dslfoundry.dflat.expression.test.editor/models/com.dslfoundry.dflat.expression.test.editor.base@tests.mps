@@ -54,6 +54,7 @@
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610246356" name="com.dslfoundry.dflat.expression.structure.ParenthesisExpression" flags="ng" index="kAGVe" />
       <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.AMemberAccessExpression" flags="ng" index="kB0o7">
+        <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
       <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ng" index="kB0tT" />
@@ -1378,9 +1379,9 @@
       </node>
     </node>
     <node concept="kAGVe" id="3c_TKUhLL1o" role="LiZbd">
-      <node concept="2yYHDy" id="3c_TKUhTrRM" role="1K51Ad">
-        <node concept="kB0tT" id="3c_TKUhTrRN" role="kB0tU">
-          <node concept="LIFWc" id="3c_TKUhTrS9" role="lGtFl">
+      <node concept="2yYHDy" id="5xWoeZu_H8a" role="1K51Ad">
+        <node concept="kB0tT" id="5xWoeZu_H8c" role="kB0tU">
+          <node concept="LIFWc" id="5xWoeZu_H8x" role="lGtFl">
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
@@ -1388,7 +1389,7 @@
             <property role="LIFWd" value="Error" />
           </node>
         </node>
-        <node concept="kB_7c" id="3c_TKUhPeEq" role="1K51Ad" />
+        <node concept="kB_7c" id="5xWoeZu_H81" role="2hxcEd" />
       </node>
     </node>
     <node concept="3clFbS" id="3c_TKUhLL1q" role="LjaKd">
@@ -2720,9 +2721,9 @@
       </node>
     </node>
     <node concept="kAGVe" id="3c_TKUhRNPV" role="LiZbd">
-      <node concept="2yYJJK" id="3c_TKUhTrSL" role="1K51Ad">
-        <node concept="kB0tT" id="3c_TKUhTrSM" role="kB0tU">
-          <node concept="LIFWc" id="3c_TKUhTrT8" role="lGtFl">
+      <node concept="2yYJJK" id="5xWoeZu_H7a" role="1K51Ad">
+        <node concept="kB0tT" id="5xWoeZu_H7c" role="kB0tU">
+          <node concept="LIFWc" id="5xWoeZu_H7x" role="lGtFl">
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
@@ -2730,7 +2731,7 @@
             <property role="LIFWd" value="Error" />
           </node>
         </node>
-        <node concept="kB_7c" id="3c_TKUhTrSB" role="1K51Ad" />
+        <node concept="kB_7c" id="5xWoeZu_Ew$" role="2hxcEd" />
       </node>
     </node>
     <node concept="3clFbS" id="3c_TKUhRNQ0" role="LjaKd">
