@@ -5,6 +5,11 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:21717649-bb7f-4964-87cf-78a6930e9801:com.dslfoundry.dflat.expression" version="0" />
@@ -12,7 +17,7 @@
     <language slang="l:28617705-0ee4-4b12-80b9-7532ec4a79c9:com.dslfoundry.dflat.structure" version="0" />
     <language slang="l:8b8c7b93-8f15-471e-a430-739566f9c25e:com.dslfoundry.dflat.type" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -22,6 +27,7 @@
     <module reference="0d383cce-ba43-4e20-a85f-35b68b4ab069(com.dslfoundry.dflat.playground)" version="0" />
     <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
+    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
 </solution>
 

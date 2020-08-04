@@ -2,7 +2,7 @@
 <model ref="r:9262ca05-a604-46bc-a04f-ecf975f34c1a(com.dslfoundry.dflat.structure.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -49,7 +49,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -626,12 +626,11 @@
       </node>
       <node concept="3F2HdR" id="6wfKxDWFT$J" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="y2ir:5KwscwGd6fA" resolve="parameters" />
         <node concept="2iRfu4" id="6wfKxDWFT$L" role="2czzBx" />
         <node concept="3F0ifn" id="6wfKxDWK2az" role="2czzBI">
           <property role="ilYzB" value="parameters" />
-          <property role="1cu_pB" value="1" />
+          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         </node>
       </node>
       <node concept="3F0ifn" id="6wfKxDWFT$U" role="3EZMnx">
@@ -2037,97 +2036,97 @@
     <node concept="14StLt" id="3lo6kbLh9c2" role="V601i">
       <property role="TrG5h" value="Access" />
       <node concept="VechU" id="3lo6kbLh9c5" role="3F10Kt">
-        <property role="Vb096" value="orange" />
+        <property role="Vb096" value="fLwANPp/orange" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhchY" role="V601i">
       <property role="TrG5h" value="Modifier" />
       <node concept="VechU" id="3lo6kbLhcir" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhcjQ" role="V601i">
       <property role="TrG5h" value="Static" />
       <node concept="VechU" id="3lo6kbLhcjR" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLlJfp" role="V601i">
       <property role="TrG5h" value="Partial" />
       <node concept="VechU" id="3lo6kbLlJfq" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbs7" role="V601i">
       <property role="TrG5h" value="CompilationUnit" />
       <node concept="VechU" id="3lo6kbLhbsc" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbuo" role="V601i">
       <property role="TrG5h" value="Namespace" />
       <node concept="VechU" id="3lo6kbLhbup" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbsw" role="V601i">
       <property role="TrG5h" value="Using" />
       <node concept="VechU" id="3lo6kbLhbsx" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbsm" role="V601i">
       <property role="TrG5h" value="Class" />
       <node concept="VechU" id="3lo6kbLhbsn" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbse" role="V601i">
       <property role="TrG5h" value="Enum" />
       <node concept="VechU" id="3lo6kbLhbsf" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbu9" role="V601i">
       <property role="TrG5h" value="Attribute" />
       <node concept="VechU" id="3lo6kbLhbum" role="3F10Kt">
-        <property role="Vb096" value="darkGray" />
+        <property role="Vb096" value="fLJRk5B/darkGray" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbKD" role="V601i">
       <property role="TrG5h" value="Constant" />
       <node concept="VechU" id="3lo6kbLhbKE" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbKV" role="V601i">
       <property role="TrG5h" value="Method" />
       <node concept="VechU" id="3lo6kbLhbMh" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbLf" role="V601i">
       <property role="TrG5h" value="Property" />
       <node concept="VechU" id="3lo6kbLhbMj" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbMl" role="V601i">
       <property role="TrG5h" value="Field" />
       <node concept="VechU" id="3lo6kbLhbMm" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbMH" role="V601i">
       <property role="TrG5h" value="Constructor" />
       <node concept="VechU" id="3lo6kbLhbMI" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbN7" role="V601i">
       <property role="TrG5h" value="Destructor" />
       <node concept="VechU" id="3lo6kbLhbN8" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
   </node>

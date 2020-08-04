@@ -106,7 +106,6 @@
       </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
         <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
     </language>
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
@@ -440,7 +439,6 @@
                   <ref role="kB_2E" node="7CM0FuThjoQ" resolve="data" />
                   <node concept="1KehLL" id="7CM0FuUVhvf" role="lGtFl">
                     <property role="1K8rM7" value="ReferencePresentation_qm8fop_a0a0" />
-                    <property role="1Kfyot" value="right" />
                   </node>
                 </node>
               </node>

@@ -2,7 +2,7 @@
 <model ref="r:3b438087-f318-43f9-9202-eb1e981edb72(com.dslfoundry.dflat.statement.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression" version="0" />
@@ -37,7 +37,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -746,19 +746,19 @@
     <node concept="14StLt" id="3lo6kbLhbqf" role="V601i">
       <property role="TrG5h" value="Keyword" />
       <node concept="VechU" id="3lo6kbLhbqi" role="3F10Kt">
-        <property role="Vb096" value="blue" />
+        <property role="Vb096" value="fLwANPu/blue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbqo" role="V601i">
       <property role="TrG5h" value="Comment" />
       <node concept="VechU" id="3lo6kbLhbqt" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhbrU" role="V601i">
       <property role="TrG5h" value="Semicolon" />
       <node concept="VechU" id="3lo6kbLhbs1" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
     </node>
     <node concept="14StLt" id="7CM0FuU94Ej" role="V601i">
@@ -809,7 +809,7 @@
         <node concept="VPM3Z" id="3c_TKUhYobu" role="3F10Kt" />
         <node concept="3XFhqQ" id="3c_TKUhYobv" role="3EZMnx" />
         <node concept="1iCGBv" id="3c_TKUhYobw" role="3EZMnx">
-          <property role="1cu_pB" value="1" />
+          <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
           <ref role="1NtTu8" to="28vp:5KwscwGd6v8" resolve="block" />
           <node concept="1sVBvm" id="3c_TKUhYobx" role="1sWHZn">
             <node concept="PMmxH" id="3c_TKUhYoby" role="2wV5jI">
@@ -1014,7 +1014,7 @@
         <ref role="1k5W1q" node="3lo6kbLhbqf" resolve="Keyword" />
       </node>
       <node concept="1iCGBv" id="3c_TKUifEEA" role="3EZMnx">
-        <property role="1cu_pB" value="1" />
+        <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <ref role="1NtTu8" to="28vp:5KwscwGd6uw" resolve="label" />
         <node concept="1sVBvm" id="3c_TKUifEEC" role="1sWHZn">
           <node concept="3SHvHV" id="3c_TKUifEEK" role="2wV5jI" />

@@ -2,8 +2,8 @@
 <model ref="r:41d2813e-0b78-473b-9cc1-73a5ef4297f4(grammarcells.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -95,7 +95,6 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
@@ -164,7 +163,6 @@
       <node concept="3dgokm" id="1lkQMM503_Y" role="1N6uqs">
         <node concept="3clFbS" id="1lkQMM503A0" role="2VODD2">
           <node concept="2xdQw9" id="1lkQMM51gwu" role="3cqZAp">
-            <property role="2xdLsb" value="debug" />
             <node concept="3cpWs3" id="1lkQMM51hjL" role="9lYJi">
               <node concept="2OqwBi" id="1lkQMM51QEK" role="3uHU7w">
                 <node concept="2rP1CM" id="1lkQMM51nK7" role="2Oq$k0" />
@@ -176,7 +174,6 @@
             </node>
           </node>
           <node concept="2xdQw9" id="1lkQMM51pcl" role="3cqZAp">
-            <property role="2xdLsb" value="debug" />
             <node concept="3cpWs3" id="1lkQMM51pcm" role="9lYJi">
               <node concept="2OqwBi" id="1lkQMM51Sbe" role="3uHU7w">
                 <node concept="3kakTB" id="1lkQMM51pKe" role="2Oq$k0" />
@@ -207,7 +204,6 @@
             </node>
           </node>
           <node concept="2xdQw9" id="1lkQMM50Nvf" role="3cqZAp">
-            <property role="2xdLsb" value="debug" />
             <node concept="3cpWs3" id="1lkQMM50O$V" role="9lYJi">
               <node concept="37vLTw" id="1lkQMM50OGU" role="3uHU7w">
                 <ref role="3cqZAo" node="1lkQMM50$6S" resolve="dotEx" />
@@ -238,7 +234,6 @@
             </node>
           </node>
           <node concept="2xdQw9" id="1lkQMM50P6L" role="3cqZAp">
-            <property role="2xdLsb" value="debug" />
             <node concept="3cpWs3" id="1lkQMM50PHY" role="9lYJi">
               <node concept="37vLTw" id="1lkQMM50PSk" role="3uHU7w">
                 <ref role="3cqZAo" node="1lkQMM50DmS" resolve="dotExConcept" />
@@ -295,7 +290,6 @@
                         </node>
                       </node>
                       <node concept="2xdQw9" id="1lkQMM50S97" role="3cqZAp">
-                        <property role="2xdLsb" value="debug" />
                         <node concept="3cpWs3" id="1lkQMM50T4a" role="9lYJi">
                           <node concept="37vLTw" id="1lkQMM50TeA" role="3uHU7w">
                             <ref role="3cqZAo" node="1lkQMM50RO4" resolve="concept" />
@@ -334,7 +328,6 @@
     <node concept="9SLcT" id="1lkQMM4Llux" role="9SGkU">
       <node concept="3clFbS" id="1lkQMM4Lluy" role="2VODD2">
         <node concept="2xdQw9" id="1lkQMM4Ll_S" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="1lkQMM4Lmlv" role="9lYJi">
             <node concept="2H4GUG" id="1lkQMM4Lmta" role="3uHU7w" />
             <node concept="Xl_RD" id="1lkQMM4Ll_U" role="3uHU7B">

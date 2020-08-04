@@ -2,7 +2,7 @@
 <model ref="r:823bd02b-f594-430a-93ac-b287cfd5075e(com.dslfoundry.dflat.structure.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
@@ -381,7 +381,7 @@
             <node concept="nLn13" id="1lkQMM4Nxa9" role="2Oq$k0" />
             <node concept="1mIQ4w" id="1lkQMM4NxQB" role="2OqNvi">
               <node concept="chp4Y" id="1lkQMM4ONFz" role="cj9EA">
-                <ref role="cht4Q" to="wgz4:6wfKxDW$Wgt" resolve="DotExpression" />
+                <ref role="cht4Q" to="wgz4:6wfKxDW$Wgt" resolve="AMemberAccessExpression" />
               </node>
             </node>
           </node>

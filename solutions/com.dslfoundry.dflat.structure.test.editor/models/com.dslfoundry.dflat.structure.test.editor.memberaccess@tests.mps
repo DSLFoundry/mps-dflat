@@ -2,7 +2,7 @@
 <model ref="r:ddb8920f-5c48-4675-8736-66a30167fbb9(com.dslfoundry.dflat.structure.test.editor.memberaccess@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <devkit ref="97be3f2e-6ee3-4400-ade4-6b4b2f948d52(com.dslfoundry.dflat)" />
   </languages>
@@ -18,8 +18,8 @@
         <child id="1101347953350127927" name="actionReference" index="3iKnsn" />
       </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
-        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
@@ -37,6 +37,9 @@
       </concept>
       <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
         <reference id="4239542196496929559" name="action" index="1iFR8X" />
+      </concept>
+      <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
+        <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -131,90 +134,6 @@
   </node>
   <node concept="LiM7Y" id="3c_TKUltGtq">
     <property role="TrG5h" value="SingleAccess" />
-    <node concept="1K5120" id="3c_TKUltGtr" role="LiRBU">
-      <property role="TrG5h" value="bb" />
-      <node concept="1K51nC" id="3c_TKUltGtt" role="1K5112">
-        <property role="TrG5h" value="SingleAccess" />
-        <node concept="1K51kN" id="3c_TKUltGt_" role="1K517W">
-          <property role="TrG5h" value="self" />
-          <node concept="kAGV1" id="3c_TKUltGtK" role="1K51Bn">
-            <ref role="kAGV8" node="3c_TKUltGtt" resolve="SingleAccess" />
-          </node>
-          <node concept="1K51l8" id="3c_TKUltGu1" role="1K51mQ" />
-        </node>
-        <node concept="1K51rN" id="3c_TKUlCSy1" role="1K517W">
-          <property role="TrG5h" value="name" />
-          <node concept="kB_1A" id="3c_TKUlCSyk" role="1K51Bn" />
-          <node concept="kB_oh" id="3c_TKUlCSyE" role="1K51$P">
-            <property role="kB_oY" value="hello" />
-          </node>
-        </node>
-        <node concept="33MXCb" id="3c_TKUlCSyU" role="1K517W" />
-        <node concept="1K51r2" id="3c_TKUlCSzi" role="1K517W">
-          <property role="TrG5h" value="DoIt" />
-          <node concept="kB$OU" id="3c_TKUlCSzj" role="kAOx1">
-            <node concept="1K51vM" id="3c_TKUlCSzk" role="1K51s0">
-              <node concept="1K51ur" id="5xWoeZusOPh" role="1K51vO">
-                <node concept="33ha1Z" id="5xWoeZusOPg" role="1K51Ad">
-                  <node concept="LIFWc" id="5xWoeZusOQ5" role="lGtFl">
-                    <property role="ZRATv" value="true" />
-                    <property role="OXtK3" value="true" />
-                    <property role="p6zMq" value="4" />
-                    <property role="p6zMs" value="4" />
-                    <property role="LIFWd" value="Constant_xaaxob_a0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="kB_43" id="3c_TKUlCSzH" role="1K51Bn" />
-        </node>
-      </node>
-    </node>
-    <node concept="1K5120" id="3c_TKUlCS_9" role="LiZbd">
-      <property role="TrG5h" value="bb" />
-      <node concept="1K51nC" id="3c_TKUlCS_a" role="1K5112">
-        <property role="TrG5h" value="SingleAccess" />
-        <node concept="1K51kN" id="3c_TKUlCS_b" role="1K517W">
-          <property role="TrG5h" value="self" />
-          <node concept="kAGV1" id="3c_TKUlCS_c" role="1K51Bn">
-            <ref role="kAGV8" node="3c_TKUlCS_a" resolve="SingleAccess" />
-          </node>
-          <node concept="1K51l8" id="3c_TKUlCS_d" role="1K51mQ" />
-        </node>
-        <node concept="1K51rN" id="3c_TKUlCS_e" role="1K517W">
-          <property role="TrG5h" value="name" />
-          <node concept="kB_1A" id="3c_TKUlCS_f" role="1K51Bn" />
-          <node concept="kB_oh" id="3c_TKUlCS_g" role="1K51$P">
-            <property role="kB_oY" value="hello" />
-          </node>
-        </node>
-        <node concept="33MXCb" id="3c_TKUlCS_h" role="1K517W" />
-        <node concept="1K51r2" id="3c_TKUlCS_i" role="1K517W">
-          <property role="TrG5h" value="DoIt" />
-          <node concept="kB$OU" id="3c_TKUlCS_j" role="kAOx1">
-            <node concept="1K51vM" id="3c_TKUlCS_k" role="1K51s0">
-              <node concept="1K51ur" id="5xWoeZusFRK" role="1K51vO">
-                <node concept="2yYHDy" id="5xWoeZusOQk" role="1K51Ad">
-                  <node concept="370BGT" id="5xWoeZusOQC" role="kB0tU">
-                    <ref role="kB_2E" node="3c_TKUlCS_e" resolve="name" />
-                    <node concept="LIFWc" id="5xWoeZusPiC" role="lGtFl">
-                      <property role="ZRATv" value="true" />
-                      <property role="OXtK3" value="true" />
-                      <property role="p6zMq" value="4" />
-                      <property role="p6zMs" value="4" />
-                      <property role="LIFWd" value="ReadOnlyModelAccessor_iarjf9_a" />
-                    </node>
-                  </node>
-                  <node concept="33ha1Z" id="5xWoeZusOOc" role="2hxcEd" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="kB_43" id="3c_TKUlCS_o" role="1K51Bn" />
-        </node>
-      </node>
-    </node>
     <node concept="3clFbS" id="3c_TKUlCSCz" role="LjaKd">
       <node concept="2TK7Tu" id="3c_TKUlCSCy" role="3cqZAp">
         <property role="2TTd_B" value="." />
@@ -234,93 +153,97 @@
       </node>
       <node concept="3clFbH" id="3c_TKUlCTD8" role="3cqZAp" />
     </node>
-  </node>
-  <node concept="LiM7Y" id="3c_TKUlCUpj">
-    <property role="TrG5h" value="DeepAccess" />
-    <node concept="1K5120" id="3c_TKUlCUpk" role="LiRBU">
-      <property role="TrG5h" value="bb" />
-      <node concept="1K51nC" id="3c_TKUlCUpl" role="1K5112">
-        <property role="TrG5h" value="DeepAccess" />
-        <node concept="1K51kN" id="3c_TKUlCUpm" role="1K517W">
-          <property role="TrG5h" value="self" />
-          <node concept="kAGV1" id="3c_TKUlCUpn" role="1K51Bn">
-            <ref role="kAGV8" node="3c_TKUlCUpl" resolve="DeepAccess" />
+    <node concept="1qefOq" id="3Tgyboe69RH" role="25YQCW">
+      <node concept="1K5120" id="3c_TKUltGtr" role="1qenE9">
+        <property role="TrG5h" value="bb" />
+        <node concept="1K51nC" id="3c_TKUltGtt" role="1K5112">
+          <property role="TrG5h" value="SingleAccess" />
+          <node concept="1K51kN" id="3c_TKUltGt_" role="1K517W">
+            <property role="TrG5h" value="self" />
+            <node concept="kAGV1" id="3c_TKUltGtK" role="1K51Bn">
+              <ref role="kAGV8" node="3c_TKUltGtt" resolve="SingleAccess" />
+            </node>
+            <node concept="1K51l8" id="3c_TKUltGu1" role="1K51mQ" />
           </node>
-          <node concept="1K51l8" id="3c_TKUlCUpo" role="1K51mQ" />
-        </node>
-        <node concept="1K51rN" id="3c_TKUlCUpp" role="1K517W">
-          <property role="TrG5h" value="name" />
-          <node concept="kB_1A" id="3c_TKUlCUpq" role="1K51Bn" />
-          <node concept="kB_oh" id="3c_TKUlCUpr" role="1K51$P">
-            <property role="kB_oY" value="hello" />
+          <node concept="1K51rN" id="3c_TKUlCSy1" role="1K517W">
+            <property role="TrG5h" value="name" />
+            <node concept="kB_1A" id="3c_TKUlCSyk" role="1K51Bn" />
+            <node concept="kB_oh" id="3c_TKUlCSyE" role="1K51$P">
+              <property role="kB_oY" value="hello" />
+            </node>
           </node>
-        </node>
-        <node concept="33MXCb" id="3c_TKUlCUps" role="1K517W" />
-        <node concept="1K51r2" id="3c_TKUlCUpt" role="1K517W">
-          <property role="TrG5h" value="DoIt" />
-          <node concept="kB$OU" id="3c_TKUlCUpu" role="kAOx1">
-            <node concept="1K51vM" id="3c_TKUlCUpv" role="1K51s0">
-              <node concept="1K51ur" id="3c_TKUlCUpw" role="1K51vO">
-                <node concept="2yYHDy" id="5xWoeZus$Qg" role="1K51Ad">
-                  <node concept="33Hxln" id="5xWoeZus$Q$" role="kB0tU">
-                    <ref role="kB_2E" node="3c_TKUlCUpm" resolve="self" />
-                    <node concept="LIFWc" id="5xWoeZus$RC" role="lGtFl">
+          <node concept="33MXCb" id="3c_TKUlCSyU" role="1K517W" />
+          <node concept="1K51r2" id="3c_TKUlCSzi" role="1K517W">
+            <property role="TrG5h" value="DoIt" />
+            <node concept="kB$OU" id="3c_TKUlCSzj" role="kAOx1">
+              <node concept="1K51vM" id="3c_TKUlCSzk" role="1K51s0">
+                <node concept="1K51ur" id="5xWoeZusOPh" role="1K51vO">
+                  <node concept="33ha1Z" id="5xWoeZusOPg" role="1K51Ad">
+                    <node concept="LIFWc" id="5xWoeZusOQ5" role="lGtFl">
                       <property role="ZRATv" value="true" />
                       <property role="OXtK3" value="true" />
                       <property role="p6zMq" value="4" />
                       <property role="p6zMs" value="4" />
-                      <property role="LIFWd" value="ReferencePresentation_qm8fop_a0a0" />
-                    </node>
-                  </node>
-                  <node concept="33ha1Z" id="5xWoeZus$Q0" role="2hxcEd" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="kB_43" id="3c_TKUlCUpz" role="1K51Bn" />
-        </node>
-      </node>
-    </node>
-    <node concept="1K5120" id="3c_TKUlCUp$" role="LiZbd">
-      <property role="TrG5h" value="bb" />
-      <node concept="1K51nC" id="3c_TKUlCUp_" role="1K5112">
-        <property role="TrG5h" value="DeepAccess" />
-        <node concept="1K51kN" id="3c_TKUlCUpA" role="1K517W">
-          <property role="TrG5h" value="self" />
-          <node concept="kAGV1" id="3c_TKUlCUpB" role="1K51Bn">
-            <ref role="kAGV8" node="3c_TKUlCUp_" resolve="DeepAccess" />
-          </node>
-          <node concept="1K51l8" id="3c_TKUlCUpC" role="1K51mQ" />
-        </node>
-        <node concept="1K51rN" id="3c_TKUlCUpD" role="1K517W">
-          <property role="TrG5h" value="name" />
-          <node concept="kB_1A" id="3c_TKUlCUpE" role="1K51Bn" />
-          <node concept="kB_oh" id="3c_TKUlCUpF" role="1K51$P">
-            <property role="kB_oY" value="hello" />
-          </node>
-        </node>
-        <node concept="33MXCb" id="3c_TKUlCUpG" role="1K517W" />
-        <node concept="1K51r2" id="3c_TKUlCUpH" role="1K517W">
-          <property role="TrG5h" value="DoIt" />
-          <node concept="kB$OU" id="3c_TKUlCUpI" role="kAOx1">
-            <node concept="1K51vM" id="3c_TKUlCUpJ" role="1K51s0">
-              <node concept="1K51ur" id="3c_TKUlCUpK" role="1K51vO">
-                <node concept="2yYHDy" id="5xWoeZuCVdQ" role="1K51Ad">
-                  <node concept="kB0tT" id="5xWoeZuCVdS" role="kB0tU" />
-                  <node concept="2yYHDy" id="5xWoeZurduT" role="2hxcEd">
-                    <node concept="33ha1Z" id="5xWoeZurduD" role="2hxcEd" />
-                    <node concept="33Hxln" id="5xWoeZurdwd" role="kB0tU">
-                      <ref role="kB_2E" node="3c_TKUlCUpA" resolve="self" />
+                      <property role="LIFWd" value="Constant_xaaxob_a0" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="kB_43" id="3c_TKUlCSzH" role="1K51Bn" />
           </node>
-          <node concept="kB_43" id="3c_TKUlCUpP" role="1K51Bn" />
         </node>
       </node>
     </node>
+    <node concept="1qefOq" id="3Tgyboe69Sq" role="25YQFr">
+      <node concept="1K5120" id="3c_TKUlCS_9" role="1qenE9">
+        <property role="TrG5h" value="bb" />
+        <node concept="1K51nC" id="3c_TKUlCS_a" role="1K5112">
+          <property role="TrG5h" value="SingleAccess" />
+          <node concept="1K51kN" id="3c_TKUlCS_b" role="1K517W">
+            <property role="TrG5h" value="self" />
+            <node concept="kAGV1" id="3c_TKUlCS_c" role="1K51Bn">
+              <ref role="kAGV8" node="3c_TKUlCS_a" resolve="SingleAccess" />
+            </node>
+            <node concept="1K51l8" id="3c_TKUlCS_d" role="1K51mQ" />
+          </node>
+          <node concept="1K51rN" id="3c_TKUlCS_e" role="1K517W">
+            <property role="TrG5h" value="name" />
+            <node concept="kB_1A" id="3c_TKUlCS_f" role="1K51Bn" />
+            <node concept="kB_oh" id="3c_TKUlCS_g" role="1K51$P">
+              <property role="kB_oY" value="hello" />
+            </node>
+          </node>
+          <node concept="33MXCb" id="3c_TKUlCS_h" role="1K517W" />
+          <node concept="1K51r2" id="3c_TKUlCS_i" role="1K517W">
+            <property role="TrG5h" value="DoIt" />
+            <node concept="kB$OU" id="3c_TKUlCS_j" role="kAOx1">
+              <node concept="1K51vM" id="3c_TKUlCS_k" role="1K51s0">
+                <node concept="1K51ur" id="5xWoeZusFRK" role="1K51vO">
+                  <node concept="2yYHDy" id="5xWoeZusOQk" role="1K51Ad">
+                    <node concept="370BGT" id="5xWoeZusOQC" role="kB0tU">
+                      <ref role="kB_2E" node="3c_TKUlCS_e" resolve="name" />
+                      <node concept="LIFWc" id="5xWoeZusPiC" role="lGtFl">
+                        <property role="ZRATv" value="true" />
+                        <property role="OXtK3" value="true" />
+                        <property role="p6zMq" value="4" />
+                        <property role="p6zMs" value="4" />
+                        <property role="LIFWd" value="ReadOnlyModelAccessor_iarjf9_a" />
+                      </node>
+                    </node>
+                    <node concept="33ha1Z" id="5xWoeZusOOc" role="2hxcEd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="kB_43" id="3c_TKUlCS_o" role="1K51Bn" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3c_TKUlCUpj">
+    <property role="TrG5h" value="DeepAccess" />
     <node concept="3clFbS" id="3c_TKUlCUpQ" role="LjaKd">
       <node concept="2TK7Tu" id="3c_TKUlCUpR" role="3cqZAp">
         <property role="2TTd_B" value="." />
@@ -339,6 +262,94 @@
         </node>
       </node>
       <node concept="3clFbH" id="3c_TKUlCUpX" role="3cqZAp" />
+    </node>
+    <node concept="1qefOq" id="3Tgyboe69RI" role="25YQCW">
+      <node concept="1K5120" id="3c_TKUlCUpk" role="1qenE9">
+        <property role="TrG5h" value="bb" />
+        <node concept="1K51nC" id="3c_TKUlCUpl" role="1K5112">
+          <property role="TrG5h" value="DeepAccess" />
+          <node concept="1K51kN" id="3c_TKUlCUpm" role="1K517W">
+            <property role="TrG5h" value="self" />
+            <node concept="kAGV1" id="3c_TKUlCUpn" role="1K51Bn">
+              <ref role="kAGV8" node="3c_TKUlCUpl" resolve="DeepAccess" />
+            </node>
+            <node concept="1K51l8" id="3c_TKUlCUpo" role="1K51mQ" />
+          </node>
+          <node concept="1K51rN" id="3c_TKUlCUpp" role="1K517W">
+            <property role="TrG5h" value="name" />
+            <node concept="kB_1A" id="3c_TKUlCUpq" role="1K51Bn" />
+            <node concept="kB_oh" id="3c_TKUlCUpr" role="1K51$P">
+              <property role="kB_oY" value="hello" />
+            </node>
+          </node>
+          <node concept="33MXCb" id="3c_TKUlCUps" role="1K517W" />
+          <node concept="1K51r2" id="3c_TKUlCUpt" role="1K517W">
+            <property role="TrG5h" value="DoIt" />
+            <node concept="kB$OU" id="3c_TKUlCUpu" role="kAOx1">
+              <node concept="1K51vM" id="3c_TKUlCUpv" role="1K51s0">
+                <node concept="1K51ur" id="3c_TKUlCUpw" role="1K51vO">
+                  <node concept="2yYHDy" id="5xWoeZus$Qg" role="1K51Ad">
+                    <node concept="33Hxln" id="5xWoeZus$Q$" role="kB0tU">
+                      <ref role="kB_2E" node="3c_TKUlCUpm" resolve="self" />
+                      <node concept="LIFWc" id="5xWoeZus$RC" role="lGtFl">
+                        <property role="ZRATv" value="true" />
+                        <property role="OXtK3" value="true" />
+                        <property role="p6zMq" value="4" />
+                        <property role="p6zMs" value="4" />
+                        <property role="LIFWd" value="ReferencePresentation_qm8fop_a0a0" />
+                      </node>
+                    </node>
+                    <node concept="33ha1Z" id="5xWoeZus$Q0" role="2hxcEd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="kB_43" id="3c_TKUlCUpz" role="1K51Bn" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3Tgyboe69Sr" role="25YQFr">
+      <node concept="1K5120" id="3c_TKUlCUp$" role="1qenE9">
+        <property role="TrG5h" value="bb" />
+        <node concept="1K51nC" id="3c_TKUlCUp_" role="1K5112">
+          <property role="TrG5h" value="DeepAccess" />
+          <node concept="1K51kN" id="3c_TKUlCUpA" role="1K517W">
+            <property role="TrG5h" value="self" />
+            <node concept="kAGV1" id="3c_TKUlCUpB" role="1K51Bn">
+              <ref role="kAGV8" node="3c_TKUlCUp_" resolve="DeepAccess" />
+            </node>
+            <node concept="1K51l8" id="3c_TKUlCUpC" role="1K51mQ" />
+          </node>
+          <node concept="1K51rN" id="3c_TKUlCUpD" role="1K517W">
+            <property role="TrG5h" value="name" />
+            <node concept="kB_1A" id="3c_TKUlCUpE" role="1K51Bn" />
+            <node concept="kB_oh" id="3c_TKUlCUpF" role="1K51$P">
+              <property role="kB_oY" value="hello" />
+            </node>
+          </node>
+          <node concept="33MXCb" id="3c_TKUlCUpG" role="1K517W" />
+          <node concept="1K51r2" id="3c_TKUlCUpH" role="1K517W">
+            <property role="TrG5h" value="DoIt" />
+            <node concept="kB$OU" id="3c_TKUlCUpI" role="kAOx1">
+              <node concept="1K51vM" id="3c_TKUlCUpJ" role="1K51s0">
+                <node concept="1K51ur" id="3c_TKUlCUpK" role="1K51vO">
+                  <node concept="2yYHDy" id="5xWoeZuCVdQ" role="1K51Ad">
+                    <node concept="kB0tT" id="5xWoeZuCVdS" role="kB0tU" />
+                    <node concept="2yYHDy" id="5xWoeZurduT" role="2hxcEd">
+                      <node concept="33ha1Z" id="5xWoeZurduD" role="2hxcEd" />
+                      <node concept="33Hxln" id="5xWoeZurdwd" role="kB0tU">
+                        <ref role="kB_2E" node="3c_TKUlCUpA" resolve="self" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="kB_43" id="3c_TKUlCUpP" role="1K51Bn" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

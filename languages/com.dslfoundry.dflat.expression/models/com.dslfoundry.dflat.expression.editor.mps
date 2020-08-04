@@ -2,7 +2,7 @@
 <model ref="r:6d2c3cd0-e8af-409a-8c7c-1e2871cc2684(com.dslfoundry.dflat.expression.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -42,7 +42,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -649,25 +649,25 @@
     <node concept="14StLt" id="3lo6kbLh9ca" role="V601i">
       <property role="TrG5h" value="StringLiteral" />
       <node concept="VechU" id="3lo6kbLh9cd" role="3F10Kt">
-        <property role="Vb096" value="DARK_MAGENTA" />
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLh9up" role="V601i">
       <property role="TrG5h" value="NumberLiteral" />
       <node concept="VechU" id="3lo6kbLh9uu" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLh9uY" role="V601i">
       <property role="TrG5h" value="BooleanLiteral" />
       <node concept="VechU" id="3lo6kbLh9v5" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3c_TKUhKtx4" role="V601i">
       <property role="TrG5h" value="NullLiteral" />
       <node concept="VechU" id="3c_TKUhKtx5" role="3F10Kt">
-        <property role="Vb096" value="DARK_BLUE" />
+        <property role="Vb096" value="g1_eI4o/darkBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLh9Lm" role="V601i">
@@ -679,7 +679,7 @@
     <node concept="14StLt" id="7CM0FuU2pIl" role="V601i">
       <property role="TrG5h" value="BlockEnd" />
       <node concept="VechU" id="7CM0FuU2pIw" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
       <node concept="Vb9p2" id="7CM0FuU2pI_" role="3F10Kt" />
       <node concept="VPM3Z" id="3c_TKUi88PT" role="3F10Kt" />
@@ -889,7 +889,7 @@
     <node concept="1Qtc8_" id="1lkQMM4LygZ" role="IW6Ez">
       <node concept="3cWJ9i" id="1lkQMM4Lyh5" role="1Qtc8$">
         <node concept="CtIbL" id="1lkQMM4Lyh7" role="CtIbM">
-          <property role="CtIbK" value="RIGHT" />
+          <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
       <node concept="mvV$s" id="1lkQMM4Lyhg" role="1Qtc8A">

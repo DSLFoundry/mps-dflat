@@ -2,7 +2,7 @@
 <model ref="r:702ad5ce-d972-4cf3-961b-67eb6a8219e2(com.dslfoundry.dflat.type.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="13" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -32,7 +32,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -330,31 +330,31 @@
     <node concept="14StLt" id="3lo6kbLh9L4" role="V601i">
       <property role="TrG5h" value="SimpleType" />
       <node concept="VechU" id="3lo6kbLh9L6" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLh9L8" role="V601i">
       <property role="TrG5h" value="StringType" />
       <node concept="VechU" id="3lo6kbLh9L9" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhb7s" role="V601i">
       <property role="TrG5h" value="ObjectType" />
       <node concept="VechU" id="3lo6kbLhb7t" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhb7$" role="V601i">
       <property role="TrG5h" value="DynamicType" />
       <node concept="VechU" id="3lo6kbLhb7_" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
     <node concept="14StLt" id="3lo6kbLhb7I" role="V601i">
       <property role="TrG5h" value="VoidType" />
       <node concept="VechU" id="3lo6kbLhb7J" role="3F10Kt">
-        <property role="Vb096" value="LIGHT_BLUE" />
+        <property role="Vb096" value="hGRnIZc/lightBlue" />
       </node>
     </node>
   </node>

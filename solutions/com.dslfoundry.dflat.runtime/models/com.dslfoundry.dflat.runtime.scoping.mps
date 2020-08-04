@@ -2,8 +2,8 @@
 <model ref="r:60ca9eb8-120f-450f-a830-b55094bab30d(com.dslfoundry.dflat.runtime.scoping)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -103,7 +103,6 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
@@ -369,7 +368,6 @@
           </node>
         </node>
         <node concept="2xdQw9" id="7CM0FuT57gP" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuT57gQ" role="9lYJi">
             <node concept="37vLTw" id="7CM0FuT57gR" role="3uHU7w">
               <ref role="3cqZAo" node="7CM0FuT57gH" resolve="r" />
@@ -422,7 +420,6 @@
           </node>
         </node>
         <node concept="2xdQw9" id="7CM0FuT57JH" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuT57JI" role="9lYJi">
             <node concept="37vLTw" id="7CM0FuT57JJ" role="3uHU7w">
               <ref role="3cqZAo" node="7CM0FuT57JB" resolve="r" />
@@ -470,7 +467,6 @@
           </node>
         </node>
         <node concept="2xdQw9" id="7CM0FuT58eW" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuT58eX" role="9lYJi">
             <node concept="37vLTw" id="7CM0FuT58eY" role="3uHU7w">
               <ref role="3cqZAo" node="7CM0FuT58eP" resolve="r" />
@@ -499,7 +495,6 @@
       <property role="TrG5h" value="filterConcepts" />
       <node concept="3clFbS" id="7CM0FuT58DH" role="3clF47">
         <node concept="2xdQw9" id="7CM0FuTwULJ" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuTwULK" role="9lYJi">
             <node concept="Xl_RD" id="7CM0FuTwULM" role="3uHU7B">
               <property role="Xl_RC" value="ADottedScope.filterConcepts kind: " />
@@ -529,7 +524,6 @@
           </node>
         </node>
         <node concept="2xdQw9" id="7CM0FuT58DQ" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuT58DR" role="9lYJi">
             <node concept="37vLTw" id="7CM0FuT58DS" role="3uHU7w">
               <ref role="3cqZAo" node="7CM0FuT58DJ" resolve="r" />
@@ -597,7 +591,6 @@
           </node>
         </node>
         <node concept="2xdQw9" id="7CM0FuT58Zs" role="3cqZAp">
-          <property role="2xdLsb" value="debug" />
           <node concept="3cpWs3" id="7CM0FuT58Zt" role="9lYJi">
             <node concept="37vLTw" id="7CM0FuT58Zu" role="3uHU7w">
               <ref role="3cqZAo" node="7CM0FuT58Zd" resolve="r" />

@@ -2,7 +2,7 @@
 <model ref="r:427e6384-9b59-4f79-ac2a-ee878578e6c5(com.dslfoundry.dflat.type.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -58,9 +58,9 @@
     <property role="TrG5h" value="ITyped" />
     <node concept="1TJgyj" id="5KwscwGd6$v" role="1TKVEi">
       <property role="IQ2ns" value="6638429855781513503" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
     </node>
     <node concept="PrWs8" id="3lo6kbKDdfs" role="PrDN$">
@@ -403,7 +403,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6wfKxDW$pav" role="1TKVEi">
       <property role="IQ2ns" value="7498425323610018463" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="6wfKxDW$p9w" resolve="INonNullableType" />
       <ref role="20ksaX" node="5KwscwGd6$v" resolve="type" />
@@ -527,16 +527,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6wfKxDW$pag" role="1TKVEi">
       <property role="IQ2ns" value="7498425323610018448" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
       <ref role="20lvS9" node="6wfKxDW$pa5" resolve="INonArrayType" />
       <ref role="20ksaX" node="5KwscwGd6$v" resolve="type" />
     </node>
     <node concept="1TJgyj" id="6wfKxDW$paz" role="1TKVEi">
       <property role="IQ2ns" value="7498425323610018467" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="dimensions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6wfKxDW$paA" resolve="IArrayDimension" />
     </node>
     <node concept="PrWs8" id="6wfKxDW$pa7" role="PzmwI">
@@ -591,9 +591,8 @@
     <property role="TrG5h" value="ITypeReference" />
     <node concept="1TJgyj" id="6wfKxDW_gNi" role="1TKVEi">
       <property role="IQ2ns" value="7498425323610246354" />
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="targetType" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
@@ -626,9 +625,9 @@
     <property role="TrG5h" value="IGenericed" />
     <node concept="1TJgyj" id="7wiI39P2o$X" role="1TKVEi">
       <property role="IQ2ns" value="8652180360983578941" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="typeParameters" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
     </node>
   </node>
@@ -648,9 +647,8 @@
     <property role="TrG5h" value="ITypeable" />
     <node concept="1TJgyj" id="3lo6kbKDde0" role="1TKVEi">
       <property role="IQ2ns" value="3843850057256588160" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
     </node>
     <node concept="PrWs8" id="3lo6kbKDdfq" role="PrDN$">
@@ -666,9 +664,9 @@
     <property role="TrG5h" value="IGeneric" />
     <node concept="1TJgyj" id="3lo6kbL8_fh" role="1TKVEi">
       <property role="IQ2ns" value="3843850057264813009" />
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="typeDefinitions" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
     </node>
   </node>
