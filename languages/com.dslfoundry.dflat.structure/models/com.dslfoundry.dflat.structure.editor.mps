@@ -24,7 +24,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1198489924438" name="jetbrains.mps.lang.editor.structure.CellModel_Block" flags="sg" stub="8104358048506730066" index="b$f91">
         <child id="1198489993734" name="body" index="b$wch" />
       </concept>
@@ -44,6 +46,8 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -278,6 +282,9 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <ref role="1XX52x" to="y2ir:5KwscwGd62l" resolve="AClass" />
     <node concept="3EZMnI" id="6wfKxDW_TZz" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqM7Y" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3lo6kbKhhow" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -304,6 +311,9 @@
       <node concept="PMmxH" id="3lo6kbKqF3N" role="3EZMnx">
         <ref role="PMmxG" to="nahy:3lo6kbKqF3n" resolve="spacer" />
       </node>
+    </node>
+    <node concept="PMmxH" id="3Tgyboffiil" role="6VMZX">
+      <ref role="PMmxG" node="3TgyboffihC" resolve="AClass_Inspector" />
     </node>
   </node>
   <node concept="PKFIW" id="6wfKxDW_Ugz">
@@ -656,6 +666,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.constructor" />
     <ref role="1XX52x" to="y2ir:5KwscwGd65c" resolve="Constructor" />
     <node concept="3EZMnI" id="6wfKxDWHHxa" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqPdF" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3c_TKUj5N51" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -739,6 +752,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.constant" />
     <ref role="1XX52x" to="y2ir:5KwscwGd64T" resolve="Constant" />
     <node concept="3EZMnI" id="15FVd_LEbAu" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqPeT" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3c_TKUj2FRl" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -891,6 +907,7 @@
         <node concept="1sVBvm" id="7wiI39P2z60" role="1sWHZn">
           <node concept="3SHvHV" id="7wiI39P2z67" role="2wV5jI" />
         </node>
+        <node concept="VPxyj" id="3TgyboeIGo4" role="3F10Kt" />
       </node>
       <node concept="l2Vlx" id="7wiI39P2z5U" role="2iSdaV" />
       <node concept="PMmxH" id="3lo6kbLbsxS" role="3EZMnx">
@@ -902,6 +919,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.method" />
     <ref role="1XX52x" to="y2ir:5KwscwGd6oa" resolve="Method" />
     <node concept="3EZMnI" id="7wiI39P5OPy" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqOKK" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3c_TKUk9$M5" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -1006,6 +1026,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="3TgyboePM0c" role="3EZMnx">
+        <ref role="PMmxG" to="lut0:3lo6kbL8_g7" resolve="generic" />
+      </node>
       <node concept="PMmxH" id="3lo6kbJwDiS" role="3EZMnx">
         <ref role="PMmxG" to="nahy:3lo6kbJwDiq" resolve="argumented" />
       </node>
@@ -1016,6 +1039,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.property" />
     <ref role="1XX52x" to="y2ir:5KwscwGd6oV" resolve="Property" />
     <node concept="3EZMnI" id="7wiI39Pv_dY" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqOf3" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3c_TKUkxMa_" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -1621,6 +1647,9 @@
     <property role="3GE5qa" value="namespace" />
     <ref role="1XX52x" to="y2ir:5KwscwGd61H" resolve="Namespace" />
     <node concept="3EZMnI" id="7wiI39OVRjT" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqM7j" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="3EZMnI" id="7wiI39OVRk3" role="3EZMnx">
         <node concept="VPM3Z" id="7wiI39OVRk5" role="3F10Kt" />
         <node concept="PMmxH" id="7wiI39OVRkd" role="3EZMnx">
@@ -1900,6 +1929,9 @@
     <property role="3GE5qa" value="typeDeclaration.class" />
     <ref role="1XX52x" to="y2ir:5KwscwGd6kw" resolve="Class" />
     <node concept="3EZMnI" id="3lo6kbKhhuz" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqM8j" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3lo6kbKhhu$" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -1924,6 +1956,9 @@
         <ref role="PMmxG" to="nahy:3lo6kbKqF3n" resolve="spacer" />
       </node>
     </node>
+    <node concept="PMmxH" id="3Tgyboffiij" role="6VMZX">
+      <ref role="PMmxG" node="3TgyboffihC" resolve="AClass_Inspector" />
+    </node>
   </node>
   <node concept="24kQdi" id="3lo6kbKl9ZI">
     <property role="3GE5qa" value="typeDeclaration.class.member" />
@@ -1934,6 +1969,9 @@
     <property role="3GE5qa" value="typeDeclaration.enum" />
     <ref role="1XX52x" to="y2ir:5KwscwGd62o" resolve="Enum" />
     <node concept="3EZMnI" id="3lo6kbKDdYr" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqPfx" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3lo6kbKDdYy" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -1984,6 +2022,9 @@
     <property role="3GE5qa" value="typeDeclaration.enum" />
     <ref role="1XX52x" to="y2ir:3lo6kbKDdcZ" resolve="EnumLiteral" />
     <node concept="3EZMnI" id="3lo6kbKDf1b" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqPfW" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3lo6kbKDf1z" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -2184,6 +2225,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.field" />
     <ref role="1XX52x" to="y2ir:5KwscwGd6nV" resolve="Field" />
     <node concept="3EZMnI" id="7CM0FuTb3Pl" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZqOLh" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
       <node concept="PMmxH" id="3c_TKUj927C" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
       </node>
@@ -2421,6 +2465,55 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="3c_TKUksucH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3TgyboffihC">
+    <property role="3GE5qa" value="typeDeclaration.class" />
+    <property role="TrG5h" value="AClass_Inspector" />
+    <ref role="1XX52x" to="y2ir:5KwscwGd62l" resolve="AClass" />
+    <node concept="3EZMnI" id="3TgyboffihH" role="2wV5jI">
+      <node concept="3EZMnI" id="3TgyboffihO" role="3EZMnx">
+        <node concept="VPM3Z" id="3TgyboffihQ" role="3F10Kt" />
+        <node concept="3F0ifn" id="3TgyboffihS" role="3EZMnx">
+          <property role="3F0ifm" value="partial:" />
+        </node>
+        <node concept="3XFhqQ" id="3Tgyboffii1" role="3EZMnx" />
+        <node concept="3F0A7n" id="3Tgyboffii9" role="3EZMnx">
+          <ref role="1NtTu8" to="y2ir:5KwscwGd6k_" resolve="partial" />
+        </node>
+        <node concept="2iRfu4" id="3TgyboffihT" role="2iSdaV" />
+      </node>
+      <node concept="2EHx9g" id="3Tgyboffiie" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4JGzwQZqKrD">
+    <property role="3GE5qa" value="documentation" />
+    <ref role="1XX52x" to="y2ir:4JGzwQZqDlr" resolve="Documentation" />
+    <node concept="3EZMnI" id="4JGzwQZqKrO" role="2wV5jI">
+      <node concept="PMmxH" id="4JGzwQZDG2_" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="xShMh" id="4JGzwQZVHUt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4JGzwQZqM4g" role="3EZMnx">
+        <ref role="1NtTu8" to="wgz4:7wiI39PdGrl" resolve="text" />
+      </node>
+      <node concept="2iRfu4" id="4JGzwQZqKrR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="4JGzwQZqM5L">
+    <property role="3GE5qa" value="documentation" />
+    <property role="TrG5h" value="documented" />
+    <ref role="1XX52x" to="y2ir:4JGzwQZqDlo" resolve="IDocumented" />
+    <node concept="3EZMnI" id="4JGzwQZDFXE" role="2wV5jI">
+      <node concept="2iRkQZ" id="4JGzwQZDFXF" role="2iSdaV" />
+      <node concept="_tjkj" id="4JGzwQZDFXK" role="3EZMnx">
+        <node concept="3F2HdR" id="4JGzwQZDFX_" role="_tjki">
+          <ref role="1NtTu8" to="y2ir:4JGzwQZqDlp" resolve="documentation" />
+          <node concept="2iRkQZ" id="4JGzwQZDFXC" role="2czzBx" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

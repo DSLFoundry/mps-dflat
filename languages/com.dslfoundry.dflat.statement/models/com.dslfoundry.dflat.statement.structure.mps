@@ -9,7 +9,6 @@
     <import index="r1kv" ref="r:427e6384-9b59-4f79-ac2a-ee878578e6c5(com.dslfoundry.dflat.type.structure)" />
     <import index="wgz4" ref="r:3e9e012e-836a-4f5e-8e8c-74ff2ffd837f(com.dslfoundry.dflat.expression.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -749,12 +748,8 @@
     <property role="TrG5h" value="ACommentStatement" />
     <property role="3GE5qa" value="comment" />
     <ref role="1TJDcQ" node="5KwscwGd6t1" resolve="Statement" />
-    <node concept="1TJgyj" id="7wiI39PdGrl" role="1TKVEi">
-      <property role="IQ2ns" value="8652180360986543829" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="text" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    <node concept="PrWs8" id="4JGzwQZqC_c" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:4JGzwQZqC_b" resolve="IComment" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wiI39PdQEP">

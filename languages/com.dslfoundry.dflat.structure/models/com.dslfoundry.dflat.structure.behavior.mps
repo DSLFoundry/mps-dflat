@@ -21,6 +21,7 @@
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="wgz4" ref="r:3e9e012e-836a-4f5e-8e8c-74ff2ffd837f(com.dslfoundry.dflat.expression.structure)" />
     <import index="md96" ref="r:1c679d3b-43d5-4793-a40c-66934011dda1(com.dslfoundry.dflat.statement.behavior)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="28vp" ref="r:97df7598-a461-44b0-9392-375b61c3ab06(com.dslfoundry.dflat.statement.structure)" implicit="true" />
   </imports>
   <registry>
@@ -35,6 +36,7 @@
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
         <property id="5864038008284099149" name="isStatic" index="2Ki8OM" />
         <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
@@ -59,6 +61,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -483,6 +488,26 @@
     </node>
     <node concept="13hLZK" id="3lo6kbLrsKM" role="13h7CW">
       <node concept="3clFbS" id="3lo6kbLrsKN" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3TgyboeP1DQ" role="13h7CS">
+      <property role="TrG5h" value="getMembers" />
+      <ref role="13i0hy" node="3TgyboeP1op" resolve="getMembers" />
+      <node concept="3Tm1VV" id="3TgyboeP1DR" role="1B3o_S" />
+      <node concept="3clFbS" id="3TgyboeP1DV" role="3clF47">
+        <node concept="3clFbF" id="3TgyboeP1Ld" role="3cqZAp">
+          <node concept="2OqwBi" id="3TgyboeP23z" role="3clFbG">
+            <node concept="13iPFW" id="3TgyboeP1Lc" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="3TgyboeP2sd" role="2OqNvi">
+              <ref role="3TtcxE" to="y2ir:5KwscwGd64O" resolve="members" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3TgyboeP1DW" role="3clF45">
+        <node concept="3Tqbb2" id="3TgyboeP1DX" role="A3Ik2">
+          <ref role="ehGHo" to="y2ir:7CM0FuTYtyW" resolve="IClassMember" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3lo6kbLrsS8">
@@ -1356,6 +1381,50 @@
         </node>
       </node>
       <node concept="17QB3L" id="3c_TKUkN5Ia" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3TgyboeP1oe">
+    <property role="3GE5qa" value="typeDeclaration" />
+    <ref role="13h7C2" to="y2ir:6wfKxDW_gN$" resolve="IClassOrInterface" />
+    <node concept="13i0hz" id="3TgyboeP1op" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getMembers" />
+      <node concept="3Tm1VV" id="3TgyboeP1oq" role="1B3o_S" />
+      <node concept="A3Dl8" id="3TgyboeP1oD" role="3clF45">
+        <node concept="3Tqbb2" id="3TgyboeP1oQ" role="A3Ik2">
+          <ref role="ehGHo" to="y2ir:7CM0FuTYtyW" resolve="IClassMember" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3TgyboeP1os" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="3TgyboeP1of" role="13h7CW">
+      <node concept="3clFbS" id="3TgyboeP1og" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3TgyboePOnO">
+    <property role="3GE5qa" value="typeDeclaration" />
+    <ref role="13h7C2" to="y2ir:5KwscwGd62n" resolve="Interface" />
+    <node concept="13hLZK" id="3TgyboePOnP" role="13h7CW">
+      <node concept="3clFbS" id="3TgyboePOnQ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3TgyboePOnZ" role="13h7CS">
+      <property role="TrG5h" value="getMembers" />
+      <ref role="13i0hy" node="3TgyboeP1op" resolve="getMembers" />
+      <node concept="3Tm1VV" id="3TgyboePOo0" role="1B3o_S" />
+      <node concept="3clFbS" id="3TgyboePOo4" role="3clF47">
+        <node concept="3clFbF" id="3TgyboePOCD" role="3cqZAp">
+          <node concept="2YIFZM" id="3TgyboePOEE" role="3clFbG">
+            <ref role="37wK5l" to="33ny:~Collections.emptySet()" resolve="emptySet" />
+            <ref role="1Pybhc" to="33ny:~Collections" resolve="Collections" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="3TgyboePOo5" role="3clF45">
+        <node concept="3Tqbb2" id="3TgyboePOo6" role="A3Ik2">
+          <ref role="ehGHo" to="y2ir:7CM0FuTYtyW" resolve="IClassMember" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

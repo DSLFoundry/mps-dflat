@@ -64,6 +64,9 @@
       <concept id="2896773699153795590" name="jetbrains.mps.lang.editor.structure.TransformationLocation_SideTransform" flags="ng" index="3cWJ9i">
         <child id="3473224453637651919" name="placeInCell" index="CtIbM" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
@@ -71,11 +74,9 @@
         <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="3308396621974580100" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_Default" flags="ng" index="3p36aQ" />
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1075375595203" name="jetbrains.mps.lang.editor.structure.CellModel_Error" flags="sg" stub="8104358048506729356" index="1xolST">
         <property id="1075375595204" name="text" index="1xolSY" />
-      </concept>
-      <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
-        <reference id="1227861587090" name="link" index="3ygfmf" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -106,6 +107,7 @@
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
+      <concept id="625126330682908270" name="jetbrains.mps.lang.editor.structure.CellModel_ReferencePresentation" flags="sg" stub="730538219795961225" index="3SHvHV" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1198257632966" name="jetbrains.mps.lang.editor.structure.CellModel_BlockStart" flags="ng" index="3XI7vg" />
       <concept id="1198257747917" name="jetbrains.mps.lang.editor.structure.CellModel_BlockEnd" flags="ng" index="3XIzrr" />
@@ -258,23 +260,10 @@
   <node concept="24kQdi" id="6wfKxDWXfz$">
     <property role="3GE5qa" value="reference" />
     <ref role="1XX52x" to="wgz4:6wfKxDXhrye" resolve="AReferenceExpression" />
-    <node concept="1HlG4h" id="15FVd_LCjD5" role="2wV5jI">
-      <node concept="1HfYo3" id="15FVd_LCjD9" role="1HlULh">
-        <node concept="3TQlhw" id="15FVd_LCjDd" role="1Hhtcw">
-          <node concept="3clFbS" id="15FVd_LCjDh" role="2VODD2">
-            <node concept="3clFbF" id="15FVd_LCjLX" role="3cqZAp">
-              <node concept="2OqwBi" id="15FVd_LCk0H" role="3clFbG">
-                <node concept="pncrf" id="15FVd_LCjLW" role="2Oq$k0" />
-                <node concept="2qgKlT" id="15FVd_LCkrn" role="2OqNvi">
-                  <ref role="37wK5l" to="h8m6:15FVd_LC8p5" resolve="getTargetName" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3yfXC2" id="7wiI39Py2nT" role="3F10Kt">
-        <ref role="3ygfmf" to="wgz4:6wfKxDW$paK" resolve="target" />
+    <node concept="1iCGBv" id="3TgyboflVoe" role="2wV5jI">
+      <ref role="1NtTu8" to="wgz4:6wfKxDW$paK" resolve="target" />
+      <node concept="1sVBvm" id="3TgyboflVog" role="1sWHZn">
+        <node concept="3SHvHV" id="3TgyboflVon" role="2wV5jI" />
       </node>
     </node>
   </node>

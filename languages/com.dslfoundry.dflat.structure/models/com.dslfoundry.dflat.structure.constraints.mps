@@ -319,7 +319,7 @@
           <node concept="3clFbF" id="3lo6kbMnwp$" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMnwoS" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMnwA1" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMmCUR" resolve="LocalClassScope" />
+                <ref role="37wK5l" to="8iju:3TgyboeOEL$" resolve="LocalClassInheritedScope" />
                 <node concept="2rP1CM" id="3lo6kbMnwQO" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMnx2T" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AMethod" />
