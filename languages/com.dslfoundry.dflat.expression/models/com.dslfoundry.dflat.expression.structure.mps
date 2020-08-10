@@ -878,6 +878,9 @@
     <node concept="PrWs8" id="6wfKxDWT1H9" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3IMG871JqJj" role="PrDN$">
+      <ref role="PrY4T" node="3IMG871Jqty" resolve="IIdentifiable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6wfKxDX4CVj">
     <property role="EcuMT" value="7498425323618471635" />
@@ -941,6 +944,9 @@
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="6wfKxDW$pc1" resolve="IValue" />
       <ref role="20ksaX" node="6wfKxDW$paK" resolve="target" />
+    </node>
+    <node concept="PrWs8" id="6p1EFbMe12g" role="PzmwI">
+      <ref role="PrY4T" node="3lo6kbLTGgo" resolve="IDottable" />
     </node>
   </node>
   <node concept="PlHQZ" id="3lo6kbJwDgI">
@@ -1029,6 +1035,10 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3IMG871Jqty">
+    <property role="EcuMT" value="4301694665439946594" />
+    <property role="TrG5h" value="IIdentifiable" />
   </node>
 </model>
 

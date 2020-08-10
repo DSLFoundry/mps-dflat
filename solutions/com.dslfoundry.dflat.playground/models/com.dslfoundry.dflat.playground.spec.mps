@@ -24,6 +24,7 @@
       <concept id="7498425323621824654" name="com.dslfoundry.dflat.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
+      <concept id="3685605919835503980" name="com.dslfoundry.dflat.expression.structure.MemberAccessExpression" flags="ng" index="2yYHDy" />
       <concept id="3843850057237566510" name="com.dslfoundry.dflat.expression.structure.IArgumented" flags="ng" index="3qQCPG">
         <child id="7498425323610018533" name="arguments" index="kB_3Z" />
       </concept>
@@ -299,11 +300,20 @@
                   </node>
                 </node>
               </node>
+              <node concept="1K51ur" id="6p1EFbLQhaL" role="1K51vO">
+                <node concept="2yYHDy" id="6p1EFbLQhbg" role="1K51Ad">
+                  <node concept="34UqCQ" id="6p1EFbLQhbw" role="kB0tU">
+                    <ref role="kB_2E" node="7CM0FuTb3KT" resolve="Pop" />
+                  </node>
+                  <node concept="33ha1Z" id="6p1EFbLQhaJ" role="2hxcEd" />
+                </node>
+              </node>
               <node concept="1K51tB" id="7CM0FuTYafU" role="1K51vO">
                 <node concept="kB_4h" id="7CM0FuTYagu" role="1K51Ad">
                   <ref role="kB_2E" node="7CM0FuTYab1" resolve="result" />
                 </node>
               </node>
+              <node concept="1K51u9" id="6p1EFbLQh9a" role="1K51vO" />
             </node>
           </node>
           <node concept="1K51l8" id="7CM0FuTb3Le" role="1K51mQ" />

@@ -145,7 +145,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="7CM0FuTPy4S">
-    <property role="TrG5h" value="typeof_AMethod" />
+    <property role="TrG5h" value="typeof_IAMethod" />
     <property role="3GE5qa" value="typeDeclaration.class.member.method" />
     <node concept="3clFbS" id="7CM0FuTPy4T" role="18ibNy">
       <node concept="1Z5TYs" id="7CM0FuTPynH" role="3cqZAp">
@@ -153,7 +153,7 @@
           <node concept="1Z2H0r" id="7CM0FuTPynX" role="mwGJk">
             <node concept="2OqwBi" id="7CM0FuTPyHP" role="1Z2MuG">
               <node concept="1YBJjd" id="7CM0FuTPyoi" role="2Oq$k0">
-                <ref role="1YBMHb" node="7CM0FuTPy4V" resolve="aMethod" />
+                <ref role="1YBMHb" node="7CM0FuTPy4V" resolve="iaMethod" />
               </node>
               <node concept="3TrEf2" id="7CM0FuTPznO" role="2OqNvi">
                 <ref role="3Tt5mk" to="y2ir:5KwscwGd69n" resolve="returnType" />
@@ -164,15 +164,15 @@
         <node concept="mw_s8" id="7CM0FuTPynK" role="1ZfhK$">
           <node concept="1Z2H0r" id="7CM0FuTPy4Z" role="mwGJk">
             <node concept="1YBJjd" id="7CM0FuTPy6P" role="1Z2MuG">
-              <ref role="1YBMHb" node="7CM0FuTPy4V" resolve="aMethod" />
+              <ref role="1YBMHb" node="7CM0FuTPy4V" resolve="iaMethod" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="7CM0FuTPy4V" role="1YuTPh">
-      <property role="TrG5h" value="aMethod" />
-      <ref role="1YaFvo" to="y2ir:5KwscwGd64X" resolve="AMethod" />
+      <property role="TrG5h" value="iaMethod" />
+      <ref role="1YaFvo" to="y2ir:3IMG8716bMl" resolve="IAMethod" />
     </node>
   </node>
   <node concept="1YbPZF" id="7CM0FuTP$E7">

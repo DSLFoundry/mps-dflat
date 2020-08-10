@@ -1015,15 +1015,10 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
     <ref role="1XX52x" to="y2ir:6wfKxDW$pbl" resolve="AMethodCallExpression" />
     <node concept="3EZMnI" id="7wiI39PiA3K" role="2wV5jI">
-      <node concept="1kIj98" id="7wiI39PjyF$" role="3EZMnx">
-        <node concept="1iCGBv" id="7wiI39PiA3R" role="1kIj9b">
-          <ref role="1NtTu8" to="y2ir:6wfKxDW$pb6" resolve="target" />
-          <node concept="1sVBvm" id="7wiI39PiA3T" role="1sWHZn">
-            <node concept="3F0A7n" id="7wiI39PoZxn" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+      <node concept="1iCGBv" id="7wiI39PiA3R" role="3EZMnx">
+        <ref role="1NtTu8" to="y2ir:6wfKxDW$pb6" resolve="target" />
+        <node concept="1sVBvm" id="7wiI39PiA3T" role="1sWHZn">
+          <node concept="3SHvHV" id="3IMG871K0lq" role="2wV5jI" />
         </node>
       </node>
       <node concept="PMmxH" id="3TgyboePM0c" role="3EZMnx">
@@ -1787,7 +1782,7 @@
   <node concept="PKFIW" id="3lo6kbKcb_Y">
     <property role="3GE5qa" value="typeDeclaration.class.member.method" />
     <property role="TrG5h" value="methodModifiers" />
-    <ref role="1XX52x" to="y2ir:5KwscwGd64X" resolve="AMethod" />
+    <ref role="1XX52x" to="y2ir:5KwscwGd64X" resolve="AClassMethod" />
     <node concept="3EZMnI" id="3lo6kbKcbA4" role="2wV5jI">
       <node concept="PMmxH" id="3lo6kbKcbAe" role="3EZMnx">
         <ref role="PMmxG" node="3lo6kbKcbzI" resolve="async" />
@@ -1962,7 +1957,7 @@
   </node>
   <node concept="24kQdi" id="3lo6kbKl9ZI">
     <property role="3GE5qa" value="typeDeclaration.class.member" />
-    <ref role="1XX52x" to="y2ir:3lo6kbKl9Zk" resolve="ClassMember" />
+    <ref role="1XX52x" to="y2ir:3lo6kbKl9Zk" resolve="AClassMember" />
     <node concept="35HoNQ" id="3lo6kbKl9ZK" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="3lo6kbKDdYp">
@@ -2175,15 +2170,10 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
     <ref role="1XX52x" to="y2ir:3lo6kbLGrdO" resolve="ScopedMethodCallExpression" />
     <node concept="3EZMnI" id="3lo6kbLQSUa" role="2wV5jI">
-      <node concept="1kIj98" id="3lo6kbLQSUb" role="3EZMnx">
-        <node concept="1iCGBv" id="3lo6kbLQSUc" role="1kIj9b">
-          <ref role="1NtTu8" to="y2ir:6wfKxDW$pb6" resolve="target" />
-          <node concept="1sVBvm" id="3lo6kbLQSUd" role="1sWHZn">
-            <node concept="3F0A7n" id="3lo6kbLQSUe" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+      <node concept="1iCGBv" id="3IMG871K0ly" role="3EZMnx">
+        <ref role="1NtTu8" to="y2ir:6wfKxDW$pb6" resolve="target" />
+        <node concept="1sVBvm" id="3IMG871K0lz" role="1sWHZn">
+          <node concept="3SHvHV" id="3IMG871K0l$" role="2wV5jI" />
         </node>
       </node>
       <node concept="PMmxH" id="3lo6kbLQSUf" role="3EZMnx">
@@ -2514,6 +2504,167 @@
           <node concept="2iRkQZ" id="4JGzwQZDFXC" role="2czzBx" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IMG87168$g">
+    <property role="3GE5qa" value="typeDeclaration.interface" />
+    <ref role="1XX52x" to="y2ir:5KwscwGd62n" resolve="Interface" />
+    <node concept="3EZMnI" id="3IMG87168$i" role="2wV5jI">
+      <node concept="PMmxH" id="3IMG87168$j" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
+      <node concept="PMmxH" id="3IMG87168$k" role="3EZMnx">
+        <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
+      </node>
+      <node concept="2iRkQZ" id="3IMG87168$l" role="2iSdaV" />
+      <node concept="3EZMnI" id="3IMG87168$m" role="3EZMnx">
+        <node concept="PMmxH" id="3IMG87168$n" role="3EZMnx">
+          <ref role="PMmxG" node="6wfKxDW_Ugz" resolve="accessed" />
+        </node>
+        <node concept="2iRfu4" id="3IMG87168$o" role="2iSdaV" />
+        <node concept="PMmxH" id="3IMG87168$p" role="3EZMnx">
+          <ref role="1k5W1q" node="3lo6kbLhbsm" resolve="Class" />
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0ifn" id="3IMG87168$E" role="3EZMnx">
+          <property role="3F0ifm" value="interface" />
+          <ref role="1k5W1q" node="3lo6kbLhbsm" resolve="Class" />
+        </node>
+        <node concept="3EZMnI" id="3IMG87168$J" role="3EZMnx">
+          <node concept="PMmxH" id="3IMG87168$K" role="3EZMnx">
+            <ref role="PMmxG" to="nahy:15FVd_LJ0sn" resolve="identifier" />
+          </node>
+          <node concept="PMmxH" id="3IMG87168$L" role="3EZMnx">
+            <ref role="PMmxG" to="lut0:3lo6kbL8_g7" resolve="generic" />
+          </node>
+          <node concept="3EZMnI" id="3IMG87168$W" role="3EZMnx">
+            <node concept="3F0ifn" id="3IMG87168$X" role="3EZMnx">
+              <property role="3F0ifm" value=":" />
+            </node>
+            <node concept="2iRfu4" id="3IMG87168$Y" role="2iSdaV" />
+            <node concept="3F2HdR" id="3IMG87168$Z" role="3EZMnx">
+              <property role="2czwfO" value="," />
+              <ref role="1NtTu8" to="y2ir:3IMG87168_a" resolve="bases" />
+              <node concept="3F0ifn" id="3IMG87168_0" role="2czzBI">
+                <property role="ilYzB" value="Object" />
+              </node>
+              <node concept="2iRkQZ" id="3IMG87168_1" role="2czzBx" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="3IMG87168$N" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3IMG8716p0M" role="3EZMnx">
+        <node concept="2iRkQZ" id="3IMG8716p0N" role="2iSdaV" />
+        <node concept="PMmxH" id="3IMG8716p0O" role="3EZMnx">
+          <ref role="PMmxG" to="nahy:7CM0FuTYIsO" resolve="BlockStart" />
+        </node>
+        <node concept="3EZMnI" id="3IMG8716p0P" role="3EZMnx">
+          <node concept="2iRfu4" id="3IMG8716p0Q" role="2iSdaV" />
+          <node concept="3XFhqQ" id="3IMG8716p0R" role="3EZMnx" />
+          <node concept="3F2HdR" id="3IMG8716p0S" role="3EZMnx">
+            <ref role="1NtTu8" to="y2ir:3IMG87168_b" resolve="members" />
+            <node concept="2iRkQZ" id="3IMG8716p0T" role="2czzBx" />
+          </node>
+        </node>
+        <node concept="PMmxH" id="3IMG8716p0U" role="3EZMnx">
+          <ref role="PMmxG" to="nahy:7CM0FuTYHg4" resolve="BlockEnd" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="3IMG87168$t" role="3EZMnx">
+        <ref role="PMmxG" to="nahy:3lo6kbKqF3n" resolve="spacer" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IMG87168_J">
+    <property role="3GE5qa" value="typeDeclaration.interface" />
+    <ref role="1XX52x" to="y2ir:3IMG87168_e" resolve="InterfaceTypeReference" />
+    <node concept="3EZMnI" id="3IMG87168_L" role="2wV5jI">
+      <node concept="1iCGBv" id="3IMG87168_M" role="3EZMnx">
+        <ref role="1NtTu8" to="y2ir:3IMG87168_i" resolve="targetType" />
+        <node concept="1sVBvm" id="3IMG87168_N" role="1sWHZn">
+          <node concept="3SHvHV" id="3IMG87168_O" role="2wV5jI" />
+        </node>
+        <node concept="VPxyj" id="3IMG87168_P" role="3F10Kt" />
+      </node>
+      <node concept="l2Vlx" id="3IMG87168_Q" role="2iSdaV" />
+      <node concept="PMmxH" id="3IMG87168_R" role="3EZMnx">
+        <ref role="PMmxG" to="lut0:3lo6kbL8uSt" resolve="genericed" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IMG8716cN_">
+    <property role="3GE5qa" value="typeDeclaration.interface" />
+    <ref role="1XX52x" to="y2ir:3IMG8716bNW" resolve="InterfaceMethod" />
+    <node concept="3EZMnI" id="3IMG8716cO5" role="2wV5jI">
+      <node concept="PMmxH" id="3IMG8716cO6" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
+      <node concept="PMmxH" id="3IMG8716cO7" role="3EZMnx">
+        <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
+      </node>
+      <node concept="3EZMnI" id="3IMG8716cO8" role="3EZMnx">
+        <node concept="VPM3Z" id="3IMG8716cO9" role="3F10Kt" />
+        <node concept="PMmxH" id="3IMG8716cOd" role="3EZMnx">
+          <ref role="PMmxG" to="lut0:15FVd_LJ0q2" resolve="typed" />
+        </node>
+        <node concept="PMmxH" id="3IMG8716cOe" role="3EZMnx">
+          <ref role="1k5W1q" node="3lo6kbLhbKV" resolve="Method" />
+          <ref role="PMmxG" to="nahy:15FVd_LJ0sn" resolve="identifier" />
+        </node>
+        <node concept="PMmxH" id="3IMG8716cOf" role="3EZMnx">
+          <ref role="PMmxG" node="6wfKxDWFT$w" resolve="parametered" />
+        </node>
+        <node concept="PMmxH" id="3IMG8716cOJ" role="3EZMnx">
+          <ref role="PMmxG" to="i8lu:7wiI39PyZKf" resolve="semicolon" />
+        </node>
+        <node concept="2iRfu4" id="3IMG8716cOg" role="2iSdaV" />
+      </node>
+      <node concept="PMmxH" id="3IMG8716cOi" role="3EZMnx">
+        <ref role="PMmxG" to="nahy:3lo6kbKqF3n" resolve="spacer" />
+      </node>
+      <node concept="2iRkQZ" id="3IMG8716cOj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IMG871zvSv">
+    <property role="3GE5qa" value="typeDeclaration.class.member.method.instance" />
+    <ref role="1XX52x" to="y2ir:5KwscwGd6og" resolve="OverrideMethod" />
+    <node concept="3EZMnI" id="3IMG871zvSx" role="2wV5jI">
+      <node concept="PMmxH" id="3IMG871zvSy" role="3EZMnx">
+        <ref role="PMmxG" node="4JGzwQZqM5L" resolve="documented" />
+      </node>
+      <node concept="PMmxH" id="3IMG871zvSz" role="3EZMnx">
+        <ref role="PMmxG" node="3lo6kbKhhop" resolve="attributed" />
+      </node>
+      <node concept="3EZMnI" id="3IMG871zvS$" role="3EZMnx">
+        <node concept="VPM3Z" id="3IMG871zvS_" role="3F10Kt" />
+        <node concept="PMmxH" id="3IMG871zvSA" role="3EZMnx">
+          <ref role="PMmxG" node="6wfKxDW_Ugz" resolve="accessed" />
+        </node>
+        <node concept="PMmxH" id="3IMG871zvSC" role="3EZMnx">
+          <ref role="PMmxG" node="3lo6kbKcb_Y" resolve="methodModifiers" />
+        </node>
+        <node concept="PMmxH" id="3IMG871zvSD" role="3EZMnx">
+          <ref role="PMmxG" to="lut0:15FVd_LJ0q2" resolve="typed" />
+        </node>
+        <node concept="1iCGBv" id="3IMG871zvTl" role="3EZMnx">
+          <ref role="1NtTu8" to="y2ir:5KwscwGd6or" resolve="overrides" />
+          <node concept="1sVBvm" id="3IMG871zvTn" role="1sWHZn">
+            <node concept="3SHvHV" id="3IMG871zvTy" role="2wV5jI" />
+          </node>
+        </node>
+        <node concept="PMmxH" id="3IMG871zvSF" role="3EZMnx">
+          <ref role="PMmxG" node="6wfKxDWFT$w" resolve="parametered" />
+        </node>
+        <node concept="2iRfu4" id="3IMG871zvSG" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="3IMG871zvSH" role="3EZMnx">
+        <ref role="1NtTu8" to="y2ir:6wfKxDW_8Dr" resolve="body" />
+      </node>
+      <node concept="PMmxH" id="3IMG871zvSI" role="3EZMnx">
+        <ref role="PMmxG" to="nahy:3lo6kbKqF3n" resolve="spacer" />
+      </node>
+      <node concept="2iRkQZ" id="3IMG871zvSJ" role="2iSdaV" />
     </node>
   </node>
 </model>

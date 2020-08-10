@@ -217,7 +217,7 @@
                 <ref role="37wK5l" to="8iju:3lo6kbMnMKO" resolve="DottedClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMo1JA" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMo1Vz" role="37wK5m">
-                  <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AMethod" />
+                  <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AClassMethod" />
                 </node>
               </node>
             </node>
@@ -322,7 +322,7 @@
                 <ref role="37wK5l" to="8iju:3TgyboeOEL$" resolve="LocalClassInheritedScope" />
                 <node concept="2rP1CM" id="3lo6kbMnwQO" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMnx2T" role="37wK5m">
-                  <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AMethod" />
+                  <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AClassMethod" />
                 </node>
               </node>
             </node>
@@ -511,6 +511,24 @@
                 <node concept="35c_gC" id="7CM0FuTxlUA" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64U" resolve="AField" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3IMG8716a7d">
+    <property role="3GE5qa" value="typeDeclaration.interface" />
+    <ref role="1M2myG" to="y2ir:3IMG87168_j" resolve="InterfaceTypeReferenceExpression" />
+    <node concept="9SLcT" id="3IMG8716a7e" role="9SGkU">
+      <node concept="3clFbS" id="3IMG8716a7f" role="2VODD2">
+        <node concept="3clFbF" id="3IMG8716abb" role="3cqZAp">
+          <node concept="2OqwBi" id="3IMG8716asN" role="3clFbG">
+            <node concept="2DD5aU" id="3IMG8716aba" role="2Oq$k0" />
+            <node concept="2Zo12i" id="3IMG8716aGP" role="2OqNvi">
+              <node concept="chp4Y" id="3IMG8716aNY" role="2Zo12j">
+                <ref role="cht4Q" to="y2ir:3IMG87168_e" resolve="InterfaceTypeReference" />
               </node>
             </node>
           </node>
