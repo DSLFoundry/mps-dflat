@@ -687,8 +687,8 @@
     <property role="EcuMT" value="6638429855781512733" />
     <property role="3GE5qa" value="typeDeclaration.class.member.method.instance" />
     <property role="TrG5h" value="IVirtualMethod" />
-    <node concept="PrWs8" id="3IMG871Jzyr" role="PrDN$">
-      <ref role="PrY4T" to="wgz4:3IMG871Jqty" resolve="IIdentifiable" />
+    <node concept="PrWs8" id="1XZk3YZabEI" role="PrDN$">
+      <ref role="PrY4T" node="6wfKxDW$pb8" resolve="IMethod" />
     </node>
   </node>
   <node concept="PlHQZ" id="5KwscwGd6cy">
@@ -2112,6 +2112,29 @@
     </node>
     <node concept="PrWs8" id="3IMG871Jrdf" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1XZk3YYBet6">
+    <property role="EcuMT" value="2269620971929134918" />
+    <property role="3GE5qa" value="typeDeclaration.class.member.method.instance" />
+    <property role="TrG5h" value="VirtualMethod" />
+    <property role="34LRSv" value="virtual method" />
+    <ref role="1TJDcQ" node="7wiI39P4KcB" resolve="AVirtualMethod" />
+    <node concept="PrWs8" id="1XZk3YYBeuq" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
+    </node>
+    <node concept="PrWs8" id="1XZk3YYBet7" role="PzmwI">
+      <ref role="PrY4T" node="6wfKxDW$oW1" resolve="IBodiedMethod" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1XZk3YYYmEd">
+    <property role="EcuMT" value="2269620971935197837" />
+    <property role="3GE5qa" value="typeDeclaration.class" />
+    <property role="TrG5h" value="BaseExpression" />
+    <property role="34LRSv" value="base" />
+    <ref role="1TJDcQ" to="wgz4:6wfKxDXeUzQ" resolve="Expression" />
+    <node concept="PrWs8" id="1XZk3YYYmEe" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
     </node>
   </node>
 </model>

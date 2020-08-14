@@ -75,7 +75,7 @@
       <concept id="8805103209585170620" name="com.dslfoundry.dflat.structure.structure.IClassMember" flags="ng" index="33MXCb" />
       <concept id="3843850057274209139" name="com.dslfoundry.dflat.structure.structure.LocalMethodCallExpression" flags="ng" index="34UqCL" />
       <concept id="3843850057274209140" name="com.dslfoundry.dflat.structure.structure.ScopedMethodCallExpression" flags="ng" index="34UqCQ" />
-      <concept id="3843850057251332052" name="com.dslfoundry.dflat.structure.structure.ClassMember" flags="ng" index="3538qm" />
+      <concept id="3843850057251332052" name="com.dslfoundry.dflat.structure.structure.AClassMember" flags="ng" index="3538qm" />
       <concept id="3843850057256588095" name="com.dslfoundry.dflat.structure.structure.EnumLiteral" flags="ng" index="35ZcDX" />
       <concept id="6638429855781511298" name="com.dslfoundry.dflat.structure.structure.ANamespaceContainer" flags="ng" index="1K511a">
         <child id="6638429855781511306" name="members" index="1K5112" />
