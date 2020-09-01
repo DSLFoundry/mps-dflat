@@ -153,6 +153,9 @@
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
       </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
+      </concept>
     </language>
     <language id="442d3b7d-fe4a-4293-a7c1-6744d440ecaa" name="com.mbeddr.mpsutil.richstring">
       <concept id="3354025285337528500" name="com.mbeddr.mpsutil.richstring.structure.InlineExpression" flags="ng" index="EGPMe">
@@ -2103,7 +2106,9 @@
                     <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
                     <node concept="2pJxcG" id="3Tgyboe4Q7V" role="2pJxcM">
                       <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                      <node concept="Xl_RD" id="3Tgyboe4Q8g" role="28ntcv" />
+                      <node concept="WxPPo" id="5n5W$jCZLa4" role="28ntcv">
+                        <node concept="Xl_RD" id="3Tgyboe4Q8g" role="WxPPp" />
+                      </node>
                     </node>
                   </node>
                 </node>
