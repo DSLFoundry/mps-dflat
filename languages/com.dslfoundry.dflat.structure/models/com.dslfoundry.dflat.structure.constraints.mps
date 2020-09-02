@@ -672,5 +672,23 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="4ROMMEbo6QQ">
+    <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
+    <ref role="1M2myG" to="y2ir:4ROMMEbo5U1" resolve="NamedPropertyExpression" />
+    <node concept="9S07l" id="4ROMMEbo7aM" role="9Vyp8">
+      <node concept="3clFbS" id="4ROMMEbo7aN" role="2VODD2">
+        <node concept="3clFbF" id="4ROMMEbo7bl" role="3cqZAp">
+          <node concept="2OqwBi" id="4ROMMEbo7bn" role="3clFbG">
+            <node concept="nLn13" id="4ROMMEbo7bo" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4ROMMEbo7bp" role="2OqNvi">
+              <node concept="chp4Y" id="4ROMMEbo7bq" role="cj9EA">
+                <ref role="cht4Q" to="wgz4:3lo6kbJwDgI" resolve="IArgumented" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
