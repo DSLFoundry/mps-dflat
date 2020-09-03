@@ -166,8 +166,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -406,13 +416,17 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="7CM0FuT57gP" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuT57gQ" role="9lYJi">
-            <node concept="37vLTw" id="7CM0FuT57gR" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT57gH" resolve="r" />
-            </node>
-            <node concept="Xl_RD" id="7CM0FuT57gS" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.getDotExpression: " />
+        <node concept="1X3_iC" id="7RTlUgf$55N" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuT57gP" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuT57gQ" role="9lYJi">
+              <node concept="37vLTw" id="7CM0FuT57gR" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT57gH" resolve="r" />
+              </node>
+              <node concept="Xl_RD" id="7CM0FuT57gS" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.getDotExpression: " />
+              </node>
             </node>
           </node>
         </node>
@@ -458,13 +472,17 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="7CM0FuT57JH" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuT57JI" role="9lYJi">
-            <node concept="37vLTw" id="7CM0FuT57JJ" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT57JB" resolve="r" />
-            </node>
-            <node concept="Xl_RD" id="7CM0FuT57JK" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.getDottable: " />
+        <node concept="1X3_iC" id="7RTlUgf$56Y" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuT57JH" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuT57JI" role="9lYJi">
+              <node concept="37vLTw" id="7CM0FuT57JJ" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT57JB" resolve="r" />
+              </node>
+              <node concept="Xl_RD" id="7CM0FuT57JK" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.getDottable: " />
+              </node>
             </node>
           </node>
         </node>
@@ -505,13 +523,17 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="7CM0FuT58eW" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuT58eX" role="9lYJi">
-            <node concept="37vLTw" id="7CM0FuT58eY" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT58eP" resolve="r" />
-            </node>
-            <node concept="Xl_RD" id="7CM0FuT58eZ" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.getPossibleTargets: " />
+        <node concept="1X3_iC" id="7RTlUgf$5ca" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuT58eW" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuT58eX" role="9lYJi">
+              <node concept="37vLTw" id="7CM0FuT58eY" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT58eP" resolve="r" />
+              </node>
+              <node concept="Xl_RD" id="7CM0FuT58eZ" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.getPossibleTargets: " />
+              </node>
             </node>
           </node>
         </node>
@@ -533,13 +555,17 @@
     <node concept="2YIFZL" id="7CM0FuT58D_" role="jymVt">
       <property role="TrG5h" value="filterConcepts" />
       <node concept="3clFbS" id="7CM0FuT58DH" role="3clF47">
-        <node concept="2xdQw9" id="7CM0FuTwULJ" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuTwULK" role="9lYJi">
-            <node concept="Xl_RD" id="7CM0FuTwULM" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.filterConcepts kind: " />
-            </node>
-            <node concept="37vLTw" id="7CM0FuTwVib" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT58DD" resolve="kind" />
+        <node concept="1X3_iC" id="7RTlUgf$5iz" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuTwULJ" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuTwULK" role="9lYJi">
+              <node concept="Xl_RD" id="7CM0FuTwULM" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.filterConcepts kind: " />
+              </node>
+              <node concept="37vLTw" id="7CM0FuTwVib" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT58DD" resolve="kind" />
+              </node>
             </node>
           </node>
         </node>
@@ -562,13 +588,17 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="7CM0FuT58DQ" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuT58DR" role="9lYJi">
-            <node concept="37vLTw" id="7CM0FuT58DS" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT58DJ" resolve="r" />
-            </node>
-            <node concept="Xl_RD" id="7CM0FuT58DT" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.filterConcepts: " />
+        <node concept="1X3_iC" id="7RTlUgf$5rM" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuT58DQ" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuT58DR" role="9lYJi">
+              <node concept="37vLTw" id="7CM0FuT58DS" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT58DJ" resolve="r" />
+              </node>
+              <node concept="Xl_RD" id="7CM0FuT58DT" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.filterConcepts: " />
+              </node>
             </node>
           </node>
         </node>
@@ -629,13 +659,17 @@
             </node>
           </node>
         </node>
-        <node concept="2xdQw9" id="7CM0FuT58Zs" role="3cqZAp">
-          <node concept="3cpWs3" id="7CM0FuT58Zt" role="9lYJi">
-            <node concept="37vLTw" id="7CM0FuT58Zu" role="3uHU7w">
-              <ref role="3cqZAo" node="7CM0FuT58Zd" resolve="r" />
-            </node>
-            <node concept="Xl_RD" id="7CM0FuT58Zv" role="3uHU7B">
-              <property role="Xl_RC" value="ADottedScope.getFittingTargets: " />
+        <node concept="1X3_iC" id="7RTlUgf$5tx" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="2xdQw9" id="7CM0FuT58Zs" role="8Wnug">
+            <node concept="3cpWs3" id="7CM0FuT58Zt" role="9lYJi">
+              <node concept="37vLTw" id="7CM0FuT58Zu" role="3uHU7w">
+                <ref role="3cqZAo" node="7CM0FuT58Zd" resolve="r" />
+              </node>
+              <node concept="Xl_RD" id="7CM0FuT58Zv" role="3uHU7B">
+                <property role="Xl_RC" value="ADottedScope.getFittingTargets: " />
+              </node>
             </node>
           </node>
         </node>
