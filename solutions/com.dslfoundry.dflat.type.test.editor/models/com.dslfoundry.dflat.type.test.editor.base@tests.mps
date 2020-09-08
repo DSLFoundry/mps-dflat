@@ -169,7 +169,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="7CM0FuUW0bB">
-    <property role="2XOHcw" value="c:\Sources\d-flat" />
+    <property role="2XOHcw" value="${dflat.home}" />
   </node>
 </model>
 
