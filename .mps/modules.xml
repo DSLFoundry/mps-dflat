@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/com.dslfoundry.dflat/com.dslfoundry.dflat.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.expression/com.dslfoundry.dflat.expression.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.gensupport/com.dslfoundry.dflat.gensupport.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.statement/com.dslfoundry.dflat.statement.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.structure/com.dslfoundry.dflat.structure.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.type/com.dslfoundry.dflat.type.mpl" folder="" />
