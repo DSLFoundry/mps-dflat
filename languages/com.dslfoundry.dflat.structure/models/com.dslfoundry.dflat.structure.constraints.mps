@@ -166,22 +166,22 @@
       <node concept="3dgokm" id="3lo6kbLzyhN" role="1N6uqs">
         <node concept="3clFbS" id="3lo6kbLzyhP" role="2VODD2">
           <node concept="3clFbF" id="3lo6kbLzy$c" role="3cqZAp">
-            <node concept="2YIFZM" id="3lo6kbLzyD9" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+            <node concept="2YIFZM" id="SDkzKCxDOO" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="3lo6kbLz$jx" role="37wK5m">
-                <node concept="2OqwBi" id="3lo6kbLzz1l" role="2Oq$k0">
-                  <node concept="2rP1CM" id="3lo6kbLzyOs" role="2Oq$k0" />
-                  <node concept="2Xjw5R" id="3lo6kbLzzrd" role="2OqNvi">
-                    <node concept="1xMEDy" id="3lo6kbLzzrf" role="1xVPHs">
-                      <node concept="chp4Y" id="7CM0FuTE_PN" role="ri$Ld">
+              <node concept="2OqwBi" id="SDkzKCxDOP" role="37wK5m">
+                <node concept="2OqwBi" id="SDkzKCxDOQ" role="2Oq$k0">
+                  <node concept="2rP1CM" id="SDkzKCxDOR" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="SDkzKCxDOS" role="2OqNvi">
+                    <node concept="1xMEDy" id="SDkzKCxDOT" role="1xVPHs">
+                      <node concept="chp4Y" id="SDkzKCxDOU" role="ri$Ld">
                         <ref role="cht4Q" to="y2ir:5KwscwGd6f_" resolve="IParametered" />
                       </node>
                     </node>
-                    <node concept="1xIGOp" id="3lo6kbLzzPm" role="1xVPHs" />
+                    <node concept="1xIGOp" id="SDkzKCxDOV" role="1xVPHs" />
                   </node>
                 </node>
-                <node concept="3Tsc0h" id="7CM0FuTECkw" role="2OqNvi">
+                <node concept="3Tsc0h" id="SDkzKCxDOW" role="2OqNvi">
                   <ref role="3TtcxE" to="y2ir:5KwscwGd6fA" resolve="parameters" />
                 </node>
               </node>
@@ -274,33 +274,33 @@
       <node concept="3dgokm" id="3lo6kbMbK4_" role="1N6uqs">
         <node concept="3clFbS" id="3lo6kbMbK4B" role="2VODD2">
           <node concept="3clFbF" id="3lo6kbMbK7_" role="3cqZAp">
-            <node concept="2YIFZM" id="3lo6kbMbQVE" role="3clFbG">
-              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+            <node concept="2YIFZM" id="SDkzKCxEhy" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="2OqwBi" id="3lo6kbMbNp_" role="37wK5m">
-                <node concept="2OqwBi" id="3lo6kbMbMMj" role="2Oq$k0">
-                  <node concept="2OqwBi" id="3lo6kbMbLct" role="2Oq$k0">
-                    <node concept="2OqwBi" id="3lo6kbMbKkE" role="2Oq$k0">
-                      <node concept="2rP1CM" id="3lo6kbMbK7$" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="3lo6kbMbKFe" role="2OqNvi">
-                        <node concept="1xMEDy" id="3lo6kbMbKFg" role="1xVPHs">
-                          <node concept="chp4Y" id="3lo6kbMbKLM" role="ri$Ld">
+              <node concept="2OqwBi" id="SDkzKCxEhz" role="37wK5m">
+                <node concept="2OqwBi" id="SDkzKCxEh$" role="2Oq$k0">
+                  <node concept="2OqwBi" id="SDkzKCxEh_" role="2Oq$k0">
+                    <node concept="2OqwBi" id="SDkzKCxEhA" role="2Oq$k0">
+                      <node concept="2rP1CM" id="SDkzKCxEhB" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="SDkzKCxEhC" role="2OqNvi">
+                        <node concept="1xMEDy" id="SDkzKCxEhD" role="1xVPHs">
+                          <node concept="chp4Y" id="SDkzKCxEhE" role="ri$Ld">
                             <ref role="cht4Q" to="y2ir:7wiI39PaAFF" resolve="NewExpression" />
                           </node>
                         </node>
-                        <node concept="1xIGOp" id="3lo6kbMbKWS" role="1xVPHs" />
+                        <node concept="1xIGOp" id="SDkzKCxEhF" role="1xVPHs" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="3lo6kbMbLvu" role="2OqNvi">
+                    <node concept="3TrEf2" id="SDkzKCxEhG" role="2OqNvi">
                       <ref role="3Tt5mk" to="y2ir:7wiI39Pc7Du" resolve="newType" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="3lo6kbMbN2x" role="2OqNvi">
+                  <node concept="2qgKlT" id="SDkzKCxEhH" role="2OqNvi">
                     <ref role="37wK5l" to="7d5b:3lo6kbLTJoa" resolve="getDotTargetMembers" />
                   </node>
                 </node>
-                <node concept="v3k3i" id="3lo6kbMbQsK" role="2OqNvi">
-                  <node concept="chp4Y" id="3lo6kbMbQAF" role="v3oSu">
+                <node concept="v3k3i" id="SDkzKCxEhI" role="2OqNvi">
+                  <node concept="chp4Y" id="SDkzKCxEhJ" role="v3oSu">
                     <ref role="cht4Q" to="y2ir:5KwscwGd650" resolve="AProperty" />
                   </node>
                 </node>
@@ -665,6 +665,24 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="4ROMMEbo6QQ">
+    <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
+    <ref role="1M2myG" to="y2ir:4ROMMEbo5U1" resolve="NamedPropertyExpression" />
+    <node concept="9S07l" id="4ROMMEbo7aM" role="9Vyp8">
+      <node concept="3clFbS" id="4ROMMEbo7aN" role="2VODD2">
+        <node concept="3clFbF" id="4ROMMEbo7bl" role="3cqZAp">
+          <node concept="2OqwBi" id="4ROMMEbo7bn" role="3clFbG">
+            <node concept="nLn13" id="4ROMMEbo7bo" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4ROMMEbo7bp" role="2OqNvi">
+              <node concept="chp4Y" id="4ROMMEbo7bq" role="cj9EA">
+                <ref role="cht4Q" to="wgz4:3lo6kbJwDgI" resolve="IArgumented" />
               </node>
             </node>
           </node>

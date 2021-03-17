@@ -218,7 +218,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="7CM0FuUW0bB">
-    <property role="2XOHcw" value="c:\Sources\d-flat" />
+    <property role="2XOHcw" value="${dflat.home}" />
   </node>
   <node concept="LiM7Y" id="3c_TKUhYncp">
     <property role="TrG5h" value="Block" />

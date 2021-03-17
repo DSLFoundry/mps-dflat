@@ -157,9 +157,6 @@
       <concept id="6638429855781513018" name="com.dslfoundry.dflat.statement.structure.BlockStatement" flags="ng" index="1K51vM" />
     </language>
   </registry>
-  <node concept="2XOHcx" id="7CM0FuUW0bB">
-    <property role="2XOHcw" value="c:\Sources\d-flat" />
-  </node>
   <node concept="LiM7Y" id="3c_TKUhYnMU">
     <property role="TrG5h" value="namespace" />
     <property role="3GE5qa" value="namespace" />
@@ -2193,6 +2190,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2XOHcx" id="7CM0FuUW0bB">
+    <property role="2XOHcw" value="${dflat.home}" />
   </node>
 </model>
 

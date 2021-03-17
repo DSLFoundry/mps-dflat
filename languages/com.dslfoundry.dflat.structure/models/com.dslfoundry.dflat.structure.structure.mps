@@ -2,7 +2,7 @@
 <model ref="r:057a88a5-cb68-4a31-9cbb-309ef9308749(com.dslfoundry.dflat.structure.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -241,6 +241,9 @@
     </node>
     <node concept="PrWs8" id="6wfKxDWTiED" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
+    </node>
+    <node concept="PrWs8" id="7RTlUgepxO9" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd69K">
@@ -1127,6 +1130,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5KwscwGd62j" role="PzmwI">
       <ref role="PrY4T" node="5KwscwGd61K" resolve="INamespaceMember" />
+    </node>
+    <node concept="PrWs8" id="7RTlUgepxOg" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX2" resolve="ICanSuppressErrors" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd62m">
@@ -2136,6 +2142,58 @@
     <node concept="PrWs8" id="1XZk3YYYmEe" role="PzmwI">
       <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4ROMMEbo5U1">
+    <property role="EcuMT" value="5617338018825264769" />
+    <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
+    <property role="TrG5h" value="NamedPropertyExpression" />
+    <property role="34LRSv" value=":" />
+    <property role="R4oN_" value="named property" />
+    <ref role="1TJDcQ" to="wgz4:6wfKxDXhryk" resolve="AValueReferenceExpression" />
+    <node concept="1TJgyj" id="4ROMMEbo5U2" role="1TKVEi">
+      <property role="IQ2ns" value="5617338018825264770" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <ref role="20ksaX" to="wgz4:6wfKxDW$pc2" resolve="target" />
+      <ref role="20lvS9" node="5KwscwGd650" resolve="AProperty" />
+    </node>
+    <node concept="PrWs8" id="4ROMMEbo5U3" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:5KwscwGd6_4" resolve="IExpressed" />
+    </node>
+    <node concept="RPilO" id="4ROMMEbo5U4" role="lGtFl">
+      <ref role="RPilL" node="4ROMMEbo5U2" resolve="target" />
+      <node concept="ROjv2" id="4ROMMEbo5U5" role="ROhUF">
+        <property role="1W_73K" value=" [named property]" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RTlUge5K$C">
+    <property role="EcuMT" value="9077382886064589096" />
+    <property role="3GE5qa" value="namespace.comment" />
+    <property role="TrG5h" value="ACommentMember" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7RTlUgegXLO" role="PzmwI">
+      <ref role="PrY4T" node="5KwscwGd61K" resolve="INamespaceMember" />
+    </node>
+    <node concept="PrWs8" id="7RTlUge5K$D" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:4JGzwQZqC_b" resolve="IComment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7RTlUge5K$F">
+    <property role="EcuMT" value="9077382886064589099" />
+    <property role="3GE5qa" value="namespace.comment" />
+    <property role="TrG5h" value="SingleLineCommentMember" />
+    <property role="34LRSv" value="//" />
+    <property role="R4oN_" value="single-line comment" />
+    <ref role="1TJDcQ" node="7RTlUge5K$C" resolve="ACommentMember" />
+  </node>
+  <node concept="1TIwiD" id="7RTlUge5KX5">
+    <property role="EcuMT" value="9077382886064590661" />
+    <property role="3GE5qa" value="namespace.comment" />
+    <property role="TrG5h" value="MultiLineCommentMenber" />
+    <property role="34LRSv" value="/*" />
+    <property role="R4oN_" value="multi-line comment" />
+    <ref role="1TJDcQ" node="7RTlUge5K$C" resolve="ACommentMember" />
   </node>
 </model>
 
