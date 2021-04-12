@@ -2091,6 +2091,12 @@
         <property role="Vb096" value="g1_qVrt/darkMagenta" />
       </node>
     </node>
+    <node concept="14StLt" id="4py18fsEQE0" role="V601i">
+      <property role="TrG5h" value="Readonly" />
+      <node concept="VechU" id="4py18fsEQE1" role="3F10Kt">
+        <property role="Vb096" value="g1_qVrt/darkMagenta" />
+      </node>
+    </node>
     <node concept="14StLt" id="3lo6kbLlJfp" role="V601i">
       <property role="TrG5h" value="Partial" />
       <node concept="VechU" id="3lo6kbLlJfq" role="3F10Kt">
@@ -2247,6 +2253,9 @@
         </node>
         <node concept="PMmxH" id="3c_TKUjtpl7" role="3EZMnx">
           <ref role="PMmxG" node="7wiI39P7kFN" resolve="staticed" />
+        </node>
+        <node concept="PMmxH" id="4py18fsEQFv" role="3EZMnx">
+          <ref role="PMmxG" node="4py18fsEQDY" resolve="readonlyed" />
         </node>
         <node concept="PMmxH" id="7CM0FuTb3Pq" role="3EZMnx">
           <ref role="PMmxG" to="lut0:15FVd_LJ0q2" resolve="typed" />
@@ -2663,6 +2672,10 @@
         <node concept="PMmxH" id="3IMG871zvSC" role="3EZMnx">
           <ref role="PMmxG" node="3lo6kbKcb_Y" resolve="methodModifiers" />
         </node>
+        <node concept="3F0ifn" id="4py18fsl9qC" role="3EZMnx">
+          <property role="3F0ifm" value="override" />
+          <ref role="1k5W1q" to="i8lu:3lo6kbLhbqf" resolve="Keyword" />
+        </node>
         <node concept="PMmxH" id="3IMG871zvSD" role="3EZMnx">
           <ref role="PMmxG" to="lut0:15FVd_LJ0q2" resolve="typed" />
         </node>
@@ -2832,6 +2845,15 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="7wiI39PdQFE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="4py18fsEQDY">
+    <property role="3GE5qa" value="typeDeclaration.modifier" />
+    <property role="TrG5h" value="readonlyed" />
+    <ref role="1XX52x" to="y2ir:4py18fsEQDV" resolve="IReadonlyed" />
+    <node concept="1kHk_G" id="4py18fsEQDZ" role="2wV5jI">
+      <ref role="1NtTu8" to="y2ir:4py18fsEQDW" resolve="readonly" />
+      <ref role="1k5W1q" node="4py18fsEQE0" resolve="Readonly" />
     </node>
   </node>
 </model>

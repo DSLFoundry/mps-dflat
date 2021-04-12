@@ -670,5 +670,15 @@
       <ref role="20lvS9" node="5KwscwGd6$t" resolve="IType" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4yBUYlYtArj">
+    <property role="EcuMT" value="5235412462743217875" />
+    <property role="TrG5h" value="IValueHasType" />
+    <node concept="PrWs8" id="4yBUYlYtArk" role="PrDN$">
+      <ref role="PrY4T" to="wgz4:6wfKxDW$pc1" resolve="IValue" />
+    </node>
+    <node concept="PrWs8" id="4yBUYlYtArp" role="PrDN$">
+      <ref role="PrY4T" node="3lo6kbKDde2" resolve="IHasType" />
+    </node>
+  </node>
 </model>
 

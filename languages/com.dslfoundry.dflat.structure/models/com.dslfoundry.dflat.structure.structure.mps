@@ -206,6 +206,9 @@
     <node concept="PrWs8" id="4JGzwQZqM53" role="PzmwI">
       <ref role="PrY4T" node="4JGzwQZqDlo" resolve="IDocumented" />
     </node>
+    <node concept="PrWs8" id="4py18fsPxhE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5KwscwGd61K">
     <property role="EcuMT" value="6638429855781511280" />
@@ -282,14 +285,14 @@
     <property role="EcuMT" value="6638429855781512168" />
     <property role="3GE5qa" value="parameter" />
     <property role="TrG5h" value="IParameter" />
+    <node concept="PrWs8" id="4yBUYlYtBCB" role="PrDN$">
+      <ref role="PrY4T" to="r1kv:4yBUYlYtArj" resolve="IValueHasType" />
+    </node>
     <node concept="PrWs8" id="6wfKxDW$oXC" role="PrDN$">
       <ref role="PrY4T" to="r1kv:5KwscwGd6$u" resolve="ITyped" />
     </node>
     <node concept="PrWs8" id="6wfKxDWTiEY" role="PrDN$">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
-    </node>
-    <node concept="PrWs8" id="6wfKxDW$Wmg" role="PrDN$">
-      <ref role="PrY4T" to="wgz4:6wfKxDW$pc1" resolve="IValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd6h1">
@@ -343,11 +346,11 @@
     <node concept="PrWs8" id="3lo6kbKlaSG" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
     </node>
+    <node concept="PrWs8" id="4yBUYlYtBCc" role="PzmwI">
+      <ref role="PrY4T" to="r1kv:4yBUYlYtArj" resolve="IValueHasType" />
+    </node>
     <node concept="PrWs8" id="3lo6kbKlaSO" role="PzmwI">
       <ref role="PrY4T" to="r1kv:5KwscwGd6$u" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="3lo6kbKlaSW" role="PzmwI">
-      <ref role="PrY4T" to="wgz4:6wfKxDW$pc1" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="5KwscwGd6jc" role="PzmwI">
       <ref role="PrY4T" to="wgz4:5KwscwGd6j5" resolve="IInitialized" />
@@ -485,11 +488,11 @@
     <node concept="PrWs8" id="7CM0FuTb3PI" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
     </node>
+    <node concept="PrWs8" id="4yBUYlYtB_3" role="PzmwI">
+      <ref role="PrY4T" to="r1kv:4yBUYlYtArj" resolve="IValueHasType" />
+    </node>
     <node concept="PrWs8" id="3lo6kbKlaRL" role="PzmwI">
       <ref role="PrY4T" to="r1kv:5KwscwGd6$u" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="3lo6kbKlaRS" role="PzmwI">
-      <ref role="PrY4T" to="wgz4:6wfKxDW$pc1" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="5KwscwGd6jC" role="PzmwI">
       <ref role="PrY4T" to="wgz4:5KwscwGd6j5" resolve="IInitialized" />
@@ -499,6 +502,9 @@
     </node>
     <node concept="PrWs8" id="7wiI39P4KbR" role="PzmwI">
       <ref role="PrY4T" node="7wiI39P4KbO" resolve="IStaticed" />
+    </node>
+    <node concept="PrWs8" id="4py18fsEQEI" role="PzmwI">
+      <ref role="PrY4T" node="4py18fsEQDV" resolve="IReadonlyed" />
     </node>
     <node concept="PrWs8" id="3c_TKUj926y" role="PzmwI">
       <ref role="PrY4T" node="3lo6kbJzmKm" resolve="IAttributed" />
@@ -815,11 +821,11 @@
     <node concept="PrWs8" id="3lo6kbKlaSn" role="PzmwI">
       <ref role="PrY4T" to="wgz4:6wfKxDWT1H8" resolve="IIdentifier" />
     </node>
+    <node concept="PrWs8" id="4yBUYlYtBBX" role="PzmwI">
+      <ref role="PrY4T" to="r1kv:4yBUYlYtArj" resolve="IValueHasType" />
+    </node>
     <node concept="PrWs8" id="3lo6kbKlaSu" role="PzmwI">
       <ref role="PrY4T" to="r1kv:5KwscwGd6$u" resolve="ITyped" />
-    </node>
-    <node concept="PrWs8" id="3lo6kbKlaS_" role="PzmwI">
-      <ref role="PrY4T" to="wgz4:6wfKxDW$pc1" resolve="IValue" />
     </node>
     <node concept="PrWs8" id="5KwscwGd6jP" role="PzmwI">
       <ref role="PrY4T" to="wgz4:5KwscwGd6j5" resolve="IInitialized" />
@@ -1223,6 +1229,9 @@
       <node concept="ROjv2" id="7wiI39P0cPY" role="ROhUF">
         <property role="1W_73P" value="using " />
       </node>
+    </node>
+    <node concept="PrWs8" id="4py18fsZ8yV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
   <node concept="1TIwiD" id="5KwscwGd61E">
@@ -2194,6 +2203,16 @@
     <property role="34LRSv" value="/*" />
     <property role="R4oN_" value="multi-line comment" />
     <ref role="1TJDcQ" node="7RTlUge5K$C" resolve="ACommentMember" />
+  </node>
+  <node concept="PlHQZ" id="4py18fsEQDV">
+    <property role="EcuMT" value="5071621094762048123" />
+    <property role="3GE5qa" value="typeDeclaration.modifier" />
+    <property role="TrG5h" value="IReadonlyed" />
+    <node concept="1TJgyi" id="4py18fsEQDW" role="1TKVEl">
+      <property role="IQ2nx" value="5071621094762048124" />
+      <property role="TrG5h" value="readonly" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 
