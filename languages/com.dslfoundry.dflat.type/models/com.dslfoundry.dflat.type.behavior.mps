@@ -403,5 +403,34 @@
       <node concept="3clFbS" id="7CM0FuT3NRK" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4yBUYlYtArR">
+    <ref role="13h7C2" to="r1kv:4yBUYlYtArj" resolve="IValueHasType" />
+    <node concept="13hLZK" id="4yBUYlYtArS" role="13h7CW">
+      <node concept="3clFbS" id="4yBUYlYtArT" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="4yBUYlYGlCQ" role="13h7CS">
+      <property role="TrG5h" value="getPossibleTargets" />
+      <ref role="13i0hy" to="h8m6:3lo6kbLTGgX" resolve="getPossibleTargets" />
+      <node concept="3Tm1VV" id="4yBUYlYGlCR" role="1B3o_S" />
+      <node concept="3clFbS" id="4yBUYlYGlCZ" role="3clF47">
+        <node concept="3clFbF" id="4yBUYlYtAsh" role="3cqZAp">
+          <node concept="2OqwBi" id="4yBUYlYGlVm" role="3clFbG">
+            <node concept="2OqwBi" id="4yBUYlYGlVn" role="2Oq$k0">
+              <node concept="13iPFW" id="4yBUYlYGlVo" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4yBUYlYGlVp" role="2OqNvi">
+                <ref role="37wK5l" node="3lo6kbKDdeB" resolve="getType" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="4yBUYlYGlVq" role="2OqNvi">
+              <ref role="37wK5l" node="3lo6kbLTJoa" resolve="getDotTargetMembers" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="4yBUYlYGlD0" role="3clF45">
+        <node concept="3Tqbb2" id="4yBUYlYGlD1" role="A3Ik2" />
+      </node>
+    </node>
+  </node>
 </model>
 
