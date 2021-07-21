@@ -1393,9 +1393,6 @@
       <ref role="20lvS9" node="6wfKxDW$pb8" resolve="IMethod" />
       <ref role="20ksaX" to="wgz4:6wfKxDW$pbf" resolve="target" />
     </node>
-    <node concept="PrWs8" id="7CM0FuTOnVZ" role="PzmwI">
-      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
-    </node>
     <node concept="PrWs8" id="3TgyboePQPG" role="PzmwI">
       <ref role="PrY4T" to="r1kv:3lo6kbL8_fg" resolve="IGeneric" />
     </node>
@@ -1825,6 +1822,9 @@
     <property role="3GE5qa" value="typeDeclaration.class.member.method.expression" />
     <property role="TrG5h" value="LocalMethodCallExpression" />
     <ref role="1TJDcQ" node="6wfKxDW$pbl" resolve="AMethodCallExpression" />
+    <node concept="PrWs8" id="4$mQTKQOGwo" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3lo6kbLGrdO">
     <property role="EcuMT" value="3843850057274209140" />
@@ -1991,6 +1991,9 @@
       <node concept="ROjv2" id="7CM0FuTx1vC" role="ROhUF">
         <property role="1W_73K" value=" [field]" />
       </node>
+    </node>
+    <node concept="PrWs8" id="4$mQTKR4ajJ" role="PzmwI">
+      <ref role="PrY4T" to="wgz4:3lo6kbLTGgo" resolve="IDottable" />
     </node>
   </node>
   <node concept="PlHQZ" id="7CM0FuTYtyW">

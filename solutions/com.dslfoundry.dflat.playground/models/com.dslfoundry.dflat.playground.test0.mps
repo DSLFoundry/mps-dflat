@@ -13,6 +13,10 @@
   <registry>
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610246356" name="com.dslfoundry.dflat.expression.structure.ParenthesisExpression" flags="ng" index="kAGVe" />
+      <concept id="7498425323610162205" name="com.dslfoundry.dflat.expression.structure.AMemberAccessExpression" flags="ng" index="kB0o7">
+        <child id="1537094357093454241" name="dottable" index="2hxcEd" />
+        <child id="7498425323610162528" name="target" index="kB0tU" />
+      </concept>
       <concept id="7498425323610060844" name="com.dslfoundry.dflat.expression.structure.ExpressionWord" flags="ng" index="kBvCQ" />
       <concept id="7498425323610060835" name="com.dslfoundry.dflat.expression.structure.InterpolatedRegularStringLiteral" flags="ng" index="kBvCT" />
       <concept id="7498425323610018774" name="com.dslfoundry.dflat.expression.structure.TrueLiteral" flags="ng" index="kB_7c" />
@@ -28,6 +32,7 @@
       <concept id="7498425323621824654" name="com.dslfoundry.dflat.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
+      <concept id="3685605919835503980" name="com.dslfoundry.dflat.expression.structure.MemberAccessExpression" flags="ng" index="2yYHDy" />
       <concept id="6638429855781512972" name="com.dslfoundry.dflat.expression.structure.ABinaryOperator" flags="ng" index="1K51v4">
         <child id="7498425323610226407" name="rhs" index="kARNX" />
       </concept>
@@ -37,6 +42,9 @@
       <concept id="6638429855781512991" name="com.dslfoundry.dflat.expression.structure.AsExpression" flags="ng" index="1K51vn" />
       <concept id="6638429855781512976" name="com.dslfoundry.dflat.expression.structure.RemainderExpression" flags="ng" index="1K51vo" />
       <concept id="6638429855781512977" name="com.dslfoundry.dflat.expression.structure.AdditionExpression" flags="ng" index="1K51vp" />
+      <concept id="6638429855781513724" name="com.dslfoundry.dflat.expression.structure.IExpressable" flags="ng" index="1K51$O">
+        <child id="6638429855781513725" name="expression" index="1K51$P" />
+      </concept>
       <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
@@ -53,6 +61,7 @@
       <concept id="7498425323610246353" name="com.dslfoundry.dflat.type.structure.ITypeReference" flags="ng" index="kAGVb">
         <reference id="7498425323610246354" name="targetType" index="kAGV8" />
       </concept>
+      <concept id="7498425323610017789" name="com.dslfoundry.dflat.type.structure.SignedIntType" flags="ng" index="kB$RB" />
       <concept id="7498425323610018394" name="com.dslfoundry.dflat.type.structure.BoolType" flags="ng" index="kB_10" />
       <concept id="7498425323610018388" name="com.dslfoundry.dflat.type.structure.DecimalType" flags="ng" index="kB_1e" />
       <concept id="7498425323610018585" name="com.dslfoundry.dflat.type.structure.VoidType" flags="ng" index="kB_43" />
@@ -62,6 +71,9 @@
       </concept>
     </language>
     <language id="28617705-0ee4-4b12-80b9-7532ec4a79c9" name="com.dslfoundry.dflat.structure">
+      <concept id="8652180360985733867" name="com.dslfoundry.dflat.structure.structure.NewExpression" flags="ng" index="dedbp">
+        <child id="8652180360986131038" name="newType" index="d8G9G" />
+      </concept>
       <concept id="7498425323610246363" name="com.dslfoundry.dflat.structure.structure.ClassTypeReference" flags="ng" index="kAGV1" />
       <concept id="7498425323610017537" name="com.dslfoundry.dflat.structure.structure.IBodiedMethod" flags="ng" index="kB$Or">
         <child id="7498425323610212955" name="body" index="kAOx1" />
@@ -69,6 +81,7 @@
       <concept id="7498425323610017568" name="com.dslfoundry.dflat.structure.structure.MethodBodyBlock" flags="ng" index="kB$OU" />
       <concept id="7498425323610017572" name="com.dslfoundry.dflat.structure.structure.MethodBodyExpression" flags="ng" index="kB$OY" />
       <concept id="3843850057274209139" name="com.dslfoundry.dflat.structure.structure.LocalMethodCallExpression" flags="ng" index="34UqCL" />
+      <concept id="3843850057274209140" name="com.dslfoundry.dflat.structure.structure.ScopedMethodCallExpression" flags="ng" index="34UqCQ" />
       <concept id="3843850057286453807" name="com.dslfoundry.dflat.structure.structure.LocalConstantReferenceExpression" flags="ng" index="37d9dH" />
       <concept id="6638429855781511298" name="com.dslfoundry.dflat.structure.structure.ANamespaceContainer" flags="ng" index="1K511a">
         <child id="6638429855781511306" name="members" index="1K5112" />
@@ -96,12 +109,14 @@
       <concept id="6638429855781512669" name="com.dslfoundry.dflat.structure.structure.INewed" flags="ng" index="1K51kl">
         <reference id="6638429855781512788" name="redefines" index="1K51qs" />
       </concept>
+      <concept id="6638429855781512699" name="com.dslfoundry.dflat.structure.structure.Field" flags="ng" index="1K51kN" />
       <concept id="6638429855781512585" name="com.dslfoundry.dflat.structure.structure.InternalAccess" flags="ng" index="1K51l1" />
       <concept id="6638429855781512576" name="com.dslfoundry.dflat.structure.structure.PublicAccess" flags="ng" index="1K51l8" />
       <concept id="6638429855781512573" name="com.dslfoundry.dflat.structure.structure.IAccessed" flags="ng" index="1K51mP">
         <child id="6638429855781512574" name="access" index="1K51mQ" />
       </concept>
       <concept id="6638429855781512480" name="com.dslfoundry.dflat.structure.structure.Class" flags="ng" index="1K51nC" />
+      <concept id="6638429855781512714" name="com.dslfoundry.dflat.structure.structure.Method" flags="ng" index="1K51r2" />
       <concept id="6638429855781512722" name="com.dslfoundry.dflat.structure.structure.NewMethod" flags="ng" index="1K51rq" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -111,6 +126,7 @@
     </language>
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
       <concept id="7498425323610018571" name="com.dslfoundry.dflat.statement.structure.AVariableReferenceExpression" flags="ng" index="kB_4h" />
+      <concept id="8805103209592647058" name="com.dslfoundry.dflat.statement.structure.NamedVariableReferenceExpression" flags="ng" index="30muW_" />
       <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ng" index="1K51se">
         <child id="6638429855781513160" name="block" index="1K51s0" />
       </concept>
@@ -122,6 +138,7 @@
         <child id="6638429855781513020" name="statements" index="1K51vO" />
       </concept>
       <concept id="6638429855781513516" name="com.dslfoundry.dflat.statement.structure.ImplicitlyTypedLocalVariableStatement" flags="ng" index="1K51B$" />
+      <concept id="6638429855781513505" name="com.dslfoundry.dflat.statement.structure.ExplicitlyTypedLocalVariableStatement" flags="ng" index="1K51BD" />
       <concept id="6638429855781514091" name="com.dslfoundry.dflat.statement.structure.IBlockable" flags="ng" index="1K51Iz">
         <child id="6638429855781514092" name="block" index="1K51I$" />
       </concept>
@@ -344,6 +361,54 @@
         </node>
       </node>
       <node concept="1K51l8" id="6wfKxDWBgdU" role="1K51mQ" />
+    </node>
+  </node>
+  <node concept="1K5120" id="4$mQTKQOPqc">
+    <property role="TrG5h" value="asdf" />
+    <node concept="1K51nC" id="4$mQTKQOPqR" role="1K5112">
+      <property role="TrG5h" value="Bla" />
+      <node concept="1K51kN" id="4$mQTKQQjz4" role="1K517W">
+        <property role="TrG5h" value="z" />
+        <node concept="kB$RB" id="4$mQTKQQjzC" role="1K51Bn" />
+        <node concept="1K51l8" id="4$mQTKQQjzZ" role="1K51mQ" />
+      </node>
+      <node concept="1K51r2" id="4$mQTKQOPr0" role="1K517W">
+        <property role="TrG5h" value="x" />
+        <node concept="kB$OU" id="4$mQTKQOPr1" role="kAOx1">
+          <node concept="1K51vM" id="4$mQTKQOPr2" role="1K51s0">
+            <node concept="1K51BD" id="4$mQTKR4agr" role="1K51vO">
+              <property role="TrG5h" value="b" />
+              <node concept="kAGV1" id="4$mQTKR4agp" role="1K51Bn">
+                <ref role="kAGV8" node="4$mQTKQOPqR" resolve="Bla" />
+              </node>
+              <node concept="dedbp" id="4$mQTKR4ahJ" role="1K51$P">
+                <node concept="kAGV1" id="4$mQTKR4aib" role="d8G9G">
+                  <ref role="kAGV8" node="4$mQTKQOPqR" resolve="Bla" />
+                </node>
+              </node>
+            </node>
+            <node concept="1K51ur" id="4$mQTKQOPrV" role="1K51vO">
+              <node concept="2yYHDy" id="4$mQTKReILe" role="1K51Ad">
+                <node concept="2yYHDy" id="4$mQTKQOPsi" role="2hxcEd">
+                  <node concept="34UqCQ" id="4$mQTKQOPsE" role="kB0tU">
+                    <ref role="kB_2E" node="4$mQTKQOPr0" resolve="x" />
+                  </node>
+                  <node concept="30muW_" id="4$mQTKR4aiL" role="2hxcEd">
+                    <ref role="kB_2E" node="4$mQTKR4agr" resolve="b" />
+                  </node>
+                </node>
+                <node concept="34UqCQ" id="4$mQTKReNK_" role="kB0tU">
+                  <ref role="kB_2E" node="4$mQTKQOPr0" resolve="x" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="kAGV1" id="4$mQTKQOPs3" role="1K51Bn">
+          <ref role="kAGV8" node="4$mQTKQOPqR" resolve="Bla" />
+        </node>
+        <node concept="1K51l8" id="4$mQTKQQjxt" role="1K51mQ" />
+      </node>
     </node>
   </node>
 </model>

@@ -1,0 +1,50 @@
+from https://app.slack.com/client/T3XHGU6G0/C01T2TP2NTD/thread/C01T2TP2NTD-1621519692.013100
+(not to be lost to Slack)
+
+Sergej Koščejev  2 months ago
+@Niko I debugged the dot expressions problem today and found out what happened. The concept inheritance hierarchy is ambiguous and grammar cells wrap algorithm takes a wrong turn as a result.We have an AST like the following:
+
+    ExpressionStatement ES1
+
+    expression: MemberAccessExpression MAE1 
+
+    dottable: LocalMethodCallExpression LMCE1
+    target: ScopedMethodCallExpression SMCE1
+
+And we use grammar.wrap for dottable in AMemberAccessExpression_Editor.The AST we expect after typing a period at the end of SMCE1 is:
+
+    ExpressionStatement ES1
+
+    expression: MemberAccessExpression MAE2
+
+    dottable: MemberAccessExpression MAE1
+
+    ... (unchanged)
+
+    target: new abstract IDotTarget instance (red rectangle in the editor)
+
+What grammar cells runtime does when looking for applicable side transformations is:
+
+    Look at the current node, SMCE1, find the IDottable that it is at the end of (so that it can be put inside the future MAE2.dottable).
+    We find SMCE1 itself and try to wrap it – that's the "wrong turn".
+    After we find our IDottable, we need to figure out which subconcept of AMemberAccessExpression we can replace it with and add the corresponding actions to the menu.
+    AMemberAccessExpression has two subconcepts, MemberAccessExpression and NullConditionalMemberAccessExpression (?.). However, neither can replace SMCE1, as the role in which it is accepts an IDotTarget, and neither of them is.
+
+If SMCE1 was not IDottable, we would have skipped it and found MAE1 as the IDottable in step 2. Then in step 4 any AMemberAccessExpression subconcept would be applicable because MAE1 is in the IExpressed.expression role which can take any other Expression and the behavior would have been as we expected.
+Niko  2 months ago
+@Sergej Koščejev Thanks a lot for the thorough analysis!
+I tried to implement your findings and changed AMethodCallExpression (and thus ScopedMethodCallExpression) to not implement IDottable, but added the interface to LocalMethodCallExpression. Unfortunately, I still cannot add another leg to a DotExpression:
+image.png 
+image.png
+Niko  2 months ago
+Did I misunderstand your findings?
+Sergej Koščejev  2 months ago
+well, it's a step further now, before we couldn't even type the dot
+Niko  2 months ago
+yes, you're right (-:
+Sergej Koščejev  2 months ago
+Now it's a different issue. I'd check scopes.
+Niko  2 months ago
+I'll dig a bit more, thanks
+Niko  2 months ago
+you're right:
