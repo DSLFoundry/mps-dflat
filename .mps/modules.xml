@@ -9,6 +9,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.structure/com.dslfoundry.dflat.structure.mpl" folder="lang.4_structure" />
       <modulePath path="$PROJECT_DIR$/languages/com.dslfoundry.dflat.type/com.dslfoundry.dflat.type.mpl" folder="lang.2_type" />
       <modulePath path="$PROJECT_DIR$/languages/grammarcells/grammarcells.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/optional.issue/optional.issue.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.build/com.dslfoundry.dflat.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.buildAllScripts/com.dslfoundry.dflat.buildAllScripts.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.expression.runtime/com.dslfoundry.dflat.expression.runtime.msd" folder="lang.1_expression" />
@@ -20,6 +21,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.structure.test.editor/com.dslfoundry.dflat.structure.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.type.test.editor/com.dslfoundry.dflat.type.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/grammarcells.playground/grammarcells.playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/optional.issue.playground/optional.issue.playground.msd" folder="" />
     </projectModules>
   </component>
 </project>
