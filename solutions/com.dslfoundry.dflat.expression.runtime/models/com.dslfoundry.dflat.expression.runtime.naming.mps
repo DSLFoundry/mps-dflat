@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f60434a7-a217-4057-9161-d5a057eeda0c(com.dslfoundry.dflat.runtime.naming)">
+<model ref="r:f60434a7-a217-4057-9161-d5a057eeda0c(com.dslfoundry.dflat.expression.runtime.naming)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />

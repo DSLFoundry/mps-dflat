@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="8iju" ref="r:60ca9eb8-120f-450f-a830-b55094bab30d(com.dslfoundry.dflat.runtime.scoping)" />
+    <import index="v2dn" ref="r:2ca780ee-0f70-4e92-b9eb-4d75c0f564c2(com.dslfoundry.dflat.statement.runtime.scoping)" />
     <import index="28vp" ref="r:97df7598-a461-44b0-9392-375b61c3ab06(com.dslfoundry.dflat.statement.structure)" implicit="true" />
   </imports>
   <registry>
@@ -149,7 +149,7 @@
           <node concept="3clFbF" id="7CM0FuUKxDw" role="3cqZAp">
             <node concept="2ShNRf" id="7CM0FuUKxDu" role="3clFbG">
               <node concept="1pGfFk" id="7CM0FuUKCZd" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:7CM0FuV1NDq" resolve="StatementListScope" />
+                <ref role="37wK5l" to="v2dn:7CM0FuV1NDq" resolve="StatementListScope" />
                 <node concept="2rP1CM" id="7CM0FuUKD3O" role="37wK5m" />
                 <node concept="35c_gC" id="7CM0FuUKDfS" role="37wK5m">
                   <ref role="35c_gD" to="28vp:5KwscwGd6Al" resolve="INamedVariableDeclaration" />

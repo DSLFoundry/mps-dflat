@@ -34,8 +34,8 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.expression.runtime)" version="0" />
     <module reference="0d383cce-ba43-4e20-a85f-35b68b4ab069(com.dslfoundry.dflat.playground)" version="0" />
-    <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>

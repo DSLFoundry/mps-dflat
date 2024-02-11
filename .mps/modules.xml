@@ -11,10 +11,12 @@
       <modulePath path="$PROJECT_DIR$/languages/grammarcells/grammarcells.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.build/com.dslfoundry.dflat.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.buildAllScripts/com.dslfoundry.dflat.buildAllScripts.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.expression.runtime/com.dslfoundry.dflat.expression.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.expression.test.editor/com.dslfoundry.dflat.expression.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.playground/com.dslfoundry.dflat.playground.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.runtime/com.dslfoundry.dflat.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.statement.runtime/com.dslfoundry.dflat.statement.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.statement.test.editor/com.dslfoundry.dflat.statement.test.editor.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.structure.runtime/com.dslfoundry.dflat.structure.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.structure.test.editor/com.dslfoundry.dflat.structure.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.dslfoundry.dflat.type.test.editor/com.dslfoundry.dflat.type.test.editor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/grammarcells.playground/grammarcells.playground.msd" folder="" />

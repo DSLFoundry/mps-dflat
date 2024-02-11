@@ -15,15 +15,13 @@
   <dependencies>
     <dependency reexport="false">8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)</dependency>
     <dependency reexport="false">21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)</dependency>
-    <dependency reexport="false">c818080e-4a8e-47c4-a83a-59c146991007(com.dslfoundry.dflat.statement)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)</dependency>
+    <dependency reexport="false">f50de8c5-42c6-4111-96bc-ea2f7970341f(com.dslfoundry.dflat.statement.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:21717649-bb7f-4964-87cf-78a6930e9801:com.dslfoundry.dflat.expression" version="0" />
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
     <language slang="l:b4f35ed8-45af-4efa-abe4-00ac26956e69:com.mbeddr.mpsutil.grammarcells.runtimelang" version="0" />
-    <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -47,14 +45,12 @@
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
     <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="1" />
-    <language slang="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
     <language slang="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" version="5" />
     <language slang="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" version="2" />
     <language slang="l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages" version="0" />
     <language slang="l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes" version="0" />
-    <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="18" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
@@ -71,8 +67,8 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)" version="0" />
-    <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)" version="0" />
     <module reference="c818080e-4a8e-47c4-a83a-59c146991007(com.dslfoundry.dflat.statement)" version="0" />
+    <module reference="f50de8c5-42c6-4111-96bc-ea2f7970341f(com.dslfoundry.dflat.statement.runtime)" version="0" />
     <module reference="8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -83,10 +79,9 @@
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
   <runtime>
-    <dependency reexport="false">9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)</dependency>
+    <dependency reexport="false">f50de8c5-42c6-4111-96bc-ea2f7970341f(com.dslfoundry.dflat.statement.runtime)</dependency>
   </runtime>
   <extendedLanguages>
     <extendedLanguage>21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)</extendedLanguage>

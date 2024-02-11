@@ -13,7 +13,6 @@
   <accessoryModels />
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)</dependency>
     <dependency reexport="false">8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)</dependency>
   </dependencies>
   <languageVersions>
@@ -61,8 +60,6 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)" version="0" />
     <module reference="b304caae-1226-4e8d-b03f-ffc7a2f3bbbb(com.dslfoundry.dflat.gensupport)" version="0" />
-    <module reference="c818080e-4a8e-47c4-a83a-59c146991007(com.dslfoundry.dflat.statement)" version="0" />
-    <module reference="28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)" version="0" />
     <module reference="8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -72,7 +69,6 @@
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)</extendedLanguage>

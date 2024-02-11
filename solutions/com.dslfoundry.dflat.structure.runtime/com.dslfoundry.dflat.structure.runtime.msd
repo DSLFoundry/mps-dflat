@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.dslfoundry.dflat.runtime" uuid="9ff1fd68-9d63-4642-aac3-e9b354f00df0" moduleVersion="0" compileInMPS="true">
+<solution name="com.dslfoundry.dflat.structure.runtime" uuid="f9caad30-1ffb-477e-bece-36823730706b" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -12,11 +12,11 @@
   </facets>
   <sourcePath />
   <dependencies>
-    <dependency reexport="true">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
-    <dependency reexport="true">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
-    <dependency reexport="false">28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)</dependency>
     <dependency reexport="false">21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -37,9 +37,9 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="21717649-bb7f-4964-87cf-78a6930e9801(com.dslfoundry.dflat.expression)" version="0" />
-    <module reference="9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)" version="0" />
     <module reference="c818080e-4a8e-47c4-a83a-59c146991007(com.dslfoundry.dflat.statement)" version="0" />
     <module reference="28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)" version="0" />
+    <module reference="f9caad30-1ffb-477e-bece-36823730706b(com.dslfoundry.dflat.structure.runtime)" version="0" />
     <module reference="8b8c7b93-8f15-471e-a430-739566f9c25e(com.dslfoundry.dflat.type)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -49,7 +49,6 @@
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" version="0" />
   </dependencyVersions>
 </solution>
 

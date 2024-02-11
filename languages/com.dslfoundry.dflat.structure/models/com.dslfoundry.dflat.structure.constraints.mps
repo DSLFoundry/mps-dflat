@@ -3,12 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="6" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="8iju" ref="r:60ca9eb8-120f-450f-a830-b55094bab30d(com.dslfoundry.dflat.runtime.scoping)" />
+    <import index="r3rh" ref="r:a64f523e-2d9d-4d61-b3e9-9ee7bc87fa75(com.dslfoundry.dflat.structure.runtime.scoping)" />
     <import index="y2ir" ref="r:057a88a5-cb68-4a31-9cbb-309ef9308749(com.dslfoundry.dflat.structure.structure)" implicit="true" />
     <import index="wgz4" ref="r:3e9e012e-836a-4f5e-8e8c-74ff2ffd837f(com.dslfoundry.dflat.expression.structure)" implicit="true" />
     <import index="7d5b" ref="r:89de843e-e2b5-4681-b4ee-54706926d780(com.dslfoundry.dflat.type.behavior)" implicit="true" />
@@ -264,7 +263,7 @@
           <node concept="3clFbF" id="3lo6kbMo1$Q" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMo1$m" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMo1F6" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMnMKO" resolve="DottedClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMnMKO" resolve="DottedClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMo1JA" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMo1Vz" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AClassMethod" />
@@ -369,7 +368,7 @@
           <node concept="3clFbF" id="3lo6kbMnwp$" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMnwoS" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMnwA1" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3TgyboeOEL$" resolve="LocalClassInheritedScope" />
+                <ref role="37wK5l" to="r3rh:3TgyboeOEL$" resolve="LocalClassInheritedScope" />
                 <node concept="2rP1CM" id="3lo6kbMnwQO" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMnx2T" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64X" resolve="AClassMethod" />
@@ -391,7 +390,7 @@
           <node concept="3clFbF" id="3lo6kbMo2DY" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMo2DW" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMo2Ke" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMmCUR" resolve="LocalClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMmCUR" resolve="LocalClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMo2OI" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMo30F" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd650" resolve="AProperty" />
@@ -413,7 +412,7 @@
           <node concept="3clFbF" id="3lo6kbMo3oz" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMo3ox" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMo3xZ" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMnMKO" resolve="DottedClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMnMKO" resolve="DottedClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMo3Av" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMo3Ms" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd650" resolve="AProperty" />
@@ -449,7 +448,7 @@
           <node concept="3clFbF" id="3lo6kbMr8Go" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMr8Gm" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMr8PL" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMmCUR" resolve="LocalClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMmCUR" resolve="LocalClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMr8Uh" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMr96e" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64T" resolve="Constant" />
@@ -471,7 +470,7 @@
           <node concept="3clFbF" id="3lo6kbMr9tq" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMr9to" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMr9AN" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMnMKO" resolve="DottedClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMnMKO" resolve="DottedClassScope" />
                 <node concept="2rP1CM" id="3lo6kbMr9Fj" role="37wK5m" />
                 <node concept="35c_gC" id="3lo6kbMr9Rg" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64T" resolve="Constant" />
@@ -493,7 +492,7 @@
           <node concept="3clFbF" id="3lo6kbMrlQ0" role="3cqZAp">
             <node concept="2ShNRf" id="3lo6kbMrlPY" role="3clFbG">
               <node concept="1pGfFk" id="3lo6kbMrlZt" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMrlOp" resolve="DottedEnumScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMrlOp" resolve="DottedEnumScope" />
                 <node concept="2rP1CM" id="3lo6kbMrm4B" role="37wK5m" />
               </node>
             </node>
@@ -534,7 +533,7 @@
           <node concept="3clFbF" id="7CM0FuTxlvJ" role="3cqZAp">
             <node concept="2ShNRf" id="7CM0FuTxlvK" role="3clFbG">
               <node concept="1pGfFk" id="7CM0FuTxlvL" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMnMKO" resolve="DottedClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMnMKO" resolve="DottedClassScope" />
                 <node concept="2rP1CM" id="7CM0FuTxlvM" role="37wK5m" />
                 <node concept="35c_gC" id="7CM0FuTxlvN" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64U" resolve="AField" />
@@ -556,7 +555,7 @@
           <node concept="3clFbF" id="7CM0FuTxlUy" role="3cqZAp">
             <node concept="2ShNRf" id="7CM0FuTxlUz" role="3clFbG">
               <node concept="1pGfFk" id="7CM0FuTxlU$" role="2ShVmc">
-                <ref role="37wK5l" to="8iju:3lo6kbMmCUR" resolve="LocalClassScope" />
+                <ref role="37wK5l" to="r3rh:3lo6kbMmCUR" resolve="LocalClassScope" />
                 <node concept="2rP1CM" id="7CM0FuTxlU_" role="37wK5m" />
                 <node concept="35c_gC" id="7CM0FuTxlUA" role="37wK5m">
                   <ref role="35c_gD" to="y2ir:5KwscwGd64U" resolve="AField" />

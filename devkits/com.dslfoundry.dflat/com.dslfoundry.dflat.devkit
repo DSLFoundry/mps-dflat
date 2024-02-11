@@ -6,7 +6,9 @@
   <exported-language name="28617705-0ee4-4b12-80b9-7532ec4a79c9(com.dslfoundry.dflat.structure)" />
   <exported-language name="31c91def-a131-41a1-9018-102874f49a12(de.slisson.mps.editor.multiline)" />
   <exported-solutions>
-    <exported-solution>9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.runtime)</exported-solution>
+    <exported-solution>9ff1fd68-9d63-4642-aac3-e9b354f00df0(com.dslfoundry.dflat.expression.runtime)</exported-solution>
+    <exported-solution>f50de8c5-42c6-4111-96bc-ea2f7970341f(com.dslfoundry.dflat.statement.runtime)</exported-solution>
+    <exported-solution>f9caad30-1ffb-477e-bece-36823730706b(com.dslfoundry.dflat.structure.runtime)</exported-solution>
   </exported-solutions>
 </dev-kit>
 
