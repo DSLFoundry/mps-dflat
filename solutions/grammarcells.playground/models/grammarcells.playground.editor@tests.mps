@@ -164,7 +164,7 @@
     </node>
   </node>
   <node concept="2XOHcx" id="1lkQMM5247B">
-    <property role="2XOHcw" value="c:\users\stotzn\git\d-blunt" />
+    <property role="2XOHcw" value="${dflat.home}" />
   </node>
 </model>
 

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="1" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -237,37 +237,40 @@
   <node concept="PKFIW" id="3lo6kbL8uSt">
     <property role="TrG5h" value="genericed" />
     <ref role="1XX52x" to="r1kv:7wiI39P2o$W" resolve="IGenericed" />
-    <node concept="_tjkj" id="3TgyboeIpah" role="2wV5jI">
-      <node concept="3EZMnI" id="3TgyboeIpgx" role="_tjki">
-        <node concept="3F0ifn" id="7wiI39P2z6n" role="3EZMnx">
-          <property role="3F0ifm" value="&lt;" />
-          <node concept="3mYdg7" id="7wiI39P2z6X" role="3F10Kt">
-            <property role="1413C4" value="generic-bracket" />
+    <node concept="3EZMnI" id="118wo$nZRjI" role="2wV5jI">
+      <node concept="l2Vlx" id="118wo$nZRjJ" role="2iSdaV" />
+      <node concept="_tjkj" id="3TgyboeIpah" role="3EZMnx">
+        <node concept="3EZMnI" id="3TgyboeIpgx" role="_tjki">
+          <node concept="3F0ifn" id="7wiI39P2z6n" role="3EZMnx">
+            <property role="3F0ifm" value="&lt;" />
+            <node concept="3mYdg7" id="7wiI39P2z6X" role="3F10Kt">
+              <property role="1413C4" value="generic-bracket" />
+            </node>
+            <node concept="11L4FC" id="3lo6kbJQZUs" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="3lo6kbJQZU$" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
-          <node concept="11L4FC" id="3lo6kbJQZUs" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+          <node concept="3F2HdR" id="7wiI39P2z6L" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="r1kv:7wiI39P2o$X" resolve="typeParameters" />
+            <node concept="l2Vlx" id="7wiI39P2z6N" role="2czzBx" />
+            <node concept="3F0ifn" id="3lo6kbK0mk3" role="2czzBI" />
           </node>
-          <node concept="11LMrY" id="3lo6kbJQZU$" role="3F10Kt">
-            <property role="VOm3f" value="true" />
+          <node concept="3F0ifn" id="7wiI39P2z6z" role="3EZMnx">
+            <property role="3F0ifm" value="&gt;" />
+            <node concept="3mYdg7" id="7wiI39P2z6Z" role="3F10Kt">
+              <property role="1413C4" value="generic-bracket" />
+            </node>
+            <node concept="11L4FC" id="3lo6kbJQZUG" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
           </node>
+          <node concept="l2Vlx" id="3TgyboeIpg$" role="2iSdaV" />
+          <node concept="VPM3Z" id="3TgyboeIpg_" role="3F10Kt" />
         </node>
-        <node concept="3F2HdR" id="7wiI39P2z6L" role="3EZMnx">
-          <property role="2czwfO" value="," />
-          <ref role="1NtTu8" to="r1kv:7wiI39P2o$X" resolve="typeParameters" />
-          <node concept="l2Vlx" id="7wiI39P2z6N" role="2czzBx" />
-          <node concept="3F0ifn" id="3lo6kbK0mk3" role="2czzBI" />
-        </node>
-        <node concept="3F0ifn" id="7wiI39P2z6z" role="3EZMnx">
-          <property role="3F0ifm" value="&gt;" />
-          <node concept="3mYdg7" id="7wiI39P2z6Z" role="3F10Kt">
-            <property role="1413C4" value="generic-bracket" />
-          </node>
-          <node concept="11L4FC" id="3lo6kbJQZUG" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="l2Vlx" id="3TgyboeIpg$" role="2iSdaV" />
-        <node concept="VPM3Z" id="3TgyboeIpg_" role="3F10Kt" />
       </node>
     </node>
   </node>
