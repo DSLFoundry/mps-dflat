@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
@@ -136,6 +136,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -421,8 +422,11 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="2xdQw9" id="7CM0FuT57gP" role="8Wnug">
             <node concept="3cpWs3" id="7CM0FuT57gQ" role="9lYJi">
-              <node concept="37vLTw" id="7CM0FuT57gR" role="3uHU7w">
-                <ref role="3cqZAo" node="7CM0FuT57gH" resolve="r" />
+              <node concept="2OqwBi" id="2miV12aGIGU" role="3uHU7w">
+                <node concept="37vLTw" id="7CM0FuT57gR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7CM0FuT57gH" resolve="r" />
+                </node>
+                <node concept="2Iv5rx" id="2miV12aGIGV" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="7CM0FuT57gS" role="3uHU7B">
                 <property role="Xl_RC" value="ADottedScope.getDotExpression: " />
@@ -477,8 +481,11 @@
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="2xdQw9" id="7CM0FuT57JH" role="8Wnug">
             <node concept="3cpWs3" id="7CM0FuT57JI" role="9lYJi">
-              <node concept="37vLTw" id="7CM0FuT57JJ" role="3uHU7w">
-                <ref role="3cqZAo" node="7CM0FuT57JB" resolve="r" />
+              <node concept="2OqwBi" id="2miV12aGIH5" role="3uHU7w">
+                <node concept="37vLTw" id="7CM0FuT57JJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7CM0FuT57JB" resolve="r" />
+                </node>
+                <node concept="2Iv5rx" id="2miV12aGIH6" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="7CM0FuT57JK" role="3uHU7B">
                 <property role="Xl_RC" value="ADottedScope.getDottable: " />
