@@ -41,8 +41,7 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <pathelement location="${artifacts.mps}/lib/util.jar" />
   </path>
   
   <target name="assemble" depends="classes, declare-mps-tasks">
@@ -65,6 +64,29 @@
         </extensions>
       </idea-plugin>
     </echoxml>
+    <mkdir dir="${build.layout}/com.dslfoundry.dflat/lib" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.dslfoundry.dflat</id>
+        <name>com.dslfoundry.dflat</name>
+        <version>${dflat.version}</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>com.mbeddr.platform</depends>
+        <depends>com.mbeddr.platform.build</depends>
+        <depends>de.itemis.mps.grammarcells</depends>
+        <depends>de.slisson.mps.richtext</depends>
+        <depends>de.itemis.mps.extensions.build</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.layout}/com.dslfoundry.dflat/lib/com.dslfoundry.dflat.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar" />
+    </jar>
     <mkdir dir="${build.layout}/com.dslfoundry.dflat/languages" />
     <mkdir dir="${build.layout}/com.dslfoundry.dflat/languages/com.dslfoundry.dflat" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.expression.jar" />
@@ -588,9 +610,9 @@
       <zipfileset file="${dflat.home}/solutions/com.dslfoundry.dflat.build/com.dslfoundry.dflat.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.dflat.build-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar1" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar1/META-INF" />
+    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar1/META-INF/module.xml">
       <module namespace="com.dslfoundry.dflat" type="devkit" uuid="97be3f2e-6ee3-4400-ade4-6b4b2f948d52">
         <dependencies />
         <uses />
@@ -599,7 +621,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.dslfoundry.dflat/languages/com.dslfoundry.dflat/com.dslfoundry.dflat.jar" duplicate="preserve">
       <zipfileset file="${dflat.home}/devkits/com.dslfoundry.dflat/com.dslfoundry.dflat.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar" />
+      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar1" />
     </jar>
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat" />
@@ -621,6 +643,29 @@
         </extensions>
       </idea-plugin>
     </echoxml>
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat/lib" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar2" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar2/META-INF" />
+    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar2/META-INF/plugin.xml">
+      <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+        <id>com.dslfoundry.dflat</id>
+        <name>com.dslfoundry.dflat</name>
+        <version>${dflat.version}</version>
+        <depends>jetbrains.mps.core</depends>
+        <depends>com.mbeddr.platform</depends>
+        <depends>com.mbeddr.platform.build</depends>
+        <depends>de.itemis.mps.grammarcells</depends>
+        <depends>de.slisson.mps.richtext</depends>
+        <depends>de.itemis.mps.extensions.build</depends>
+        
+        <extensions defaultExtensionNs="com.intellij">
+          <mps.LanguageLibrary dir="/languages" />
+        </extensions>
+      </idea-plugin>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat/lib/com.dslfoundry.dflat.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar2" />
+    </jar>
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat/languages" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat/languages/com.dslfoundry.dflat" />
     <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.expression.jar1" />
@@ -1144,9 +1189,9 @@
       <zipfileset file="${dflat.home}/solutions/com.dslfoundry.dflat.build/com.dslfoundry.dflat.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.dslfoundry.dflat.build-models1" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar1" />
-    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar1/META-INF" />
-    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar1/META-INF/module.xml">
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar3" />
+    <mkdir dir="${build.tmp}/default/com.dslfoundry.dflat.jar3/META-INF" />
+    <echoxml file="${build.tmp}/default/com.dslfoundry.dflat.jar3/META-INF/module.xml">
       <module namespace="com.dslfoundry.dflat" type="devkit" uuid="97be3f2e-6ee3-4400-ade4-6b4b2f948d52">
         <dependencies />
         <uses />
@@ -1155,7 +1200,7 @@
     </echoxml>
     <jar destfile="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip/com.dslfoundry.dflat/languages/com.dslfoundry.dflat/com.dslfoundry.dflat.jar" duplicate="preserve">
       <zipfileset file="${dflat.home}/devkits/com.dslfoundry.dflat/com.dslfoundry.dflat.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar1" />
+      <fileset dir="${build.tmp}/default/com.dslfoundry.dflat.jar3" />
     </jar>
     <zip destfile="${build.layout}/com.dslfoundry.dflat-${dflat.version}.zip">
       <fileset dir="${build.tmp}/default/com.dslfoundry.dflat-_dl__lbrace_dflat.version_rbrace_.zip" />
@@ -1196,9 +1241,13 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin path="${artifacts.mps}/plugins/git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
+      <plugin path="${artifacts.mps}/plugins/mps-git4idea" />
       <plugin path="${artifacts.mps}/plugins/mps-tooltips" />
+      <plugin path="${artifacts.mps}/plugins/mps-vcs" />
+      <plugin path="${artifacts.mps}/plugins/svn4idea" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -1289,6 +1338,7 @@
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
@@ -1309,10 +1359,15 @@
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.java.stub.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.kernel.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.makeup.jar" />
+      <library file="${artifacts.mps}/languages/util/jetbrains.mps.persistence.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.project.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.runtime.jar" />
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+      <library file="${artifacts.mps}/plugins/mps-vcs/languages/jetbrains.mps.ide.vcs.modelmetadata.jar" />
+      <library file="${artifacts.mps}/plugins/mps-vcs/lib/jetbrains.mps.ide.vcs.core.jar" />
+      <library file="${artifacts.mps}/plugins/mps-vcs/lib/jetbrains.mps.ide.vcs.platform.jar" />
+      <library file="${artifacts.mps}/plugins/mps-vcs/lib/jetbrains.mps.vcs.mergehints.runtime.jar" />
       <chunk bootstrap="true">
         <module file="${dflat.home}/solutions/com.dslfoundry.dflat.build/com.dslfoundry.dflat.build.msd" />
         <module file="${dflat.home}/languages/com.dslfoundry.dflat.expression/com.dslfoundry.dflat.expression.mpl" />
@@ -1381,12 +1436,13 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -1445,12 +1501,13 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -1493,7 +1550,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -1514,9 +1573,8 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -1554,7 +1612,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -1575,9 +1635,8 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -1615,7 +1674,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -1636,9 +1697,8 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -1681,7 +1741,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -1704,13 +1766,10 @@
         <pathelement path="${build.tmp}/java/out/com.dslfoundry.dflat.statement" />
         <pathelement path="${build.tmp}/java/out/com.dslfoundry.dflat.structure" />
         <pathelement path="${build.tmp}/java/out/com.dslfoundry.dflat.type" />
-        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
@@ -1745,7 +1804,9 @@
         <fileset file="${artifacts.mps}/lib/mps-context.jar" />
         <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-problem.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-feedback-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messages-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-messages-for-rules.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
@@ -1766,9 +1827,8 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/3rd-party.jar" />
         <fileset file="${artifacts.mps}/lib/ecj-4.16.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />

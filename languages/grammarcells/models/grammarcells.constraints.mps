@@ -106,6 +106,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
@@ -205,8 +206,11 @@
           </node>
           <node concept="2xdQw9" id="1lkQMM50Nvf" role="3cqZAp">
             <node concept="3cpWs3" id="1lkQMM50O$V" role="9lYJi">
-              <node concept="37vLTw" id="1lkQMM50OGU" role="3uHU7w">
-                <ref role="3cqZAo" node="1lkQMM50$6S" resolve="dotEx" />
+              <node concept="2OqwBi" id="2miV12aGIGj" role="3uHU7w">
+                <node concept="37vLTw" id="1lkQMM50OGU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1lkQMM50$6S" resolve="dotEx" />
+                </node>
+                <node concept="2Iv5rx" id="2miV12aGIGk" role="2OqNvi" />
               </node>
               <node concept="Xl_RD" id="1lkQMM50Nvh" role="3uHU7B">
                 <property role="Xl_RC" value="dotEx: " />
@@ -329,7 +333,10 @@
       <node concept="3clFbS" id="1lkQMM4Lluy" role="2VODD2">
         <node concept="2xdQw9" id="1lkQMM4Ll_S" role="3cqZAp">
           <node concept="3cpWs3" id="1lkQMM4Lmlv" role="9lYJi">
-            <node concept="2H4GUG" id="1lkQMM4Lmta" role="3uHU7w" />
+            <node concept="2OqwBi" id="2miV12aGIGJ" role="3uHU7w">
+              <node concept="2H4GUG" id="1lkQMM4Lmta" role="2Oq$k0" />
+              <node concept="2Iv5rx" id="2miV12aGIGK" role="2OqNvi" />
+            </node>
             <node concept="Xl_RD" id="1lkQMM4Ll_U" role="3uHU7B">
               <property role="Xl_RC" value="childNode: " />
             </node>
