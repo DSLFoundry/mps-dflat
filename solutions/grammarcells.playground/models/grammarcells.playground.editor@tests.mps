@@ -2,7 +2,7 @@
 <model ref="r:5eedbc06-0862-4f93-8dbc-ff02c4f0407e(grammarcells.playground.editor@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="69c9278e-ecc7-4b65-9e37-07cd34038c24" name="grammarcells" version="0" />
   </languages>
