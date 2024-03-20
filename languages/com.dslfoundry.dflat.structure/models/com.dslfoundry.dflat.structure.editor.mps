@@ -1800,7 +1800,7 @@
   </node>
   <node concept="PKFIW" id="3lo6kbKcb_x">
     <property role="3GE5qa" value="typeDeclaration.modifier" />
-    <property role="TrG5h" value="sealed" />
+    <property role="TrG5h" value="sealeded" />
     <ref role="1XX52x" to="y2ir:3lo6kbKcbyh" resolve="ISealed" />
     <node concept="3EZMnI" id="118wo$oBL3S" role="2wV5jI">
       <node concept="2iRfu4" id="118wo$oBL3T" role="2iSdaV" />
