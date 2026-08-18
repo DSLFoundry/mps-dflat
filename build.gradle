@@ -7,11 +7,11 @@ import java.time.format.FormatStyle
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
-        maven { url 'https://artifacts.itemis.cloud/repository/maven-mps/' }
+        maven { url = 'https://artifacts.itemis.cloud/repository/maven-mps/' }
         mavenCentral()
     }
     dependencies {
-        classpath 'de.itemis.mps:mps-gradle-plugin:1.11.+'
+        classpath 'de.itemis.mps:mps-gradle-plugin:1.30.+'
     }
 }
 
@@ -39,7 +39,7 @@ dependencies {
 
 repositories {
         maven {
-            url "https://artifacts.itemis.cloud/repository/maven-mps/"
+            url = "https://artifacts.itemis.cloud/repository/maven-mps/"
         }
 
     mavenCentral()
@@ -71,7 +71,7 @@ def defaultScriptArgs = [
         'version'                           : dflatVersion,
         'dflat.version'                     : dflatVersion,
 ]
-def defaultScriptClasspath = project.configurations.junitAnt.fileCollection { true }
+def defaultScriptClasspath = project.configurations.junitAnt.asFileTree
 
 // enables https://github.com/mbeddr/mps-gradle-plugin#providing-global-defaults
 ext["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.collect { "-D$it.key=$it.value".toString() }
@@ -79,11 +79,11 @@ ext["itemis.mps.gradle.ant.defaultScriptClasspath"] = defaultScriptClasspath
 
 
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLanguageLibs]) {
-    script "scripts/allScripts.xml"
+    script = "scripts/allScripts.xml"
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
-    script "$buildDir/languageBuild.xml"
+    script = "$buildDir/languageBuild.xml"
 }
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
@@ -94,7 +94,7 @@ task packageLanguages(type: Zip, dependsOn: buildLanguages) {
 
 task setup {
     dependsOn resolveAllLanguageLibs
-    description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
+    description = 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
 
