@@ -18,11 +18,11 @@ buildscript {
 plugins {
     id 'base'
     id 'maven-publish'
-    id "io.github.humblerookie.gradle" version "0.5.0"
+    id "com.github.breadmoirai.github-release" version "2.5.2"
 }
 
 def incrementalBuild = !project.hasProperty("disableIncrementalBuild")
-def artifactsDir = new File(buildDir, 'artifacts')
+def artifactsDir = layout.buildDirectory.dir('artifacts').get().asFile
 
 
 configurations {
@@ -50,14 +50,14 @@ task resolveMps(type: Copy) {
     from {
         configurations.mps.resolve().collect { zipTree(it) }
     }
-    into "$buildDir/mps"
+    into layout.buildDirectory.dir("mps")
 }
 
 task resolveAllLanguageLibs(type: Copy) {
     from {
         configurations.languageLibs.resolve().collect { zipTree(it) }
     }
-    into "$buildDir/dependencies"
+    into layout.buildDirectory.dir("dependencies")
 }
 
 def dflatVersion = project.findProperty("dflatVersion") ?: '0.1'
@@ -66,7 +66,7 @@ def dflatVersion = project.findProperty("dflatVersion") ?: '0.1'
 def defaultScriptArgs = [
         'mps.home'                          : resolveMps.destinationDir,
         'dflat.home'                        : projectDir,
-        'build.dir'                         : buildDir,
+        'build.dir'                         : layout.buildDirectory.get().asFile,
         'mps.generator.skipUnmodifiedModels': incrementalBuild,
         'version'                           : dflatVersion,
         'dflat.version'                     : dflatVersion,
@@ -83,7 +83,7 @@ task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveAllLan
 }
 
 task buildLanguages(type: BuildLanguages, dependsOn: buildAllScripts) {
-    script = "$buildDir/languageBuild.xml"
+    script = "${layout.buildDirectory.get().asFile}/languageBuild.xml"
 }
 
 task packageLanguages(type: Zip, dependsOn: buildLanguages) {
@@ -100,14 +100,14 @@ task setup {
 
 def releaseArtifacts = ["${artifactsDir}/com.dslfoundry.dflat/com.dslfoundry.dflat-${dflatVersion}.zip"]
 
-github {
+githubRelease {
     owner = 'DSLFoundry'
     repo = 'mps-dflat'
-    token =  System.getenv().GITHUB_TOKEN != null ? System.getenv().GITHUB_TOKEN : "empty"
+    token =  providers.environmentVariable("GITHUB_TOKEN").getOrElse("empty")
     tagName =  "v-$dflatVersion"
-    targetCommitish = System.getenv().CI_COMMIT_SHA != null ? System.getenv().CI_COMMIT_SHA : "master"
-    name =  "MPS C# Implementation Extensions v$dflatVersion"
-    assets = releaseArtifacts
+    targetCommitish = providers.environmentVariable("CI_COMMIT_SHA").getOrElse("master")
+    releaseName =  "MPS C# Implementation Extensions v$dflatVersion"
+    releaseAssets = releaseArtifacts
     // body = ReleaseNotes.getReleaseNotes(file("RELEASE_NOTES.md"))
 }
 
@@ -139,7 +139,7 @@ publishing {
 }
 
 build.dependsOn buildLanguages
-githubRelease.dependsOn build
+tasks.named("githubRelease") { dependsOn(tasks.named("build"))}
 
 defaultTasks 'buildLanguages'
 
