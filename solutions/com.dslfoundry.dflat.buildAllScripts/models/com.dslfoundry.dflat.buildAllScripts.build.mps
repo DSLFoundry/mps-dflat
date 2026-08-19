@@ -139,8 +139,14 @@
         <ref role="398BVh" node="1QWUXETulXw" resolve="extensions.artifacts" />
       </node>
     </node>
+    <node concept="398rNT" id="5JVOyoerivO" role="1l3spd">
+      <property role="TrG5h" value="mps_home" />
+    </node>
     <node concept="398rNT" id="23LEVbRX3hP" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="5JVOyoeriwp" role="398pKh">
+        <ref role="398BVh" node="5JVOyoerivO" resolve="mps_home" />
+      </node>
     </node>
     <node concept="398rNT" id="4FIECQpNJnG" role="1l3spd">
       <property role="TrG5h" value="dflat.home" />

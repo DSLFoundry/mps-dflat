@@ -162,8 +162,14 @@
     <property role="turDy" value="languageBuild.xml" />
     <node concept="10PD9b" id="5QHZdtp$ydC" role="10PD9s" />
     <node concept="3b7kt6" id="5QHZdtp$ydD" role="10PD9s" />
+    <node concept="398rNT" id="5JVOyoerjXa" role="1l3spd">
+      <property role="TrG5h" value="mps_home" />
+    </node>
     <node concept="398rNT" id="5QHZdtp$ydE" role="1l3spd">
       <property role="TrG5h" value="mps.home" />
+      <node concept="398BVA" id="5JVOyoerjXc" role="398pKh">
+        <ref role="398BVh" node="5JVOyoerjXa" resolve="mps_home" />
+      </node>
     </node>
     <node concept="398rNT" id="43iyq7gjJKL" role="1l3spd">
       <property role="TrG5h" value="plugins" />
