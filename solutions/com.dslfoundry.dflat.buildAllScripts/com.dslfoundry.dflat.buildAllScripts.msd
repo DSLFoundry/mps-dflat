@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.dslfoundry.dflat.buildAllScripts" uuid="aca630f0-305e-4566-94f5-0fb388c5aef6" moduleVersion="0" compileInMPS="true">
+<solution name="com.dslfoundry.dflat.buildAllScripts" uuid="aca630f0-305e-4566-94f5-0fb388c5aef6" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">322b3bc0-e5a0-421d-b7f3-c04ecb0daee0(com.dslfoundry.dflat.build)</dependency>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>

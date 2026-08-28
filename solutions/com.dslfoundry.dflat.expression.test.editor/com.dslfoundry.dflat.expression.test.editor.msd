@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.dslfoundry.dflat.expression.test.editor" uuid="140684a0-a3b5-443b-a258-b186119a805f" moduleVersion="0" compileInMPS="true">
+<solution name="com.dslfoundry.dflat.expression.test.editor" uuid="140684a0-a3b5-443b-a258-b186119a805f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
   </dependencies>

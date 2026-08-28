@@ -60,7 +60,7 @@
         <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
-      <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ng" index="kB0tT" />
+      <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ngI" index="kB0tT" />
       <concept id="7498425323610060854" name="com.dslfoundry.dflat.expression.structure.NullLiteral" flags="ng" index="kBvCG" />
       <concept id="7498425323610060844" name="com.dslfoundry.dflat.expression.structure.ExpressionWord" flags="ng" index="kBvCQ" />
       <concept id="7498425323610060835" name="com.dslfoundry.dflat.expression.structure.InterpolatedRegularStringLiteral" flags="ng" index="kBvCT" />
@@ -131,7 +131,7 @@
       <concept id="6638429855781513013" name="com.dslfoundry.dflat.expression.structure.ExclusiveOrAssignmentExpression" flags="ng" index="1K51vX" />
       <concept id="6638429855781513014" name="com.dslfoundry.dflat.expression.structure.LeftShiftAssignmentExpression" flags="ng" index="1K51vY" />
       <concept id="6638429855781513015" name="com.dslfoundry.dflat.expression.structure.RightShiftAssignmentExpression" flags="ng" index="1K51vZ" />
-      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
+      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ngI" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
     </language>
@@ -148,7 +148,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
