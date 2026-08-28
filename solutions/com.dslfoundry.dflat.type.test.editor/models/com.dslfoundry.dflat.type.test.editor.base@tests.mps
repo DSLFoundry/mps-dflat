@@ -55,7 +55,7 @@
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
       <concept id="7498425323610246356" name="com.dslfoundry.dflat.expression.structure.ParenthesisExpression" flags="ng" index="kAGVe" />
       <concept id="7498425323621165302" name="com.dslfoundry.dflat.expression.structure.Expression" flags="ng" index="ld6FG" />
-      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
+      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ngI" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
     </language>
@@ -64,7 +64,7 @@
       <concept id="7498425323610018428" name="com.dslfoundry.dflat.type.structure.StringType" flags="ng" index="kB_1A" />
       <concept id="3843850057251239573" name="com.dslfoundry.dflat.type.structure.TypeofExpression" flags="ng" index="352MZn" />
       <concept id="6638429855781512970" name="com.dslfoundry.dflat.type.structure.CastExpression" flags="ng" index="1K51v2" />
-      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ng" index="1K51Bm">
+      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ngI" index="1K51Bm">
         <child id="6638429855781513503" name="type" index="1K51Bn" />
       </concept>
     </language>
@@ -72,7 +72,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

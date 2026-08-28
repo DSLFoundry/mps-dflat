@@ -14,7 +14,7 @@
         <child id="1537094357093454241" name="dottable" index="2hxcEd" />
         <child id="7498425323610162528" name="target" index="kB0tU" />
       </concept>
-      <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ng" index="kB0tT" />
+      <concept id="7498425323610162531" name="com.dslfoundry.dflat.expression.structure.IDotTarget" flags="ngI" index="kB0tT" />
       <concept id="7498425323610060854" name="com.dslfoundry.dflat.expression.structure.NullLiteral" flags="ng" index="kBvCG" />
       <concept id="7498425323610018827" name="com.dslfoundry.dflat.expression.structure.RegularStringLiteral" flags="ng" index="kB_oh" />
       <concept id="7498425323610018849" name="com.dslfoundry.dflat.expression.structure.ALiteral" flags="ng" index="kB_oV">
@@ -25,7 +25,7 @@
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
       <concept id="3685605919835503980" name="com.dslfoundry.dflat.expression.structure.MemberAccessExpression" flags="ng" index="2yYHDy" />
-      <concept id="3843850057237566510" name="com.dslfoundry.dflat.expression.structure.IArgumented" flags="ng" index="3qQCPG">
+      <concept id="3843850057237566510" name="com.dslfoundry.dflat.expression.structure.IArgumented" flags="ngI" index="3qQCPG">
         <child id="7498425323610018533" name="arguments" index="kB_3Z" />
       </concept>
       <concept id="6638429855781512972" name="com.dslfoundry.dflat.expression.structure.ABinaryOperator" flags="ng" index="1K51v4">
@@ -37,26 +37,26 @@
         <child id="8652180360987031016" name="variable" index="db8Rq" />
       </concept>
       <concept id="6638429855781513004" name="com.dslfoundry.dflat.expression.structure.SimpleAssignmentExpression" flags="ng" index="1K51v$" />
-      <concept id="6638429855781513724" name="com.dslfoundry.dflat.expression.structure.IExpressable" flags="ng" index="1K51$O">
+      <concept id="6638429855781513724" name="com.dslfoundry.dflat.expression.structure.IExpressable" flags="ngI" index="1K51$O">
         <child id="6638429855781513725" name="expression" index="1K51$P" />
       </concept>
-      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
+      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ngI" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
     </language>
     <language id="8b8c7b93-8f15-471e-a430-739566f9c25e" name="com.dslfoundry.dflat.type">
-      <concept id="7498425323610246353" name="com.dslfoundry.dflat.type.structure.ITypeReference" flags="ng" index="kAGVb">
+      <concept id="7498425323610246353" name="com.dslfoundry.dflat.type.structure.ITypeReference" flags="ngI" index="kAGVb">
         <reference id="7498425323610246354" name="targetType" index="kAGV8" />
       </concept>
       <concept id="7498425323610017789" name="com.dslfoundry.dflat.type.structure.SignedIntType" flags="ng" index="kB$RB" />
       <concept id="7498425323610018416" name="com.dslfoundry.dflat.type.structure.ObjectType" flags="ng" index="kB_1E" />
       <concept id="7498425323610018585" name="com.dslfoundry.dflat.type.structure.VoidType" flags="ng" index="kB_43" />
-      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ng" index="1K51Bm">
+      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ngI" index="1K51Bm">
         <child id="6638429855781513503" name="type" index="1K51Bn" />
       </concept>
     </language>
     <language id="28617705-0ee4-4b12-80b9-7532ec4a79c9" name="com.dslfoundry.dflat.structure">
-      <concept id="8652180360984199924" name="com.dslfoundry.dflat.structure.structure.IStaticed" flags="ng" index="d0rF6">
+      <concept id="8652180360984199924" name="com.dslfoundry.dflat.structure.structure.IStaticed" flags="ngI" index="d0rF6">
         <property id="8652180360984199925" name="static" index="d0rF7" />
       </concept>
       <concept id="8652180360985733867" name="com.dslfoundry.dflat.structure.structure.NewExpression" flags="ng" index="dedbp">
@@ -64,7 +64,7 @@
       </concept>
       <concept id="7498425323610246363" name="com.dslfoundry.dflat.structure.structure.ClassTypeReference" flags="ng" index="kAGV1" />
       <concept id="7498425323610162565" name="com.dslfoundry.dflat.structure.structure.ParameterReferenceExpression" flags="ng" index="kB0uv" />
-      <concept id="7498425323610017537" name="com.dslfoundry.dflat.structure.structure.IBodiedMethod" flags="ng" index="kB$Or">
+      <concept id="7498425323610017537" name="com.dslfoundry.dflat.structure.structure.IBodiedMethod" flags="ngI" index="kB$Or">
         <child id="7498425323610212955" name="body" index="kAOx1" />
       </concept>
       <concept id="7498425323610017568" name="com.dslfoundry.dflat.structure.structure.MethodBodyBlock" flags="ng" index="kB$OU" />
@@ -72,7 +72,7 @@
       <concept id="8805103209576571592" name="com.dslfoundry.dflat.structure.structure.ThisExpression" flags="ng" index="33ha1Z" />
       <concept id="8805103209577453542" name="com.dslfoundry.dflat.structure.structure.LocalFieldReferenceExpression" flags="ng" index="33Hxlh" />
       <concept id="8805103209577453536" name="com.dslfoundry.dflat.structure.structure.ScopedFieldReferenceExpression" flags="ng" index="33Hxln" />
-      <concept id="8805103209585170620" name="com.dslfoundry.dflat.structure.structure.IClassMember" flags="ng" index="33MXCb" />
+      <concept id="8805103209585170620" name="com.dslfoundry.dflat.structure.structure.IClassMember" flags="ngI" index="33MXCb" />
       <concept id="3843850057274209139" name="com.dslfoundry.dflat.structure.structure.LocalMethodCallExpression" flags="ng" index="34UqCL" />
       <concept id="3843850057274209140" name="com.dslfoundry.dflat.structure.structure.ScopedMethodCallExpression" flags="ng" index="34UqCQ" />
       <concept id="3843850057251332052" name="com.dslfoundry.dflat.structure.structure.AClassMember" flags="ng" index="3538qm" />
@@ -86,13 +86,13 @@
       <concept id="6638429855781511240" name="com.dslfoundry.dflat.structure.structure.CompilationUnit" flags="ng" index="1K5120" />
       <concept id="6638429855781511277" name="com.dslfoundry.dflat.structure.structure.Namespace" flags="ng" index="1K512_" />
       <concept id="6638429855781511500" name="com.dslfoundry.dflat.structure.structure.Constructor" flags="ng" index="1K5164" />
-      <concept id="6638429855781512165" name="com.dslfoundry.dflat.structure.structure.IParametered" flags="ng" index="1K51cH">
+      <concept id="6638429855781512165" name="com.dslfoundry.dflat.structure.structure.IParametered" flags="ngI" index="1K51cH">
         <child id="6638429855781512166" name="parameters" index="1K51cI" />
       </concept>
       <concept id="6638429855781512257" name="com.dslfoundry.dflat.structure.structure.Parameter" flags="ng" index="1K51i9" />
       <concept id="6638429855781512699" name="com.dslfoundry.dflat.structure.structure.Field" flags="ng" index="1K51kN" />
       <concept id="6638429855781512576" name="com.dslfoundry.dflat.structure.structure.PublicAccess" flags="ng" index="1K51l8" />
-      <concept id="6638429855781512573" name="com.dslfoundry.dflat.structure.structure.IAccessed" flags="ng" index="1K51mP">
+      <concept id="6638429855781512573" name="com.dslfoundry.dflat.structure.structure.IAccessed" flags="ngI" index="1K51mP">
         <child id="6638429855781512574" name="access" index="1K51mQ" />
       </concept>
       <concept id="6638429855781512480" name="com.dslfoundry.dflat.structure.structure.Class" flags="ng" index="1K51nC" />
@@ -102,7 +102,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
@@ -112,7 +112,7 @@
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
       <concept id="7498425323610018571" name="com.dslfoundry.dflat.statement.structure.AVariableReferenceExpression" flags="ng" index="kB_4h" />
       <concept id="8805103209592647058" name="com.dslfoundry.dflat.statement.structure.NamedVariableReferenceExpression" flags="ng" index="30muW_" />
-      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ng" index="1K51se">
+      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ngI" index="1K51se">
         <child id="6638429855781513160" name="block" index="1K51s0" />
       </concept>
       <concept id="6638429855781513135" name="com.dslfoundry.dflat.statement.structure.ReturnStatement" flags="ng" index="1K51tB" />
@@ -121,11 +121,11 @@
       <concept id="6638429855781513048" name="com.dslfoundry.dflat.statement.structure.IfStatement" flags="ng" index="1K51ug" />
       <concept id="6638429855781513043" name="com.dslfoundry.dflat.statement.structure.ExpressionStatement" flags="ng" index="1K51ur" />
       <concept id="6638429855781513018" name="com.dslfoundry.dflat.statement.structure.BlockStatement" flags="ng" index="1K51vM" />
-      <concept id="6638429855781513019" name="com.dslfoundry.dflat.statement.structure.IStatementList" flags="ng" index="1K51vN">
+      <concept id="6638429855781513019" name="com.dslfoundry.dflat.statement.structure.IStatementList" flags="ngI" index="1K51vN">
         <child id="6638429855781513020" name="statements" index="1K51vO" />
       </concept>
       <concept id="6638429855781513505" name="com.dslfoundry.dflat.statement.structure.ExplicitlyTypedLocalVariableStatement" flags="ng" index="1K51BD" />
-      <concept id="6638429855781514091" name="com.dslfoundry.dflat.statement.structure.IBlockable" flags="ng" index="1K51Iz">
+      <concept id="6638429855781514091" name="com.dslfoundry.dflat.statement.structure.IBlockable" flags="ngI" index="1K51Iz">
         <child id="6638429855781514092" name="block" index="1K51I$" />
       </concept>
     </language>

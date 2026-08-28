@@ -67,10 +67,10 @@
       <concept id="7498425323621824654" name="com.dslfoundry.dflat.expression.structure.AReferenceExpression" flags="ng" index="liBEk">
         <reference id="7498425323610018480" name="target" index="kB_2E" />
       </concept>
-      <concept id="6638429855781513724" name="com.dslfoundry.dflat.expression.structure.IExpressable" flags="ng" index="1K51$O">
+      <concept id="6638429855781513724" name="com.dslfoundry.dflat.expression.structure.IExpressable" flags="ngI" index="1K51$O">
         <child id="6638429855781513725" name="expression" index="1K51$P" />
       </concept>
-      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ng" index="1K51Ac">
+      <concept id="6638429855781513540" name="com.dslfoundry.dflat.expression.structure.IExpressed" flags="ngI" index="1K51Ac">
         <child id="6638429855781513541" name="expression" index="1K51Ad" />
       </concept>
     </language>
@@ -85,8 +85,8 @@
     <language id="8b8c7b93-8f15-471e-a430-739566f9c25e" name="com.dslfoundry.dflat.type">
       <concept id="7498425323610017789" name="com.dslfoundry.dflat.type.structure.SignedIntType" flags="ng" index="kB$RB" />
       <concept id="7498425323610018428" name="com.dslfoundry.dflat.type.structure.StringType" flags="ng" index="kB_1A" />
-      <concept id="6638429855781513501" name="com.dslfoundry.dflat.type.structure.IType" flags="ng" index="1K51Bl" />
-      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ng" index="1K51Bm">
+      <concept id="6638429855781513501" name="com.dslfoundry.dflat.type.structure.IType" flags="ngI" index="1K51Bl" />
+      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ngI" index="1K51Bm">
         <child id="6638429855781513503" name="type" index="1K51Bn" />
       </concept>
     </language>
@@ -95,7 +95,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -107,7 +107,7 @@
       <concept id="8652180360986585828" name="com.dslfoundry.dflat.statement.structure.MultiLineCommentStatement" flags="ng" index="d9tbm" />
       <concept id="3685605919845238826" name="com.dslfoundry.dflat.statement.structure.ElseIfBlock" flags="ng" index="2xlyW$" />
       <concept id="8805103209592647058" name="com.dslfoundry.dflat.statement.structure.NamedVariableReferenceExpression" flags="ng" index="30muW_" />
-      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ng" index="1K51se">
+      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ngI" index="1K51se">
         <child id="6638429855781513160" name="block" index="1K51s0" />
       </concept>
       <concept id="6638429855781513099" name="com.dslfoundry.dflat.statement.structure.WhileStatement" flags="ng" index="1K51t3" />
@@ -147,11 +147,11 @@
       <concept id="6638429855781513043" name="com.dslfoundry.dflat.statement.structure.ExpressionStatement" flags="ng" index="1K51ur" />
       <concept id="6638429855781513085" name="com.dslfoundry.dflat.statement.structure.CaseSwitchSection" flags="ng" index="1K51uP" />
       <concept id="6638429855781513018" name="com.dslfoundry.dflat.statement.structure.BlockStatement" flags="ng" index="1K51vM" />
-      <concept id="6638429855781513019" name="com.dslfoundry.dflat.statement.structure.IStatementList" flags="ng" index="1K51vN">
+      <concept id="6638429855781513019" name="com.dslfoundry.dflat.statement.structure.IStatementList" flags="ngI" index="1K51vN">
         <child id="6638429855781513020" name="statements" index="1K51vO" />
       </concept>
       <concept id="6638429855781513700" name="com.dslfoundry.dflat.statement.structure.GeneralCatchBlock" flags="ng" index="1K51$G" />
-      <concept id="6638429855781513489" name="com.dslfoundry.dflat.statement.structure.IStatemented" flags="ng" index="1K51Bp">
+      <concept id="6638429855781513489" name="com.dslfoundry.dflat.statement.structure.IStatemented" flags="ngI" index="1K51Bp">
         <child id="6638429855781513492" name="statement" index="1K51Bs" />
       </concept>
       <concept id="6638429855781513516" name="com.dslfoundry.dflat.statement.structure.ImplicitlyTypedLocalVariableStatement" flags="ng" index="1K51B$" />

@@ -32,7 +32,7 @@
   <property name="com.mbeddr.platform.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.minor.version}" />
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
-  <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
+  <property name="de.itemis.mps.extensions.version" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.major.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.major.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.minor.version}" />
   <property name="com.mbeddr.mpsutil.actionsfilter.build" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.build}" />
@@ -46,7 +46,7 @@
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
     <fileset dir="${artifacts.mps}/lib">
-      <include name="util.jar" />
+      <include name="util-8.jar" />
     </fileset>
   </path>
   
@@ -56,7 +56,7 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <echo file="${build.layout}/build.properties">com.dslfoundry.dflat.build=${build}${line.separator}com.dslfoundry.dflat.dflat.version=${dflat.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}com.mbeddr.mpsutil.actionsfilter.major.version=${com.mbeddr.mpsutil.actionsfilter.major.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.minor.version=${com.mbeddr.mpsutil.actionsfilter.minor.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.build=${com.mbeddr.mpsutil.actionsfilter.build}${line.separator}com.mbeddr.mpsutil.actionsfilter.mbeddr.version=${com.mbeddr.mpsutil.actionsfilter.mbeddr.version}</echo>
+    <echo file="${build.layout}/build.properties">com.dslfoundry.dflat.build=${build}${line.separator}com.dslfoundry.dflat.dflat.version=${dflat.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.version=${de.itemis.mps.extensions.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.major.version=${com.mbeddr.mpsutil.actionsfilter.major.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.minor.version=${com.mbeddr.mpsutil.actionsfilter.minor.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.build=${com.mbeddr.mpsutil.actionsfilter.build}${line.separator}com.mbeddr.mpsutil.actionsfilter.mbeddr.version=${com.mbeddr.mpsutil.actionsfilter.mbeddr.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -159,6 +159,7 @@
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.legacy-constraints.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />

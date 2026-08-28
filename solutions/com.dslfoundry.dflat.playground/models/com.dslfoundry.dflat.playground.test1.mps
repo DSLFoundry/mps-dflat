@@ -17,15 +17,15 @@
       <concept id="7498425323610018428" name="com.dslfoundry.dflat.type.structure.StringType" flags="ng" index="kB_1A" />
       <concept id="7498425323610018416" name="com.dslfoundry.dflat.type.structure.ObjectType" flags="ng" index="kB_1E" />
       <concept id="7498425323610018585" name="com.dslfoundry.dflat.type.structure.VoidType" flags="ng" index="kB_43" />
-      <concept id="3843850057264813008" name="com.dslfoundry.dflat.type.structure.IGeneric" flags="ng" index="34u$Ei">
+      <concept id="3843850057264813008" name="com.dslfoundry.dflat.type.structure.IGeneric" flags="ngI" index="34u$Ei">
         <child id="3843850057264813009" name="typeDefinitions" index="34u$Ej" />
       </concept>
-      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ng" index="1K51Bm">
+      <concept id="6638429855781513502" name="com.dslfoundry.dflat.type.structure.ITyped" flags="ngI" index="1K51Bm">
         <child id="6638429855781513503" name="type" index="1K51Bn" />
       </concept>
     </language>
     <language id="28617705-0ee4-4b12-80b9-7532ec4a79c9" name="com.dslfoundry.dflat.structure">
-      <concept id="7498425323610017537" name="com.dslfoundry.dflat.structure.structure.IBodiedMethod" flags="ng" index="kB$Or">
+      <concept id="7498425323610017537" name="com.dslfoundry.dflat.structure.structure.IBodiedMethod" flags="ngI" index="kB$Or">
         <child id="7498425323610212955" name="body" index="kAOx1" />
       </concept>
       <concept id="7498425323610017568" name="com.dslfoundry.dflat.structure.structure.MethodBodyBlock" flags="ng" index="kB$OU" />
@@ -42,12 +42,12 @@
       <concept id="6638429855781512763" name="com.dslfoundry.dflat.structure.structure.Property" flags="ng" index="1K51rN" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="c818080e-4a8e-47c4-a83a-59c146991007" name="com.dslfoundry.dflat.statement">
-      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ng" index="1K51se">
+      <concept id="6638429855781513158" name="com.dslfoundry.dflat.statement.structure.IBlocked" flags="ngI" index="1K51se">
         <child id="6638429855781513160" name="block" index="1K51s0" />
       </concept>
       <concept id="6638429855781513018" name="com.dslfoundry.dflat.statement.structure.BlockStatement" flags="ng" index="1K51vM" />

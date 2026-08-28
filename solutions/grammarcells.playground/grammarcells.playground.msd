@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="grammarcells.playground" uuid="d38ed35e-5285-4219-9a58-bf3e7d69e264" moduleVersion="0" compileInMPS="true">
+<solution name="grammarcells.playground" uuid="d38ed35e-5285-4219-9a58-bf3e7d69e264" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
