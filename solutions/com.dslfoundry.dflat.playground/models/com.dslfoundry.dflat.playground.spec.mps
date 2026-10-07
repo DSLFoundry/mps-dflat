@@ -5,7 +5,7 @@
     <devkit ref="97be3f2e-6ee3-4400-ade4-6b4b2f948d52(com.dslfoundry.dflat)" />
   </languages>
   <imports>
-    <import index="koxl" ref="r:0cedfa4f-06aa-441d-bd21-2c4f540a4f24(com.dslfoundry.dblunt.playground.lib)" />
+    <import index="koxl" ref="r:0cedfa4f-06aa-441d-bd21-2c4f540a4f24(com.dslfoundry.dflat.playground.lib)" />
   </imports>
   <registry>
     <language id="21717649-bb7f-4964-87cf-78a6930e9801" name="com.dslfoundry.dflat.expression">
