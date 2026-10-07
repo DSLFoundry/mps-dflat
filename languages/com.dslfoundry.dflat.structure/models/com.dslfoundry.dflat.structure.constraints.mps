@@ -662,7 +662,7 @@
                         <node concept="3clFbF" id="1XZk3YZawNe" role="3cqZAp">
                           <node concept="2OqwBi" id="1XZk3YZax4Q" role="3clFbG">
                             <node concept="37vLTw" id="1XZk3YZawNd" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2HMP5SUjIaH" />
+                              <ref role="3cqZAo" node="2HMP5SUjIaH" resolve="it" />
                             </node>
                             <node concept="1$rogu" id="1XZk3YZaxsj" role="2OqNvi" />
                           </node>
